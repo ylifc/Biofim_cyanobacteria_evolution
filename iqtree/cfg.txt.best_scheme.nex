@@ -1,0 +1,22 @@
+#nexus
+begin sets;
+  charset part1_part9_part11_part12_part13_part15 = 1-437  11002-11796  12435-12918  12919-13396  13397-13779  14192-14569;
+  charset part2 = 438-1546;
+  charset part3_part8_part17 = 1547-2204  7876-11001  15781-16596;
+  charset part4_part10_part14 = 2205-2593  11797-12434  13780-14191;
+  charset part5_part20 = 2594-3238  20372-21256;
+  charset part6 = 3239-6171;
+  charset part7 = 6172-7875;
+  charset part16 = 14570-15780;
+  charset part18_part19 = 16597-18482  18483-20371;
+  charpartition mymodels =
+    SYM+R9: part1_part9_part11_part12_part13_part15,
+    GTR+F+I+G4: part2,
+    SYM+R10: part3_part8_part17,
+    GTR+F+R7: part4_part10_part14,
+    SYM+R8: part5_part20,
+    GTR+F+I+G4: part6,
+    GTR+F+I+G4: part7,
+    GTR+F+I+G4: part16,
+    SYM+R10: part18_part19;
+end;

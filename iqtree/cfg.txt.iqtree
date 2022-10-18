@@ -1,0 +1,1241 @@
+IQ-TREE 2.1.4-beta COVID-edition built Jun 24 2021
+
+Partition file name: cfg.txt
+Input file name: reformated_merged.fa
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 10727
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 274 taxa with 9 partitions and 21256 total sites (4.62949% missing data)
+
+  ID  Name                                     Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1+part9+part11+part12+part13+part15  DNA	272	2955	2536	2117	604	604
+   2  part2                                    DNA	242	1109	1063	873	100	100
+   3  part3+part8+part17                       DNA	274	4600	4017	3572	829	829
+   4  part4+part10+part14                      DNA	270	1439	1284	1086	222	221
+   5  part5+part20                             DNA	267	1530	1449	1284	159	159
+   6  part6                                    DNA	254	2933	2863	2646	157	157
+   7  part7                                    DNA	241	1704	1277	1033	577	577
+   8  part16                                   DNA	247	1211	1110	969	159	159
+   9  part18+part19                            DNA	257	3775	1908	3157	450	450
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: SYM+R9:part1+part9+part11+part12+part13+part15,GTR+F+I+G4:part2,SYM+R10:part3+part8+part17,GTR+F+R7:part4+part10+part14,SYM+R8:part5+part20,GTR+F+I+G4:part6,GTR+F+I+G4:part7,GTR+F+I+G4:part16,SYM+R10:part18+part19
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  SYM+R9          -232130.766  464305.533 + 6.95e-310  464305.878 + 4.64e-310  464437.341 + 6.95e-310
+   2  GTR+F+I+G4       -82956.948  165935.897 + 6.95e-310  165936.138 + 4.64e-310  165991.020 + 6.95e-310
+   3  SYM+R10         -398114.474  796276.949 + 6.95e-310  796277.211 + 4.64e-310  796431.360 + 6.95e-310
+   4  GTR+F+R7        -112686.148  225414.295 + 6.95e-310  225414.947 + 4.64e-310  225525.001 + 6.95e-310
+   5  SYM+R8          -158059.478  316158.955 + 6.95e-310  316159.512 + 4.64e-310  316265.616 + 6.95e-310
+   6  GTR+F+I+G4      -308585.950  617193.901 + 6.95e-310  617193.991 + 4.64e-310  617259.723 + 6.95e-310
+   7  GTR+F+I+G4      -120070.430  240162.859 + 6.95e-310  240163.015 + 4.64e-310  240222.707 + 6.95e-310
+   8  GTR+F+I+G4      -114384.354  228790.707 + 6.95e-310  228790.928 + 4.64e-310  228846.799 + 6.95e-310
+   9  SYM+R10         -376182.010  752412.020 + 6.95e-310  752412.340 + 4.64e-310  752561.688 + 6.95e-310
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  SYM+R9         0.8353  SYM{1.87993,3.99786,1.37791,1.31719,4.90864}+FQ+R9{0.260144,0.0095021,0.0632641,0.106859,0.0984085,0.107099,0.110742,0.351613,0.110164,0.723879,0.107316,1.23277,0.10631,1.97261,0.104949,3.19041,0.0387021,4.77259}
+   2  GTR+F+I+G4     0.9089  GTR{1.56764,3.37863,1.62118,1.36229,6.15045}+F{0.255142,0.251726,0.28084,0.212292}+I{0.0745864}+G4{0.712583}
+   3  SYM+R10        1.0079  SYM{1.48504,3.87381,1.10996,1.51143,5.43016}+FQ+R10{0.21645,0.0068981,0.0693203,0.0723578,0.0667247,0.0723788,0.110045,0.224017,0.0941844,0.456184,0.0926546,0.803582,0.118537,1.28585,0.0986856,2.05093,0.0981776,3.24511,0.0352208,4.91678}
+   4  GTR+F+R7       0.7869  GTR{1.89494,4.35805,1.51862,1.35876,6.00204}+F{0.260884,0.269757,0.264749,0.204611}+R7{0.291345,0.0225231,0.172212,0.16191,0.0998664,0.467349,0.135947,1.00001,0.13017,1.69205,0.111704,2.79061,0.0587553,4.27124}
+   5  SYM+R8         1.1621  SYM{1.55741,3.36161,1.10681,1.70202,4.20137}+FQ+R8{0.171978,0.0141786,0.122093,0.0908755,0.132362,0.237532,0.110709,0.486889,0.142193,0.945823,0.12951,1.48828,0.117046,2.45883,0.0741085,3.86041}
+   6  GTR+F+I+G4     1.2238  GTR{1.3417,3.01026,1.28824,1.44173,4.96891}+F{0.249674,0.254058,0.27695,0.219318}+I{0.0445104}+G4{0.871131}
+   7  GTR+F+I+G4     0.8775  GTR{1.95458,4.75411,1.40483,1.58719,8.46513}+F{0.2442,0.252285,0.273213,0.230302}+I{0.331927}+G4{0.682157}
+   8  GTR+F+I+G4     1.0634  GTR{1.78714,4.1209,1.15013,1.57674,4.4171}+F{0.208346,0.253798,0.260942,0.276914}+I{0.123728}+G4{0.754239}
+   9  SYM+R10        1.0226  SYM{1.64323,3.68343,1.42561,1.40248,4.96239}+FQ+R10{0.169049,0.00932856,0.0501901,0.138206,0.111738,0.138272,0.147405,0.342818,0.0898672,0.549715,0.103653,0.840061,0.114234,1.43909,0.105564,2.19453,0.07562,3.17654,0.0326795,4.67451}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1895705.6028 (s.e. 10717.1367)
+Unconstrained log-likelihood (without tree): -160799.8477
+Number of free parameters (#branches + #model parameters): 699
+Akaike information criterion (AIC) score: 3792809.2056
+Corrected Akaike information criterion (AICc) score: 3792856.8121
+Bayesian information criterion (BIC) score: 3798376.3173
+
+Total tree length (sum of branch lengths): 44.3884
+Sum of internal branch lengths: 15.7397 (35.4590% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon '1G10' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--1G10
+|
+|                             +--AG-670-A05
+|                          +--| (100)
+|                          |  |  +--B_SRR6854584.1_metawrap_50_10_bins_bin.1.fa
+|                          |  +--| (100)
+|                          |     |     +--RS9915
+|                          |     |  +--| (100)
+|                          |     |  |  +--YX04-3
+|                          |     +--| (100)
+|                          |        |  +--WH8102
+|                          |        +--| (100)
+|                          |           +--WH8103
+|                       +--| (100)
+|                       |  +--W_SRR6873778.1_metawrap_50_10_bins_bin.23.fa
+|                    +--| (74)
+|                    |  |     +--AG-670-B23
+|                    |  |  +--| (99)
+|                    |  |  |  |                          +--B_SRR6869036.1_metawrap_50_10_bins_bin.2.fa
+|                    |  |  |  |                       +--| (100)
+|                    |  |  |  |                       |  |        +--B_SRR6869047.1_metawrap_50_10_bins_bin.14.fa
+|                    |  |  |  |                       |  |     +--| (100)
+|                    |  |  |  |                       |  |     |  +--W_Tara_ERR598966_metawrap_50_10_bins_bin.4.fa
+|                    |  |  |  |                       |  |  +--| (100)
+|                    |  |  |  |                       |  |  |  +--W_Tara_ERR598979_metawrap_50_10_bins_bin.2.fa
+|                    |  |  |  |                       |  +--| (100)
+|                    |  |  |  |                       |     +--W_SRR6877511.1_metawrap_50_10_bins_bin.37.fa
+|                    |  |  |  |                    +--| (67)
+|                    |  |  |  |                    |  |     +--N19
+|                    |  |  |  |                    |  |  +--| (72)
+|                    |  |  |  |                    |  |  |  +--W_Tara_ERR599102_metawrap_50_10_bins_bin.8.fa
+|                    |  |  |  |                    |  +--| (68)
+|                    |  |  |  |                    |     |     +--N5
+|                    |  |  |  |                    |     |  +--| (98)
+|                    |  |  |  |                    |     |  |  +--REDSEA-S02_B4
+|                    |  |  |  |                    |     +--| (100)
+|                    |  |  |  |                    |        +--REDSEA-S01_B1
+|                    |  |  |  |                 +--| (37)
+|                    |  |  |  |                 |  |  +--B_SRR6869044.1_metawrap_50_10_bins_bin.21.fa
+|                    |  |  |  |                 |  +--| (47)
+|                    |  |  |  |                 |     +--UW86
+|                    |  |  |  |              +--| (88)
+|                    |  |  |  |              |  |     +--B_SRR6869048.1_metawrap_50_10_bins_bin.21.fa
+|                    |  |  |  |              |  |  +--| (39)
+|                    |  |  |  |              |  |  |  +--N32
+|                    |  |  |  |              |  +--| (37)
+|                    |  |  |  |              |     +--RS344
+|                    |  |  |  |           +--| (100)
+|                    |  |  |  |           |  +--N26
+|                    |  |  |  |        +--| (100)
+|                    |  |  |  |        |  +--W_SRR6873784.1_metawrap_50_10_bins_bin.55.fa
+|                    |  |  |  |     +--| (100)
+|                    |  |  |  |     |  +--WH8109
+|                    |  |  |  |  +--| (100)
+|                    |  |  |  |  |  +--CC9605
+|                    |  |  |  +--| (100)
+|                    |  |  |     +--KORDI-52
+|                    |  +--| (100)
+|                    |     |     +--UW106
+|                    |     |  +--| (100)
+|                    |     |  |  +--UW69
+|                    |     +--| (100)
+|                    |        +--W_Tara_ERR598976_metawrap_50_10_bins_bin.5.fa
+|                 +--| (18)
+|                 |  |      +--AG-683-C23
+|                 |  |   +--| (100)
+|                 |  |   |  +--AG-686-B21
+|                 |  +---| (100)
+|                 |      |  +--BL107
+|                 |      +--| (98)
+|                 |         |     +--CC9902
+|                 |         |  +--| (100)
+|                 |         |  |  |  +--MED-G69
+|                 |         |  |  +--| (100)
+|                 |         |  |     +--W_Tara_ERR598963_metawrap_50_10_bins_bin.24.fa
+|                 |         +--| (99)
+|                 |            +--W_Tara_ERR598976_metawrap_50_10_bins_bin.23.fa
+|              +--| (64)
+|              |  |              +--CC9616
+|              |  |           +--| (100)
+|              |  |           |  +--TMED20
+|              |  |        +--| (100)
+|              |  |        |  +--KORDI-100
+|              |  |     +--| (98)
+|              |  |     |  +--MED850
+|              |  |  +--| (100)
+|              |  |  |  +--W_Tara_ERR599029_metawrap_50_10_bins_bin.17.fa
+|              |  +--| (69)
+|              |     |           +--KORDI-49
+|              |     |        +--| (67)
+|              |     |        |  +--UBA9887
+|              |     |     +--| (26)
+|              |     |     |  +--UBA3999
+|              |     |  +--| (66)
+|              |     |  |  +--MED-G70
+|              |     +--| (100)
+|              |        +--W_Tara_ERR598951_metawrap_50_10_bins_bin.8.fa
+|           +--| (75)
+|           |  |                       +--AG-670-F22
+|           |  |                    +--| (99)
+|           |  |                    |  +--AG-676-C06
+|           |  |                 +--| (75)
+|           |  |                 |  +--AG-673-F03
+|           |  |              +--| (75)
+|           |  |              |  |           +--AG-676-E23
+|           |  |              |  |        +--| (100)
+|           |  |              |  |        |  +--MIT_S9220
+|           |  |              |  |     +--| (75)
+|           |  |              |  |     |  |  +--W_Tara_ERR599050_metawrap_50_10_bins_bin.46.fa
+|           |  |              |  |     |  +--| (75)
+|           |  |              |  |     |     +--W_Tara_ERR599174_metawrap_50_10_bins_bin.4.fa
+|           |  |              |  |  +--| (75)
+|           |  |              |  |  |  +--GEYO
+|           |  |              |  +--| (75)
+|           |  |              |     +--MITS9508
+|           |  |           +--| (75)
+|           |  |           |  |     +**MITS9504
+|           |  |           |  |  +--| (100)
+|           |  |           |  |  |  +--MITS9509
+|           |  |           |  +--| (100)
+|           |  |           |     +--UW179A
+|           |  |        +--| (74)
+|           |  |        |  +--EAC657
+|           |  |     +--| (72)
+|           |  |     |  |                             +--AG-679-B05
+|           |  |     |  |                          +--| (100)
+|           |  |     |  |                          |  |     +--W_Tara_ERR594297_metawrap_50_10_bins_bin.6.fa
+|           |  |     |  |                          |  |  +--| (100)
+|           |  |     |  |                          |  |  |  +--W_Tara_ERR599174_metawrap_50_10_bins_bin.8.fa
+|           |  |     |  |                          |  +--| (100)
+|           |  |     |  |                          |     +--W_Tara_ERR599165_metawrap_50_10_bins_bin.14.fa
+|           |  |     |  |                       +--| (100)
+|           |  |     |  |                       |  +--W_SRR6877515.1_metawrap_50_10_bins_bin.13.fa
+|           |  |     |  |                    +--| (75)
+|           |  |     |  |                    |  |  +--W_Tara_ERR599136_metawrap_50_10_bins_bin.43.fa
+|           |  |     |  |                    |  +--| (100)
+|           |  |     |  |                    |     +---W_Tara_ERR594297_metawrap_50_10_bins_bin.12.fa
+|           |  |     |  |                 +--| (75)
+|           |  |     |  |                 |  |  +---B_SRR6869398.1_metawrap_50_10_bins_bin.20.fa
+|           |  |     |  |                 |  +--| (75)
+|           |  |     |  |                 |     +--W_Tara_ERR599136_metawrap_50_10_bins_bin.5.fa
+|           |  |     |  |              +--| (75)
+|           |  |     |  |              |  +--W_Tara_ERR599058_metawrap_50_10_bins_bin.13.fa
+|           |  |     |  |           +--| (75)
+|           |  |     |  |           |  +--B_SRR6854712.1_metawrap_50_10_bins_bin.2.fa
+|           |  |     |  |        +--| (64)
+|           |  |     |  |        |  |     +--B_SRR6869024.1_metawrap_50_10_bins_bin.3.fa
+|           |  |     |  |        |  |  +--| (75)
+|           |  |     |  |        |  |  |  +---W_SRR6873778.1_metawrap_50_10_bins_bin.26.fa
+|           |  |     |  |        |  +--| (64)
+|           |  |     |  |        |     +--W_SRR6873778.1_metawrap_50_10_bins_bin.43.fa
+|           |  |     |  |     +--| (63)
+|           |  |     |  |     |  +--WH7803
+|           |  |     |  |  +--| (75)
+|           |  |     |  |  |  +--B_SRR6869026.1_metawrap_50_10_bins_bin.1.fa
+|           |  |     |  +--| (75)
+|           |  |     |     |  +--TMED90
+|           |  |     |     +--| (100)
+|           |  |     |        +--WH7805
+|           |  |  +--| (64)
+|           |  |  |  |        +--AG-679-C18
+|           |  |  |  |     +--| (100)
+|           |  |  |  |     |  |  +--NAT249
+|           |  |  |  |     |  +--| (67)
+|           |  |  |  |     |     |  +--NP17
+|           |  |  |  |     |     +--| (67)
+|           |  |  |  |     |        +--UBA1528
+|           |  |  |  |  +--| (74)
+|           |  |  |  |  |  |     +--CC9311
+|           |  |  |  |  |  |  +--| (100)
+|           |  |  |  |  |  |  |  +--WH8020
+|           |  |  |  |  |  +--| (99)
+|           |  |  |  |  |     |              +--MED-G68
+|           |  |  |  |  |     |           +--| (100)
+|           |  |  |  |  |     |           |  +--UBA7448
+|           |  |  |  |  |     |        +--| (100)
+|           |  |  |  |  |     |        |  +--UBA1269
+|           |  |  |  |  |     |     +--| (100)
+|           |  |  |  |  |     |     |  +--UBA7854
+|           |  |  |  |  |     |  +--| (100)
+|           |  |  |  |  |     |  |  +--W_Tara_ERR599144_metawrap_50_10_bins_bin.16.fa
+|           |  |  |  |  |     +--| (98)
+|           |  |  |  |  |        |  +--UW179B
+|           |  |  |  |  |        +--| (100)
+|           |  |  |  |  |           +--WH8106
+|           |  |  |  +--| (68)
+|           |  |  |     |       +------W_Tara_ERR594307_metawrap_50_10_bins_bin.15.fa
+|           |  |  |     +-------| (100)
+|           |  |  |             |                       +--W_Tara_ERR594316_metawrap_50_10_bins_bin.2.fa
+|           |  |  |             |              +--------| (100)
+|           |  |  |             |              |        +--W_Tara_ERR599140_metawrap_50_10_bins_bin.2.fa
+|           |  |  |             |           +--| (74)
+|           |  |  |             |           |  +--W_Tara_ERR598951_metawrap_50_10_bins_bin.6.fa
+|           |  |  |             |        +--| (70)
+|           |  |  |             |        |  |  +--W_Tara_ERR594318_metawrap_50_10_bins_bin.15.fa
+|           |  |  |             |        |  +--| (74)
+|           |  |  |             |        |     |     +--W_Tara_ERR594297_metawrap_50_10_bins_bin.10.fa
+|           |  |  |             |        |     |  +--| (75)
+|           |  |  |             |        |     |  |  |  +--W_Tara_ERR594332_metawrap_50_10_bins_bin.12.fa
+|           |  |  |             |        |     |  |  +--| (75)
+|           |  |  |             |        |     |  |     +--W_Tara_ERR598955_metawrap_50_10_bins_bin.10.fa
+|           |  |  |             |        |     +--| (75)
+|           |  |  |             |        |        +--W_Tara_ERR599174_metawrap_50_10_bins_bin.1.fa
+|           |  |  |             |     +--| (73)
+|           |  |  |             |     |  +--W_Tara_ERR598976_metawrap_50_10_bins_bin.36.fa
+|           |  |  |             |  +--| (100)
+|           |  |  |             |  |  |  +---------------------W_Tara_ERR598963_metawrap_50_10_bins_bin.12.fa
+|           |  |  |             |  |  +--| (73)
+|           |  |  |             |  |     +--W_Tara_ERR599006_metawrap_50_10_bins_bin.1.fa
+|           |  |  |             +--| (75)
+|           |  |  |                +--W_Tara_ERR599165_metawrap_50_10_bins_bin.8.fa
+|           |  +--| (64)
+|           |     |        +--BS55D
+|           |     |     +--| (100)
+|           |     |     |  +--BS56D
+|           |     |  +--| (100)
+|           |     |  |  |  +--RS9917
+|           |     |  |  +--| (100)
+|           |     |  |     +--WH8101
+|           |     +--| (67)
+|           |        |        +--MED-G135
+|           |        |     +--| (100)
+|           |        |     |  |  +--NAT40
+|           |        |     |  +--| (94)
+|           |        |     |     |  +--UW105
+|           |        |     |     +--| (98)
+|           |        |     |        +--W_Tara_ERR598963_metawrap_50_10_bins_bin.16.fa
+|           |        |  +--| (100)
+|           |        |  |  +--UW140
+|           |        +--| (75)
+|           |           |  +--RS9916
+|           |           +--| (42)
+|           |              +------W_SRR6877514.1_metawrap_50_10_bins_bin.77.fa
+|        +--| (100)
+|        |  |                                            +-----Acaryochloris_marina_MBIC11017
+|        |  |                                         +--| (75)
+|        |  |                                         |  |  +-------Synechococcus_sp_PCC_7336
+|        |  |                                         |  +--| (74)
+|        |  |                                         |     +------B_SRR6854586.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                      +--| (75)
+|        |  |                                      |  |     +-----Oscillatoria_nigro-viridis_PCC_7112
+|        |  |                                      |  |  +--| (99)
+|        |  |                                      |  |  |  +------Trichodesmium_erythraeum_IMS101
+|        |  |                                      |  +--| (100)
+|        |  |                                      |     +----Planktothricoides_sp._SR001
+|        |  |                                   +--| (75)
+|        |  |                                   |  |                                +--B_SRR6869023.1_metawrap_50_10_bins_bin.26.fa
+|        |  |                                   |  |                             +--| (100)
+|        |  |                                   |  |                             |  +--B_SRR6869394.1_metawrap_50_10_bins_bin.21.fa
+|        |  |                                   |  |                          +--| (75)
+|        |  |                                   |  |                          |  |     +--B_SRR6869035.1_metawrap_50_10_bins_bin.21.fa
+|        |  |                                   |  |                          |  |  +--| (99)
+|        |  |                                   |  |                          |  |  |  +--B_SRR6869035.1_metawrap_50_10_bins_bin.29.fa
+|        |  |                                   |  |                          |  +--| (74)
+|        |  |                                   |  |                          |     |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                   |  |                          |     +--| (75)
+|        |  |                                   |  |                          |        +--B_SRR6869035.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                   |  |                       +--| (75)
+|        |  |                                   |  |                       |  |  +--B_SRR6869042.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                   |  |                       |  +--| (100)
+|        |  |                                   |  |                       |     +--B_SRR6869389.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                   |  |                    +--| (75)
+|        |  |                                   |  |                    |  |              +---B_SRR6869034.1_metawrap_50_10_bins_bin.17.fa
+|        |  |                                   |  |                    |  |           +--| (100)
+|        |  |                                   |  |                    |  |           |  +--B_SRR6869035.1_metawrap_50_10_bins_bin.62.fa
+|        |  |                                   |  |                    |  |        +--| (100)
+|        |  |                                   |  |                    |  |        |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.33.fa
+|        |  |                                   |  |                    |  |     +--| (100)
+|        |  |                                   |  |                    |  |     |  +--B_SRR6869393.1_metawrap_50_10_bins_bin.51.fa
+|        |  |                                   |  |                    |  |  +--| (75)
+|        |  |                                   |  |                    |  |  |  |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.22.fa
+|        |  |                                   |  |                    |  |  |  +--| (75)
+|        |  |                                   |  |                    |  |  |     |  +--B_SRR6869048.1_metawrap_50_10_bins_bin.23.fa
+|        |  |                                   |  |                    |  |  |     +--| (75)
+|        |  |                                   |  |                    |  |  |        +---B_SRR6869053.1_metawrap_50_10_bins_bin.27.fa
+|        |  |                                   |  |                    |  +--| (75)
+|        |  |                                   |  |                    |     +---B_SRR6869053.1_metawrap_50_10_bins_bin.19.fa
+|        |  |                                   |  |                 +--| (75)
+|        |  |                                   |  |                 |  |           +--B_SRR6869035.1_metawrap_50_10_bins_bin.8.fa
+|        |  |                                   |  |                 |  |        +--| (75)
+|        |  |                                   |  |                 |  |        |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.32.fa
+|        |  |                                   |  |                 |  |     +--| (100)
+|        |  |                                   |  |                 |  |     |  +--W_SRR6873781.1_metawrap_50_10_bins_bin.11.fa
+|        |  |                                   |  |                 |  |  +--| (75)
+|        |  |                                   |  |                 |  |  |  +--B_SRR6869395.1_metawrap_50_10_bins_bin.26.fa
+|        |  |                                   |  |                 |  +--| (68)
+|        |  |                                   |  |                 |     +--Pleurocapsa_sp._PCC_7319
+|        |  |                                   |  |              +--| (75)
+|        |  |                                   |  |              |  +---Myxosarcina_sp._GI1_contig_0
+|        |  |                                   |  |           +--| (75)
+|        |  |                                   |  |           |  +----Xenococcus_sp_PCC_7305
+|        |  |                                   |  |        +--| (66)
+|        |  |                                   |  |        |  |    +--B_SRR6869052.1_metawrap_50_10_bins_bin.51.fa
+|        |  |                                   |  |        |  +----| (100)
+|        |  |                                   |  |        |       +--Leptolyngbya_sp._PCC_7376
+|        |  |                                   |  |     +--| (75)
+|        |  |                                   |  |     |  |              +--B_SRR6869051.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                   |  |     |  |        +-----| (100)
+|        |  |                                   |  |     |  |        |     +---B_SRR6869054.1_metawrap_50_10_bins_bin.54.fa
+|        |  |                                   |  |     |  |     +--| (75)
+|        |  |                                   |  |     |  |     |  +--Geminocystis_herdmanii_PCC_6308
+|        |  |                                   |  |     |  |  +--| (66)
+|        |  |                                   |  |     |  |  |  +-----Gloeocapsa_sp._PCC_73106
+|        |  |                                   |  |     |  +--| (67)
+|        |  |                                   |  |     |     +-----Cyanothece_sp._PCC_8801
+|        |  |                                   |  |  +--| (73)
+|        |  |                                   |  |  |  |       +--B_SRR6869388.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                   |  |  |  |  +----| (100)
+|        |  |                                   |  |  |  |  |    +--Moorea_producens_JHB
+|        |  |                                   |  |  |  +--| (100)
+|        |  |                                   |  |  |     +----Crinalium_epipsammum_PCC_9333
+|        |  |                                   |  +--| (70)
+|        |  |                                   |     |        +---B_SRR6869052.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                   |     |     +--| (100)
+|        |  |                                   |     |     |  +--Rivularia_sp._PCC_7116
+|        |  |                                   |     |  +--| (97)
+|        |  |                                   |     |  |  |     +--B_SRR6869387.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                   |     |  |  |  +--| (100)
+|        |  |                                   |     |  |  |  |  +--Mastigocoleus_testarum_BC008_Contig-1
+|        |  |                                   |     |  |  +--| (78)
+|        |  |                                   |     |  |     +----Richelia_intracellularis_HH01
+|        |  |                                   |     +--| (76)
+|        |  |                                   |        +----Calothrix_sp._PCC_7103
+|        |  |                                +--| (75)
+|        |  |                                |  |               +------B_SRR6854573.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                |  |           +---| (100)
+|        |  |                                |  |           |   +--------B_SRR6854589.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                |  |        +--| (67)
+|        |  |                                |  |        |  |              +--B_SRR6869046.1_metawrap_50_10_bins_bin.32.fa
+|        |  |                                |  |        |  |           +--| (74)
+|        |  |                                |  |        |  |           |  |    +--B_SRR6869050.1_metawrap_50_10_bins_bin.19.fa
+|        |  |                                |  |        |  |           |  +----| (100)
+|        |  |                                |  |        |  |           |       +--B_SRR6869054.1_metawrap_50_10_bins_bin.25.fa
+|        |  |                                |  |        |  |        +--| (71)
+|        |  |                                |  |        |  |        |  |  +--B_SRR6869047.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                |  |        |  |        |  +--| (100)
+|        |  |                                |  |        |  |        |     +--B_SRR6869048.1_metawrap_50_10_bins_bin.20.fa
+|        |  |                                |  |        |  |     +--| (74)
+|        |  |                                |  |        |  |     |  +--B_SRR6869049.1_metawrap_50_10_bins_bin.18.fa
+|        |  |                                |  |        |  +-----| (100)
+|        |  |                                |  |        |        +--B_SRR6869387.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                |  |     +--| (75)
+|        |  |                                |  |     |  |                     +--B_SRR6869023.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                |  |     |  |                  +--| (100)
+|        |  |                                |  |     |  |                  |  |  +--B_SRR6869023.1_metawrap_50_10_bins_bin.7.fa
+|        |  |                                |  |     |  |                  |  +--| (100)
+|        |  |                                |  |     |  |                  |     +--B_SRR6869040.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                |  |     |  |               +--| (75)
+|        |  |                                |  |     |  |               |  |              +-----B_SRR6869023.1_metawrap_50_10_bins_bin.24.fa
+|        |  |                                |  |     |  |               |  |           +--| (100)
+|        |  |                                |  |     |  |               |  |           |  |  +---B_SRR6869035.1_metawrap_50_10_bins_bin.22.fa
+|        |  |                                |  |     |  |               |  |           |  +--| (100)
+|        |  |                                |  |     |  |               |  |           |     |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                |  |     |  |               |  |           |     +--| (100)
+|        |  |                                |  |     |  |               |  |           |        +--B_SRR6869043.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                                |  |     |  |               |  |        +--| (68)
+|        |  |                                |  |     |  |               |  |        |  |          +--B_SRR6869046.1_metawrap_50_10_bins_bin.8.fa
+|        |  |                                |  |     |  |               |  |        |  |     +----| (100)
+|        |  |                                |  |     |  |               |  |        |  |     |    +--B_SRR6869053.1_metawrap_50_10_bins_bin.45.fa
+|        |  |                                |  |     |  |               |  |        |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |        |  |  |  |  +------B_SRR6869050.1_metawrap_50_10_bins_bin.2.fa
+|        |  |                                |  |     |  |               |  |        |  |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |        |  |  |     +--------Rubidibacter_lacunae_KORDI_51-2
+|        |  |                                |  |     |  |               |  |        |  +--| (74)
+|        |  |                                |  |     |  |               |  |        |     +--B_SRR6869395.1_metawrap_50_10_bins_bin.45.fa
+|        |  |                                |  |     |  |               |  |     +--| (75)
+|        |  |                                |  |     |  |               |  |     |  |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.53.fa
+|        |  |                                |  |     |  |               |  |     |  +--| (100)
+|        |  |                                |  |     |  |               |  |     |     +---B_SRR6869395.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                                |  |     |  |               |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |  |  +--B_SRR6869034.1_metawrap_50_10_bins_bin.13.fa
+|        |  |                                |  |     |  |               |  +--| (75)
+|        |  |                                |  |     |  |               |     +--B_SRR6869035.1_metawrap_50_10_bins_bin.66.fa
+|        |  |                                |  |     |  |           +---| (75)
+|        |  |                                |  |     |  |           |   +--B_SRR6869035.1_metawrap_50_10_bins_bin.44.fa
+|        |  |                                |  |     |  |        +--| (100)
+|        |  |                                |  |     |  |        |  +--B_SRR6869034.1_metawrap_50_10_bins_bin.35.fa
+|        |  |                                |  |     |  |     +--| (75)
+|        |  |                                |  |     |  |     |  +---B_SRR6869391.1_metawrap_50_10_bins_bin.27.fa
+|        |  |                                |  |     |  |  +--| (74)
+|        |  |                                |  |     |  |  |  +-------B_SRR6869051.1_metawrap_50_10_bins_bin.2.fa
+|        |  |                                |  |     |  +--| (75)
+|        |  |                                |  |     |     +------B_SRR6869053.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                |  |  +--| (68)
+|        |  |                                |  |  |  |          +--B_SRR6869054.1_metawrap_50_10_bins_bin.42.fa
+|        |  |                                |  |  |  |     +----| (75)
+|        |  |                                |  |  |  |     |    +---B_SRR6869052.1_metawrap_50_10_bins_bin.15.fa
+|        |  |                                |  |  |  |  +--| (75)
+|        |  |                                |  |  |  |  |  +----B_SRR6869034.1_metawrap_50_10_bins_bin.34.fa
+|        |  |                                |  |  |  +--| (73)
+|        |  |                                |  |  |     +----Coleofasciculus_chthonoplastes_PCC_7420
+|        |  |                                |  +--| (75)
+|        |  |                                |     |  +----Chroogloeocystis_siderophila_5.2_s.c.1
+|        |  |                                |     +--| (75)
+|        |  |                                |        +----Nostoc_sp_PCC_7120
+|        |  |                             +--| (72)
+|        |  |                             |  |     +--Calothrix_sp._336.3
+|        |  |                             |  |  +--| (100)
+|        |  |                             |  |  |  +---Calothrix_sp._PCC_6303
+|        |  |                             |  +--| (100)
+|        |  |                             |     |        +--Chlorogloeopsis_fritschii_PCC_6912
+|        |  |                             |     |     +--| (100)
+|        |  |                             |     |     |  |  +--Fischerella_sp._PCC_9605
+|        |  |                             |     |     |  +--| (100)
+|        |  |                             |     |     |     +--Mastigocladus_laminosus_UU774
+|        |  |                             |     |  +--| (100)
+|        |  |                             |     |  |  |  +--Scytonema_tolypothrichoides_VB-61278
+|        |  |                             |     |  |  +--| (100)
+|        |  |                             |     |  |     +--Tolypothrix_bouteillei_VB521301
+|        |  |                             |     +--| (49)
+|        |  |                             |        |     +--Nodularia_spumigena_CCY9414
+|        |  |                             |        |  +--| (100)
+|        |  |                             |        |  |  |  +--Nostoc_sp_PCC_7107
+|        |  |                             |        |  |  +--| (100)
+|        |  |                             |        |  |     +--Nostoc_sp_PCC_7524
+|        |  |                             |        +--| (100)
+|        |  |                             |           +---Scytonema_hofmanni_UTEX_2349
+|        |  |                          +--| (75)
+|        |  |                          |  |           +------B_SRR6854712.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                          |  |        +--| (100)
+|        |  |                          |  |        |  |  +----B_SRR6869046.1_metawrap_50_10_bins_bin.3.fa
+|        |  |                          |  |        |  +--| (100)
+|        |  |                          |  |        |     +---B_SRR6869054.1_metawrap_50_10_bins_bin.12.fa
+|        |  |                          |  |     +--| (75)
+|        |  |                          |  |     |  |     +-----B_SRR6869023.1_metawrap_50_10_bins_bin.25.fa
+|        |  |                          |  |     |  |  +--| (75)
+|        |  |                          |  |     |  |  |  |        +--Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA
+|        |  |                          |  |     |  |  |  |  +-----| (100)
+|        |  |                          |  |     |  |  |  |  |     +**W_Tara_ERR599006_metawrap_50_10_bins_bin.5.fa
+|        |  |                          |  |     |  |  |  +--| (100)
+|        |  |                          |  |     |  |  |     |  +----Crocosphaera_watsonii_WH_8501
+|        |  |                          |  |     |  |  |     +--| (100)
+|        |  |                          |  |     |  |  |        +--Cyanothece_sp._ATCC_51142
+|        |  |                          |  |     |  +--| (75)
+|        |  |                          |  |     |     |     +--B_SRR6869046.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                          |  |     |     |  +--| (100)
+|        |  |                          |  |     |     |  |  +--B_SRR6869053.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                          |  |     |     +--| (100)
+|        |  |                          |  |     |        +---B_SRR6869387.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                          |  |  +--| (75)
+|        |  |                          |  |  |  |     +-----B_SRR6869046.1_metawrap_50_10_bins_bin.43.fa
+|        |  |                          |  |  |  |  +--| (73)
+|        |  |                          |  |  |  |  |  |    +--Dactylococcopsis_salina_PCC_8305
+|        |  |                          |  |  |  |  |  +----| (100)
+|        |  |                          |  |  |  |  |       +--Halothece_sp._PCC_7418
+|        |  |                          |  |  |  +--| (75)
+|        |  |                          |  |  |     |        +--Cyanothece_sp._PCC_7424
+|        |  |                          |  |  |     |     +--| (100)
+|        |  |                          |  |  |     |     |  +--Cyanothece_sp._PCC_7822
+|        |  |                          |  |  |     |  +--| (100)
+|        |  |                          |  |  |     |  |  +----Pleurocapsa_sp._PCC_7327
+|        |  |                          |  |  |     +--| (74)
+|        |  |                          |  |  |        +----Stanieria_cyanosphaera_PCC_7437
+|        |  |                          |  +--| (75)
+|        |  |                          |     +-----Microcoleus_sp._PCC_7113
+|        |  |                       +--| (75)
+|        |  |                       |  |     +----Arthrospira_platensis_NIES-39
+|        |  |                       |  |  +--| (100)
+|        |  |                       |  |  |  +---Lyngbya_aestuarii_BL_J_laest3
+|        |  |                       |  +--| (100)
+|        |  |                       |     +---Planktothrix_agardhii_NIVA-CYA_126.8
+|        |  |                    +--| (64)
+|        |  |                    |  |  +---Oscillatoria_acuminata_PCC_6304
+|        |  |                    |  +--| (89)
+|        |  |                    |     +-----Oscillatoria_sp._PCC_10802
+|        |  |                 +--| (43)
+|        |  |                 |  +----------Leptolyngbya_valderiana_BDU_20041
+|        |  |              +--| (35)
+|        |  |              |  |     +-----Pseudanabaena_biceps_PCC_7429
+|        |  |              |  |  +--| (100)
+|        |  |              |  |  |  |  +----Pseudanabaena_sp._PCC_6802
+|        |  |              |  |  |  +--| (100)
+|        |  |              |  |  |     +-----Synechococcus_sp_PCC_7502
+|        |  |              |  +--| (99)
+|        |  |              |     |  +----Synechococcus_sp_PCC_6312
+|        |  |              |     +--| (100)
+|        |  |              |        +---Thermosynechococcus_elongatus_BP-1
+|        |  |           +--| (74)
+|        |  |           |  +------B_SRR6869047.1_metawrap_50_10_bins_bin.23.fa
+|        |  |        +--| (100)
+|        |  |        |  |  +------------B_SRR6854585.1_metawrap_50_10_bins_bin.4.fa
+|        |  |        |  +--| (75)
+|        |  |        |     |                          +---------Caenarcanum_bioreactoricola_isolate_UASB_169
+|        |  |        |     |               +----------| (100)
+|        |  |        |     |               |          +-----Melainabacteria_bacterium_SSGW_16
+|        |  |        |     |            +--| (100)
+|        |  |        |     |            |  +----------Obscuribacter_phosphatis_isolate_EBPR_351
+|        |  |        |     |         +--| (100)
+|        |  |        |     |         |  |  +-------------Gastranaerophilales_bacterium_strain_UMGS1517
+|        |  |        |     |         |  +--| (100)
+|        |  |        |     |         |     +---------Vampirovibrio_chlorellavorus_strain_Vc_AZ_2
+|        |  |        |     |  +------| (100)
+|        |  |        |     |  |      |      +-------Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72
+|        |  |        |     |  |      +------| (100)
+|        |  |        |     |  |             +------Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196
+|        |  |        |     +--| (100)
+|        |  |        |        |      +--Synechococcus_sp_JA-2-3B_a_2-13_
+|        |  |        |        +------| (100)
+|        |  |        |               +--Synechococcus_sp_JA-3-3Ab
+|        |  |  +-----| (100)
+|        |  |  |     +---Synechococcus_elongatus_PCC_6301
+|        |  +--| (75)
+|        |     |                    +--MED-G67
+|        |     |                 +--| (100)
+|        |     |                 |  +--RCC307
+|        |     |              +--| (63)
+|        |     |              |  |  +**UBA6965
+|        |     |              |  +--| (63)
+|        |     |              |     |  +--W_SRR6873777.1_metawrap_50_10_bins_bin.23.fa
+|        |     |              |     +--| (100)
+|        |     |              |        +--W_SRR6873775.1_metawrap_50_10_bins_bin.5.fa
+|        |     |           +--| (63)
+|        |     |           |  +--W_SRR6873777.1_metawrap_50_10_bins_bin.60.fa
+|        |     |        +--| (100)
+|        |     |        |  +--Minos11
+|        |     |     +--| (100)
+|        |     |     |  +--W_Tara_ERR599134_metawrap_50_10_bins_bin.3.fa
+|        |     |  +--| (100)
+|        |     |  |  +--W_Tara_ERR598951_metawrap_50_10_bins_bin.4.fa
+|        |     +--| (75)
+|        |        |        +--MED-G71
+|        |        |     +--| (100)
+|        |        |     |  +--TMED155
+|        |        |  +--| (75)
+|        |        |  |  +--TMED19
+|        |        +--| (74)
+|        |           +--W_Tara_ERR599029_metawrap_50_10_bins_bin.31.fa
+|     +--| (100)
+|     |  |  +--CB0101
+|     |  +--| (100)
+|     |     |  +--CB0205
+|     |     +--| (100)
+|     |        |  +--W_SRR6873785.1_metawrap_50_10_bins_bin.26.fa
+|     |        +--| (100)
+|     |           +--W_Tara_ERR599029_metawrap_50_10_bins_bin.38.fa
+|  +--| (98)
+|  |  |  +--MW101C3
+|  |  +--| (100)
+|  |     +--ULC065bin1
++--| (100)
+|  |  +--SynAce01
+|  +--| (100)
+|     |  +--ULC082bin1
+|     +--| (100)
+|        +--ULC084bin3
+|
++--WH5701
+
+Tree in newick format:
+
+(1G10:0.0483121189,((((((((((AG-670-A05:0.0619665640,(B_SRR6854584.1_metawrap_50_10_bins_bin.1.fa:0.0142455214,((RS9915:0.0018435260,YX04-3:0.0027568500)100:0.0032895273,(WH8102:0.0017520111,WH8103:0.0043755337)100:0.0066054996)100:0.0129920057)100:0.0434147265)100:0.0152080152,W_SRR6873778.1_metawrap_50_10_bins_bin.23.fa:0.0305342493)100:0.0269200179,((AG-670-B23:0.0441615581,(((((((((B_SRR6869036.1_metawrap_50_10_bins_bin.2.fa:0.0558626982,(((B_SRR6869047.1_metawrap_50_10_bins_bin.14.fa:0.0052020439,W_Tara_ERR598966_metawrap_50_10_bins_bin.4.fa:0.0036741159)100:0.0008791342,W_Tara_ERR598979_metawrap_50_10_bins_bin.2.fa:0.0043971098)100:0.0005252628,W_SRR6877511.1_metawrap_50_10_bins_bin.37.fa:0.0002462565)100:0.0358591624)100:0.0397385909,((N19:0.0073007054,W_Tara_ERR599102_metawrap_50_10_bins_bin.8.fa:0.0098430026)72:0.0006744512,((N5:0.0063090861,REDSEA-S02_B4:0.0024160428)98:0.0006411492,REDSEA-S01_B1:0.0006345378)100:0.0011848019)68:0.0001729535)67:0.0002308897,(B_SRR6869044.1_metawrap_50_10_bins_bin.21.fa:0.0102859639,UW86:0.0051459190)47:0.0009669803)37:0.0002132391,((B_SRR6869048.1_metawrap_50_10_bins_bin.21.fa:0.0045877074,N32:0.0068432314)39:0.0007700744,RS344:0.0013856741)37:0.0003546732)88:0.0009021709,N26:0.0068583035)100:0.0031330447,W_SRR6873784.1_metawrap_50_10_bins_bin.55.fa:0.0091038789)100:0.0036617522,WH8109:0.0191765375)100:0.0030062790,CC9605:0.0177660369)100:0.0083653338,KORDI-52:0.0298419518)100:0.0064320556)99:0.0092851947,((UW106:0.0100734065,UW69:0.0063078226)100:0.0037178262,W_Tara_ERR598976_metawrap_50_10_bins_bin.5.fa:0.0828233656)100:0.0468648319)100:0.0390570344)74:0.0157429076,((AG-683-C23:0.0052095253,AG-686-B21:0.0067710185)100:0.0444007520,(BL107:0.0392499224,((CC9902:0.0237632746,(MED-G69:0.0028718898,W_Tara_ERR598963_metawrap_50_10_bins_bin.24.fa:0.0088486374)100:0.0124142620)100:0.0123841931,W_Tara_ERR598976_metawrap_50_10_bins_bin.23.fa:0.0415207023)99:0.0067487957)98:0.0178114621)100:0.1679206593)18:0.0080184469,(((((CC9616:0.0038258241,TMED20:0.0018849269)100:0.0711543247,KORDI-100:0.0391347488)100:0.0345605027,MED850:0.0770919457)98:0.0249310252,W_Tara_ERR599029_metawrap_50_10_bins_bin.17.fa:0.0598287816)100:0.0355812096,((((KORDI-49:0.0033178560,UBA9887:0.0182848313)67:0.0000664056,UBA3999:0.0013654236)26:0.0001957029,MED-G70:0.0003180566)66:0.0036222006,W_Tara_ERR598951_metawrap_50_10_bins_bin.8.fa:0.0717122271)100:0.0750254594)69:0.0161552581)64:0.0206104209,((((((((AG-670-F22:0.0052190794,AG-676-C06:0.0021745772)99:0.0023915520,AG-673-F03:0.0052563709)75:0.0185177217,((((AG-676-E23:0.0029289039,MIT_S9220:0.0054587685)100:0.0011158195,(W_Tara_ERR599050_metawrap_50_10_bins_bin.46.fa:0.0386682777,W_Tara_ERR599174_metawrap_50_10_bins_bin.4.fa:0.0034726303)75:0.0779286370)75:0.0007519799,GEYO:0.0074446781)75:0.0022329492,MITS9508:0.0090927412)75:0.0134889819)75:0.0169581378,((MITS9504:0.0000358132,MITS9509:0.0002509593)100:0.0346530749,UW179A:0.0312991886)100:0.0151681320)75:0.0763427653,EAC657:0.0861356803)74:0.0177738938,((((((((((AG-679-B05:0.0666454061,((W_Tara_ERR594297_metawrap_50_10_bins_bin.6.fa:0.0054489626,W_Tara_ERR599174_metawrap_50_10_bins_bin.8.fa:0.0027921804)100:0.0063466492,W_Tara_ERR599165_metawrap_50_10_bins_bin.14.fa:0.0362665727)100:0.0088644681)100:0.0696531571,W_SRR6877515.1_metawrap_50_10_bins_bin.13.fa:0.0731527324)100:0.0262922545,(W_Tara_ERR599136_metawrap_50_10_bins_bin.43.fa:0.1344367430,W_Tara_ERR594297_metawrap_50_10_bins_bin.12.fa:0.1658977659)100:0.0376094395)75:0.0334981354,(B_SRR6869398.1_metawrap_50_10_bins_bin.20.fa:0.2026582206,W_Tara_ERR599136_metawrap_50_10_bins_bin.5.fa:0.1607198401)75:0.0668975928)75:0.0392114388,W_Tara_ERR599058_metawrap_50_10_bins_bin.13.fa:0.0985778383)75:0.0879736790,B_SRR6854712.1_metawrap_50_10_bins_bin.2.fa:0.0033948419)75:0.0397630711,((B_SRR6869024.1_metawrap_50_10_bins_bin.3.fa:0.0138778926,W_SRR6873778.1_metawrap_50_10_bins_bin.26.fa:0.1737993448)75:0.0133254247,W_SRR6873778.1_metawrap_50_10_bins_bin.43.fa:0.0090572222)64:0.0098645429)64:0.0452187750,WH7803:0.0020682485)63:0.0011848314,B_SRR6869026.1_metawrap_50_10_bins_bin.1.fa:0.0843780796)75:0.0355081117,(TMED90:0.0294603692,WH7805:0.0588629403)100:0.0249736071)75:0.0700857761)72:0.0145761321,(((AG-679-C18:0.0015690323,(NAT249:0.0036219191,(NP17:0.0009447808,UBA1528:0.0120729891)67:0.0010390986)67:0.0012204605)100:0.0914116177,((CC9311:0.0274184348,WH8020:0.0269679815)100:0.0179191125,(((((MED-G68:0.0005233546,UBA7448:0.0557453722)100:0.0005711367,UBA1269:0.0014176982)100:0.0003489432,UBA7854:0.0014714185)100:0.0260298252,W_Tara_ERR599144_metawrap_50_10_bins_bin.16.fa:0.0385799152)100:0.0135129044,(UW179B:0.0131636505,WH8106:0.0222049815)100:0.0348868953)98:0.0099057219)99:0.0331056681)74:0.0467185136,(W_Tara_ERR594307_metawrap_50_10_bins_bin.15.fa:0.3161225616,((((((W_Tara_ERR594316_metawrap_50_10_bins_bin.2.fa:0.0043127666,W_Tara_ERR599140_metawrap_50_10_bins_bin.2.fa:0.0122053971)100:0.3960919300,W_Tara_ERR598951_metawrap_50_10_bins_bin.6.fa:0.0396679852)74:0.0178488729,(W_Tara_ERR594318_metawrap_50_10_bins_bin.15.fa:0.0539529727,((W_Tara_ERR594297_metawrap_50_10_bins_bin.10.fa:0.0007456913,(W_Tara_ERR594332_metawrap_50_10_bins_bin.12.fa:0.0050022618,W_Tara_ERR598955_metawrap_50_10_bins_bin.10.fa:0.0014879413)75:0.0064157780)75:0.0205135739,W_Tara_ERR599174_metawrap_50_10_bins_bin.1.fa:0.0012200165)75:0.0406226877)74:0.1485146339)70:0.0133435841,W_Tara_ERR598976_metawrap_50_10_bins_bin.36.fa:0.0091866198)73:0.0913011234,(W_Tara_ERR598963_metawrap_50_10_bins_bin.12.fa:0.9002126274,W_Tara_ERR599006_metawrap_50_10_bins_bin.1.fa:0.0365289221)73:0.0683337283)100:0.1327031878,W_Tara_ERR599165_metawrap_50_10_bins_bin.8.fa:0.0250487583)75:0.0219435250)100:0.3288029554)68:0.1070293504)64:0.0154817603,(((BS55D:0.0086893294,BS56D:0.0065038210)100:0.0694273721,(RS9917:0.0202642806,WH8101:0.0229145754)100:0.0704403771)100:0.0236329125,(((MED-G135:0.0011019130,(NAT40:0.0008745188,(UW105:0.0019459753,W_Tara_ERR598963_metawrap_50_10_bins_bin.16.fa:0.0028804106)98:0.0004547636)94:0.0004400084)100:0.0085976745,UW140:0.0069335333)100:0.1017393252,(RS9916:0.0555407136,W_SRR6877514.1_metawrap_50_10_bins_bin.77.fa:0.2941911461)42:0.0102976868)75:0.0328042033)67:0.0102923146)64:0.0219371628)75:0.0383618148,((((((((((((((Acaryochloris_marina_MBIC11017:0.2780386948,(Synechococcus_sp_PCC_7336:0.3655567271,B_SRR6854586.1_metawrap_50_10_bins_bin.5.fa:0.3123474647)74:0.0429333356)75:0.0689699705,((Oscillatoria_nigro-viridis_PCC_7112:0.2734665359,Trichodesmium_erythraeum_IMS101:0.2866466076)99:0.0339783798,Planktothricoides_sp._SR001:0.2379067516)100:0.0372372105)75:0.0244019134,(((((((((((B_SRR6869023.1_metawrap_50_10_bins_bin.26.fa:0.1008915951,B_SRR6869394.1_metawrap_50_10_bins_bin.21.fa:0.0571105045)100:0.0618314007,((B_SRR6869035.1_metawrap_50_10_bins_bin.21.fa:0.1282583673,B_SRR6869035.1_metawrap_50_10_bins_bin.29.fa:0.1361930143)99:0.0184756572,(B_SRR6869036.1_metawrap_50_10_bins_bin.16.fa:0.0806372087,B_SRR6869035.1_metawrap_50_10_bins_bin.46.fa:0.1146964946)75:0.0465008212)74:0.0149494565)75:0.0200715920,(B_SRR6869042.1_metawrap_50_10_bins_bin.16.fa:0.1255261936,B_SRR6869389.1_metawrap_50_10_bins_bin.5.fa:0.1171301515)100:0.0286958042)75:0.0187297981,(((((B_SRR6869034.1_metawrap_50_10_bins_bin.17.fa:0.1835104120,B_SRR6869035.1_metawrap_50_10_bins_bin.62.fa:0.0594727691)100:0.0514758906,B_SRR6869036.1_metawrap_50_10_bins_bin.33.fa:0.1142327359)100:0.0219929481,B_SRR6869393.1_metawrap_50_10_bins_bin.51.fa:0.1209068632)100:0.0232152974,(B_SRR6869036.1_metawrap_50_10_bins_bin.22.fa:0.1141205876,(B_SRR6869048.1_metawrap_50_10_bins_bin.23.fa:0.0887426031,B_SRR6869053.1_metawrap_50_10_bins_bin.27.fa:0.1871059345)75:0.0549005572)75:0.0658840564)75:0.0432435641,B_SRR6869053.1_metawrap_50_10_bins_bin.19.fa:0.2010289827)75:0.0954605362)75:0.1217383890,((((B_SRR6869035.1_metawrap_50_10_bins_bin.8.fa:0.0993522863,B_SRR6869036.1_metawrap_50_10_bins_bin.32.fa:0.1006778855)75:0.0250788588,W_SRR6873781.1_metawrap_50_10_bins_bin.11.fa:0.1040953475)100:0.1057009037,B_SRR6869395.1_metawrap_50_10_bins_bin.26.fa:0.1006440384)75:0.0824539527,Pleurocapsa_sp._PCC_7319:0.1231361144)68:0.0043397801)75:0.0410613997,Myxosarcina_sp._GI1_contig_0:0.1760157414)75:0.0445881210,Xenococcus_sp_PCC_7305:0.2260583901)75:0.0602632715,(B_SRR6869052.1_metawrap_50_10_bins_bin.51.fa:0.0971253814,Leptolyngbya_sp._PCC_7376:0.1000547908)100:0.2341279339)66:0.0248493910,((((B_SRR6869051.1_metawrap_50_10_bins_bin.1.fa:0.1544777841,B_SRR6869054.1_metawrap_50_10_bins_bin.54.fa:0.1840791084)100:0.2673482586,Geminocystis_herdmanii_PCC_6308:0.1263176492)75:0.1578439503,Gloeocapsa_sp._PCC_73106:0.2708913805)66:0.0374869974,Cyanothece_sp._PCC_8801:0.2527259082)67:0.0302791157)75:0.0774357660,((B_SRR6869388.1_metawrap_50_10_bins_bin.4.fa:0.1091166586,Moorea_producens_JHB:0.0050234297)100:0.2154100321,Crinalium_epipsammum_PCC_9333:0.2115611131)100:0.0472214024)73:0.0175507798,(((B_SRR6869052.1_metawrap_50_10_bins_bin.46.fa:0.2019335682,Rivularia_sp._PCC_7116:0.0706597146)100:0.1219782066,((B_SRR6869387.1_metawrap_50_10_bins_bin.5.fa:0.1374250865,Mastigocoleus_testarum_BC008_Contig-1:0.0156926807)100:0.1407391583,Richelia_intracellularis_HH01:0.2233771695)78:0.0304580438)97:0.0258628559,Calothrix_sp._PCC_7103:0.2429327322)76:0.1087564997)70:0.0027206731)75:0.0766933169,(((((B_SRR6854573.1_metawrap_50_10_bins_bin.1.fa:0.3188130352,B_SRR6854589.1_metawrap_50_10_bins_bin.4.fa:0.3830346987)100:0.1688676694,((((B_SRR6869046.1_metawrap_50_10_bins_bin.32.fa:0.0245577827,(B_SRR6869050.1_metawrap_50_10_bins_bin.19.fa:0.0316482085,B_SRR6869054.1_metawrap_50_10_bins_bin.25.fa:0.0179610608)100:0.2134054150)74:0.0182952952,(B_SRR6869047.1_metawrap_50_10_bins_bin.5.fa:0.0112396996,B_SRR6869048.1_metawrap_50_10_bins_bin.20.fa:0.0161690830)100:0.0029789338)71:0.0035515355,B_SRR6869049.1_metawrap_50_10_bins_bin.18.fa:0.0224099580)74:0.0153933345,B_SRR6869387.1_metawrap_50_10_bins_bin.1.fa:0.0253372963)100:0.2743594596)67:0.0259280594,(((((((B_SRR6869023.1_metawrap_50_10_bins_bin.16.fa:0.1243552013,(B_SRR6869023.1_metawrap_50_10_bins_bin.7.fa:0.0778917643,B_SRR6869040.1_metawrap_50_10_bins_bin.4.fa:0.1045365739)100:0.0165575179)100:0.0664471248,(((((B_SRR6869023.1_metawrap_50_10_bins_bin.24.fa:0.2782381911,(B_SRR6869035.1_metawrap_50_10_bins_bin.22.fa:0.1776156565,(B_SRR6869036.1_metawrap_50_10_bins_bin.46.fa:0.0971587428,B_SRR6869043.1_metawrap_50_10_bins_bin.6.fa:0.0995554608)100:0.0213349619)100:0.0366318138)100:0.0236111039,(((B_SRR6869046.1_metawrap_50_10_bins_bin.8.fa:0.0013061248,B_SRR6869053.1_metawrap_50_10_bins_bin.45.fa:0.0810420999)100:0.2366121161,(B_SRR6869050.1_metawrap_50_10_bins_bin.2.fa:0.2926169229,Rubidibacter_lacunae_KORDI_51-2:0.3905476735)75:0.0978167783)75:0.1137626044,B_SRR6869395.1_metawrap_50_10_bins_bin.45.fa:0.1171869108)74:0.0401894992)68:0.0170211849,(B_SRR6869036.1_metawrap_50_10_bins_bin.53.fa:0.1492474102,B_SRR6869395.1_metawrap_50_10_bins_bin.6.fa:0.1637330547)100:0.0476021949)75:0.0359125535,B_SRR6869034.1_metawrap_50_10_bins_bin.13.fa:0.0928156011)75:0.0365055911,B_SRR6869035.1_metawrap_50_10_bins_bin.66.fa:0.0664487930)75:0.0892888852)75:0.1473499232,B_SRR6869035.1_metawrap_50_10_bins_bin.44.fa:0.0784802453)75:0.1934205429,B_SRR6869034.1_metawrap_50_10_bins_bin.35.fa:0.0535629525)100:0.0861488974,B_SRR6869391.1_metawrap_50_10_bins_bin.27.fa:0.1891922532)75:0.0954119946,B_SRR6869051.1_metawrap_50_10_bins_bin.2.fa:0.3598212947)74:0.0524164012,B_SRR6869053.1_metawrap_50_10_bins_bin.16.fa:0.2930057888)75:0.1020424302)75:0.0590810100,(((B_SRR6869054.1_metawrap_50_10_bins_bin.42.fa:0.0191162290,B_SRR6869052.1_metawrap_50_10_bins_bin.15.fa:0.1930826444)75:0.2355771882,B_SRR6869034.1_metawrap_50_10_bins_bin.34.fa:0.2373188643)75:0.1354234066,Coleofasciculus_chthonoplastes_PCC_7420:0.2413409617)73:0.0380291437)68:0.0099821648,(Chroogloeocystis_siderophila_5.2_s.c.1:0.2233397179,Nostoc_sp_PCC_7120:0.2423096479)75:0.0801204692)75:0.1311557760)75:0.0434091504,((Calothrix_sp._336.3:0.1552575307,Calothrix_sp._PCC_6303:0.1767705592)100:0.0436765598,(((Chlorogloeopsis_fritschii_PCC_6912:0.1278033618,(Fischerella_sp._PCC_9605:0.0397592133,Mastigocladus_laminosus_UU774:0.0883726563)100:0.0384570955)100:0.0418657155,(Scytonema_tolypothrichoides_VB-61278:0.1042309959,Tolypothrix_bouteillei_VB521301:0.1379285180)100:0.0380043979)100:0.0276791953,((Nodularia_spumigena_CCY9414:0.1190828150,(Nostoc_sp_PCC_7107:0.1035867862,Nostoc_sp_PCC_7524:0.0980467629)100:0.0332570770)100:0.0223973942,Scytonema_hofmanni_UTEX_2349:0.1668290401)100:0.0234573108)49:0.0209115867)100:0.1276607026)72:0.0098129056,((((B_SRR6854712.1_metawrap_50_10_bins_bin.6.fa:0.3092374396,(B_SRR6869046.1_metawrap_50_10_bins_bin.3.fa:0.2149256496,B_SRR6869054.1_metawrap_50_10_bins_bin.12.fa:0.1994611909)100:0.1048346490)100:0.0805961048,((B_SRR6869023.1_metawrap_50_10_bins_bin.25.fa:0.2766594761,((Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA:0.0000502763,W_Tara_ERR599006_metawrap_50_10_bins_bin.5.fa:0.0000010011)100:0.2644830895,(Crocosphaera_watsonii_WH_8501:0.2266564242,Cyanothece_sp._ATCC_51142:0.0725584592)100:0.0547488947)100:0.1376357226)75:0.0448044179,((B_SRR6869046.1_metawrap_50_10_bins_bin.4.fa:0.0168418024,B_SRR6869053.1_metawrap_50_10_bins_bin.5.fa:0.1411776460)100:0.1627684677,B_SRR6869387.1_metawrap_50_10_bins_bin.4.fa:0.1866896042)100:0.0970510970)75:0.0241527167)75:0.1381978966,((B_SRR6869046.1_metawrap_50_10_bins_bin.43.fa:0.2523843194,(Dactylococcopsis_salina_PCC_8305:0.1341432707,Halothece_sp._PCC_7418:0.1095542701)100:0.2159425777)73:0.0252293968,(((Cyanothece_sp._PCC_7424:0.1051974799,Cyanothece_sp._PCC_7822:0.1111808402)100:0.1116257243,Pleurocapsa_sp._PCC_7327:0.2327415450)100:0.0460770518,Stanieria_cyanosphaera_PCC_7437:0.2279252809)74:0.0403228834)75:0.0189224049)75:0.0424855394,Microcoleus_sp._PCC_7113:0.2822130899)75:0.0255663891)75:0.0328756316,((Arthrospira_platensis_NIES-39:0.2046632180,Lyngbya_aestuarii_BL_J_laest3:0.1813150077)100:0.0354571681,Planktothrix_agardhii_NIVA-CYA_126.8:0.1999312903)100:0.1012690423)75:0.0416397294,(Oscillatoria_acuminata_PCC_6304:0.2027559634,Oscillatoria_sp._PCC_10802:0.2489465229)89:0.0451278136)64:0.0231378270,Leptolyngbya_valderiana_BDU_20041:0.4890655700)43:0.0316639773,((Pseudanabaena_biceps_PCC_7429:0.2628735245,(Pseudanabaena_sp._PCC_6802:0.2084542313,Synechococcus_sp_PCC_7502:0.2786998916)100:0.0476243003)100:0.1401297126,(Synechococcus_sp_PCC_6312:0.2121955355,Thermosynechococcus_elongatus_BP-1:0.1925968264)100:0.1128711589)99:0.0256455750)35:0.0359913511,B_SRR6869047.1_metawrap_50_10_bins_bin.23.fa:0.3160373937)74:0.0297344187,(B_SRR6854585.1_metawrap_50_10_bins_bin.4.fa:0.5703345086,(((((Caenarcanum_bioreactoricola_isolate_UASB_169:0.4080146862,Melainabacteria_bacterium_SSGW_16:0.2584020735)100:0.4670078693,Obscuribacter_phosphatis_isolate_EBPR_351:0.4540577564)100:0.1238761698,(Gastranaerophilales_bacterium_strain_UMGS1517:0.5881874630,Vampirovibrio_chlorellavorus_strain_Vc_AZ_2:0.4291771452)100:0.1289419715)100:0.1602480959,(Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72:0.3664720920,Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196:0.3058255364)100:0.3009236936)100:0.3163696174,(Synechococcus_sp_JA-2-3B_a_2-13_:0.0671398337,Synechococcus_sp_JA-3-3Ab:0.0779574830)100:0.2945273097)100:0.1086192646)75:0.1103427211)100:0.0781012177,Synechococcus_elongatus_PCC_6301:0.1964057102)100:0.2747438217,(((((((MED-G67:0.0003223559,RCC307:0.0023057148)100:0.0013673936,(UBA6965:0.0000022130,(W_SRR6873777.1_metawrap_50_10_bins_bin.23.fa:0.0398124600,W_SRR6873775.1_metawrap_50_10_bins_bin.5.fa:0.0640754126)100:0.1041594155)63:0.0009875211)63:0.0009891800,W_SRR6873777.1_metawrap_50_10_bins_bin.60.fa:0.0596968547)63:0.0008899342,Minos11:0.0036739249)100:0.0110028813,W_Tara_ERR599134_metawrap_50_10_bins_bin.3.fa:0.1193990813)100:0.0216149739,W_Tara_ERR598951_metawrap_50_10_bins_bin.4.fa:0.0390184989)100:0.0542678753,(((MED-G71:0.0024457695,TMED155:0.0018865034)100:0.0623894244,TMED19:0.0837702112)75:0.0356656624,W_Tara_ERR599029_metawrap_50_10_bins_bin.31.fa:0.0664173702)74:0.0164437599)75:0.0389996172)75:0.0195230941)100:0.0242316316,(CB0101:0.0538912987,(CB0205:0.0418666201,(W_SRR6873785.1_metawrap_50_10_bins_bin.26.fa:0.0047577020,W_Tara_ERR599029_metawrap_50_10_bins_bin.38.fa:0.0229864627)100:0.0830766965)100:0.0330975878)100:0.0389814689)100:0.0416344529,(MW101C3:0.0036140105,ULC065bin1:0.0027364111)100:0.0838523851)98:0.0138552939,(SynAce01:0.0776474222,(ULC082bin1:0.0025197917,ULC084bin3:0.0015548027)100:0.0878718563)100:0.0356100675)100:0.0484821983,WH5701:0.0313561343);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1895722.634978
+Robinson-Foulds distance between ML tree and consensus tree: 14
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--1G10
+|
+|                             +--AG-670-A05
+|                          +--| (100)
+|                          |  |  +--B_SRR6854584.1_metawrap_50_10_bins_bin.1.fa
+|                          |  +--| (100)
+|                          |     |     +--RS9915
+|                          |     |  +--| (100)
+|                          |     |  |  +--YX04-3
+|                          |     +--| (100)
+|                          |        |  +--WH8102
+|                          |        +--| (100)
+|                          |           +--WH8103
+|                       +--| (100)
+|                       |  +--W_SRR6873778.1_metawrap_50_10_bins_bin.23.fa
+|                    +--| (74)
+|                    |  |     +--AG-670-B23
+|                    |  |  +--| (99)
+|                    |  |  |  |                             +--B_SRR6869036.1_metawrap_50_10_bins_bin.2.fa
+|                    |  |  |  |                          +--| (100)
+|                    |  |  |  |                          |  |        +--B_SRR6869047.1_metawrap_50_10_bins_bin.14.fa
+|                    |  |  |  |                          |  |     +--| (100)
+|                    |  |  |  |                          |  |     |  +--W_Tara_ERR598966_metawrap_50_10_bins_bin.4.fa
+|                    |  |  |  |                          |  |  +--| (100)
+|                    |  |  |  |                          |  |  |  +--W_Tara_ERR598979_metawrap_50_10_bins_bin.2.fa
+|                    |  |  |  |                          |  +--| (100)
+|                    |  |  |  |                          |     +--W_SRR6877511.1_metawrap_50_10_bins_bin.37.fa
+|                    |  |  |  |                       +--| (67)
+|                    |  |  |  |                       |  |     +--N19
+|                    |  |  |  |                       |  |  +--| (72)
+|                    |  |  |  |                       |  |  |  +--W_Tara_ERR599102_metawrap_50_10_bins_bin.8.fa
+|                    |  |  |  |                       |  +--| (68)
+|                    |  |  |  |                       |     |     +--N5
+|                    |  |  |  |                       |     |  +--| (98)
+|                    |  |  |  |                       |     |  |  +--REDSEA-S02_B4
+|                    |  |  |  |                       |     +--| (100)
+|                    |  |  |  |                       |        +--REDSEA-S01_B1
+|                    |  |  |  |                    +--| (29)
+|                    |  |  |  |                    |  +--UW86
+|                    |  |  |  |                 +--| (28)
+|                    |  |  |  |                 |  |     +--B_SRR6869044.1_metawrap_50_10_bins_bin.21.fa
+|                    |  |  |  |                 |  |  +--| (52)
+|                    |  |  |  |                 |  |  |  +--N32
+|                    |  |  |  |                 |  +--| (26)
+|                    |  |  |  |                 |     +--B_SRR6869048.1_metawrap_50_10_bins_bin.21.fa
+|                    |  |  |  |              +--| (88)
+|                    |  |  |  |              |  +--RS344
+|                    |  |  |  |           +--| (100)
+|                    |  |  |  |           |  +--N26
+|                    |  |  |  |        +--| (100)
+|                    |  |  |  |        |  +--W_SRR6873784.1_metawrap_50_10_bins_bin.55.fa
+|                    |  |  |  |     +--| (100)
+|                    |  |  |  |     |  +--WH8109
+|                    |  |  |  |  +--| (100)
+|                    |  |  |  |  |  +--CC9605
+|                    |  |  |  +--| (100)
+|                    |  |  |     +--KORDI-52
+|                    |  +--| (100)
+|                    |     |     +--UW106
+|                    |     |  +--| (100)
+|                    |     |  |  +--UW69
+|                    |     +--| (100)
+|                    |        +--W_Tara_ERR598976_metawrap_50_10_bins_bin.5.fa
+|                 +--| (31)
+|                 |  |              +--CC9616
+|                 |  |           +--| (100)
+|                 |  |           |  +--TMED20
+|                 |  |        +--| (100)
+|                 |  |        |  +--KORDI-100
+|                 |  |     +--| (98)
+|                 |  |     |  +--MED850
+|                 |  |  +--| (100)
+|                 |  |  |  +--W_Tara_ERR599029_metawrap_50_10_bins_bin.17.fa
+|                 |  +--| (69)
+|                 |     |           +--KORDI-49
+|                 |     |        +--| (67)
+|                 |     |        |  +--UBA9887
+|                 |     |     +--| (26)
+|                 |     |     |  +--UBA3999
+|                 |     |  +--| (66)
+|                 |     |  |  +--MED-G70
+|                 |     +--| (100)
+|                 |        +--W_Tara_ERR598951_metawrap_50_10_bins_bin.8.fa
+|              +--| (64)
+|              |  |      +--AG-683-C23
+|              |  |   +--| (100)
+|              |  |   |  +--AG-686-B21
+|              |  +---| (100)
+|              |      |  +--BL107
+|              |      +--| (98)
+|              |         |     +--CC9902
+|              |         |  +--| (100)
+|              |         |  |  |  +--MED-G69
+|              |         |  |  +--| (100)
+|              |         |  |     +--W_Tara_ERR598963_metawrap_50_10_bins_bin.24.fa
+|              |         +--| (99)
+|              |            +--W_Tara_ERR598976_metawrap_50_10_bins_bin.23.fa
+|           +--| (75)
+|           |  |                       +--AG-670-F22
+|           |  |                    +--| (99)
+|           |  |                    |  +--AG-676-C06
+|           |  |                 +--| (75)
+|           |  |                 |  +--AG-673-F03
+|           |  |              +--| (75)
+|           |  |              |  |           +--AG-676-E23
+|           |  |              |  |        +--| (100)
+|           |  |              |  |        |  +--MIT_S9220
+|           |  |              |  |     +--| (75)
+|           |  |              |  |     |  |  +--W_Tara_ERR599050_metawrap_50_10_bins_bin.46.fa
+|           |  |              |  |     |  +--| (75)
+|           |  |              |  |     |     +--W_Tara_ERR599174_metawrap_50_10_bins_bin.4.fa
+|           |  |              |  |  +--| (75)
+|           |  |              |  |  |  +--GEYO
+|           |  |              |  +--| (75)
+|           |  |              |     +--MITS9508
+|           |  |           +--| (75)
+|           |  |           |  |     +--MITS9504
+|           |  |           |  |  +--| (100)
+|           |  |           |  |  |  +--MITS9509
+|           |  |           |  +--| (100)
+|           |  |           |     +--UW179A
+|           |  |        +--| (74)
+|           |  |        |  +--EAC657
+|           |  |     +--| (72)
+|           |  |     |  |                             +--AG-679-B05
+|           |  |     |  |                          +--| (100)
+|           |  |     |  |                          |  |     +--W_Tara_ERR594297_metawrap_50_10_bins_bin.6.fa
+|           |  |     |  |                          |  |  +--| (100)
+|           |  |     |  |                          |  |  |  +--W_Tara_ERR599174_metawrap_50_10_bins_bin.8.fa
+|           |  |     |  |                          |  +--| (100)
+|           |  |     |  |                          |     +--W_Tara_ERR599165_metawrap_50_10_bins_bin.14.fa
+|           |  |     |  |                       +--| (100)
+|           |  |     |  |                       |  +--W_SRR6877515.1_metawrap_50_10_bins_bin.13.fa
+|           |  |     |  |                    +--| (75)
+|           |  |     |  |                    |  |  +--W_Tara_ERR599136_metawrap_50_10_bins_bin.43.fa
+|           |  |     |  |                    |  +--| (100)
+|           |  |     |  |                    |     +---W_Tara_ERR594297_metawrap_50_10_bins_bin.12.fa
+|           |  |     |  |                 +--| (75)
+|           |  |     |  |                 |  |  +---B_SRR6869398.1_metawrap_50_10_bins_bin.20.fa
+|           |  |     |  |                 |  +--| (75)
+|           |  |     |  |                 |     +--W_Tara_ERR599136_metawrap_50_10_bins_bin.5.fa
+|           |  |     |  |              +--| (75)
+|           |  |     |  |              |  +--W_Tara_ERR599058_metawrap_50_10_bins_bin.13.fa
+|           |  |     |  |           +--| (75)
+|           |  |     |  |           |  +--B_SRR6854712.1_metawrap_50_10_bins_bin.2.fa
+|           |  |     |  |        +--| (64)
+|           |  |     |  |        |  |     +--B_SRR6869024.1_metawrap_50_10_bins_bin.3.fa
+|           |  |     |  |        |  |  +--| (75)
+|           |  |     |  |        |  |  |  +---W_SRR6873778.1_metawrap_50_10_bins_bin.26.fa
+|           |  |     |  |        |  +--| (64)
+|           |  |     |  |        |     +--W_SRR6873778.1_metawrap_50_10_bins_bin.43.fa
+|           |  |     |  |     +--| (63)
+|           |  |     |  |     |  +--WH7803
+|           |  |     |  |  +--| (75)
+|           |  |     |  |  |  +--B_SRR6869026.1_metawrap_50_10_bins_bin.1.fa
+|           |  |     |  +--| (75)
+|           |  |     |     |  +--TMED90
+|           |  |     |     +--| (100)
+|           |  |     |        +--WH7805
+|           |  |  +--| (64)
+|           |  |  |  |        +--AG-679-C18
+|           |  |  |  |     +--| (100)
+|           |  |  |  |     |  |  +--NAT249
+|           |  |  |  |     |  +--| (67)
+|           |  |  |  |     |     |  +--NP17
+|           |  |  |  |     |     +--| (67)
+|           |  |  |  |     |        +--UBA1528
+|           |  |  |  |  +--| (74)
+|           |  |  |  |  |  |     +--CC9311
+|           |  |  |  |  |  |  +--| (100)
+|           |  |  |  |  |  |  |  +--WH8020
+|           |  |  |  |  |  +--| (99)
+|           |  |  |  |  |     |              +--MED-G68
+|           |  |  |  |  |     |           +--| (100)
+|           |  |  |  |  |     |           |  +--UBA7448
+|           |  |  |  |  |     |        +--| (100)
+|           |  |  |  |  |     |        |  +--UBA1269
+|           |  |  |  |  |     |     +--| (100)
+|           |  |  |  |  |     |     |  +--UBA7854
+|           |  |  |  |  |     |  +--| (100)
+|           |  |  |  |  |     |  |  +--W_Tara_ERR599144_metawrap_50_10_bins_bin.16.fa
+|           |  |  |  |  |     +--| (98)
+|           |  |  |  |  |        |  +--UW179B
+|           |  |  |  |  |        +--| (100)
+|           |  |  |  |  |           +--WH8106
+|           |  |  |  +--| (68)
+|           |  |  |     |       +------W_Tara_ERR594307_metawrap_50_10_bins_bin.15.fa
+|           |  |  |     +-------| (100)
+|           |  |  |             |                       +--W_Tara_ERR594316_metawrap_50_10_bins_bin.2.fa
+|           |  |  |             |              +--------| (100)
+|           |  |  |             |              |        +--W_Tara_ERR599140_metawrap_50_10_bins_bin.2.fa
+|           |  |  |             |           +--| (74)
+|           |  |  |             |           |  +--W_Tara_ERR598951_metawrap_50_10_bins_bin.6.fa
+|           |  |  |             |        +--| (70)
+|           |  |  |             |        |  |  +--W_Tara_ERR594318_metawrap_50_10_bins_bin.15.fa
+|           |  |  |             |        |  +--| (74)
+|           |  |  |             |        |     |     +--W_Tara_ERR594297_metawrap_50_10_bins_bin.10.fa
+|           |  |  |             |        |     |  +--| (75)
+|           |  |  |             |        |     |  |  |  +--W_Tara_ERR594332_metawrap_50_10_bins_bin.12.fa
+|           |  |  |             |        |     |  |  +--| (75)
+|           |  |  |             |        |     |  |     +--W_Tara_ERR598955_metawrap_50_10_bins_bin.10.fa
+|           |  |  |             |        |     +--| (75)
+|           |  |  |             |        |        +--W_Tara_ERR599174_metawrap_50_10_bins_bin.1.fa
+|           |  |  |             |     +--| (73)
+|           |  |  |             |     |  +--W_Tara_ERR598976_metawrap_50_10_bins_bin.36.fa
+|           |  |  |             |  +--| (100)
+|           |  |  |             |  |  |  +---------------------W_Tara_ERR598963_metawrap_50_10_bins_bin.12.fa
+|           |  |  |             |  |  +--| (73)
+|           |  |  |             |  |     +--W_Tara_ERR599006_metawrap_50_10_bins_bin.1.fa
+|           |  |  |             +--| (75)
+|           |  |  |                +--W_Tara_ERR599165_metawrap_50_10_bins_bin.8.fa
+|           |  +--| (64)
+|           |     |        +--BS55D
+|           |     |     +--| (100)
+|           |     |     |  +--BS56D
+|           |     |  +--| (100)
+|           |     |  |  |  +--RS9917
+|           |     |  |  +--| (100)
+|           |     |  |     +--WH8101
+|           |     +--| (67)
+|           |        |           +--MED-G135
+|           |        |        +--| (100)
+|           |        |        |  |  +--NAT40
+|           |        |        |  +--| (94)
+|           |        |        |     |  +--UW105
+|           |        |        |     +--| (98)
+|           |        |        |        +--W_Tara_ERR598963_metawrap_50_10_bins_bin.16.fa
+|           |        |     +--| (100)
+|           |        |     |  +--UW140
+|           |        |  +--| (56)
+|           |        |  |  +--RS9916
+|           |        +--| (75)
+|           |           +------W_SRR6877514.1_metawrap_50_10_bins_bin.77.fa
+|        +--| (100)
+|        |  |                                            +-----Acaryochloris_marina_MBIC11017
+|        |  |                                         +--| (75)
+|        |  |                                         |  |  +-------Synechococcus_sp_PCC_7336
+|        |  |                                         |  +--| (74)
+|        |  |                                         |     +------B_SRR6854586.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                      +--| (75)
+|        |  |                                      |  |     +-----Oscillatoria_nigro-viridis_PCC_7112
+|        |  |                                      |  |  +--| (99)
+|        |  |                                      |  |  |  +------Trichodesmium_erythraeum_IMS101
+|        |  |                                      |  +--| (100)
+|        |  |                                      |     +----Planktothricoides_sp._SR001
+|        |  |                                   +--| (75)
+|        |  |                                   |  |                                +--B_SRR6869023.1_metawrap_50_10_bins_bin.26.fa
+|        |  |                                   |  |                             +--| (100)
+|        |  |                                   |  |                             |  +--B_SRR6869394.1_metawrap_50_10_bins_bin.21.fa
+|        |  |                                   |  |                          +--| (75)
+|        |  |                                   |  |                          |  |     +--B_SRR6869035.1_metawrap_50_10_bins_bin.21.fa
+|        |  |                                   |  |                          |  |  +--| (99)
+|        |  |                                   |  |                          |  |  |  +--B_SRR6869035.1_metawrap_50_10_bins_bin.29.fa
+|        |  |                                   |  |                          |  +--| (74)
+|        |  |                                   |  |                          |     |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                   |  |                          |     +--| (75)
+|        |  |                                   |  |                          |        +--B_SRR6869035.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                   |  |                       +--| (75)
+|        |  |                                   |  |                       |  |  +--B_SRR6869042.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                   |  |                       |  +--| (100)
+|        |  |                                   |  |                       |     +--B_SRR6869389.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                   |  |                    +--| (75)
+|        |  |                                   |  |                    |  |              +---B_SRR6869034.1_metawrap_50_10_bins_bin.17.fa
+|        |  |                                   |  |                    |  |           +--| (100)
+|        |  |                                   |  |                    |  |           |  +--B_SRR6869035.1_metawrap_50_10_bins_bin.62.fa
+|        |  |                                   |  |                    |  |        +--| (100)
+|        |  |                                   |  |                    |  |        |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.33.fa
+|        |  |                                   |  |                    |  |     +--| (100)
+|        |  |                                   |  |                    |  |     |  +--B_SRR6869393.1_metawrap_50_10_bins_bin.51.fa
+|        |  |                                   |  |                    |  |  +--| (75)
+|        |  |                                   |  |                    |  |  |  |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.22.fa
+|        |  |                                   |  |                    |  |  |  +--| (75)
+|        |  |                                   |  |                    |  |  |     |  +--B_SRR6869048.1_metawrap_50_10_bins_bin.23.fa
+|        |  |                                   |  |                    |  |  |     +--| (75)
+|        |  |                                   |  |                    |  |  |        +---B_SRR6869053.1_metawrap_50_10_bins_bin.27.fa
+|        |  |                                   |  |                    |  +--| (75)
+|        |  |                                   |  |                    |     +---B_SRR6869053.1_metawrap_50_10_bins_bin.19.fa
+|        |  |                                   |  |                 +--| (75)
+|        |  |                                   |  |                 |  |           +--B_SRR6869035.1_metawrap_50_10_bins_bin.8.fa
+|        |  |                                   |  |                 |  |        +--| (75)
+|        |  |                                   |  |                 |  |        |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.32.fa
+|        |  |                                   |  |                 |  |     +--| (100)
+|        |  |                                   |  |                 |  |     |  +--W_SRR6873781.1_metawrap_50_10_bins_bin.11.fa
+|        |  |                                   |  |                 |  |  +--| (75)
+|        |  |                                   |  |                 |  |  |  +--B_SRR6869395.1_metawrap_50_10_bins_bin.26.fa
+|        |  |                                   |  |                 |  +--| (68)
+|        |  |                                   |  |                 |     +--Pleurocapsa_sp._PCC_7319
+|        |  |                                   |  |              +--| (75)
+|        |  |                                   |  |              |  +---Myxosarcina_sp._GI1_contig_0
+|        |  |                                   |  |           +--| (75)
+|        |  |                                   |  |           |  +----Xenococcus_sp_PCC_7305
+|        |  |                                   |  |        +--| (66)
+|        |  |                                   |  |        |  |    +--B_SRR6869052.1_metawrap_50_10_bins_bin.51.fa
+|        |  |                                   |  |        |  +----| (100)
+|        |  |                                   |  |        |       +--Leptolyngbya_sp._PCC_7376
+|        |  |                                   |  |     +--| (75)
+|        |  |                                   |  |     |  |              +--B_SRR6869051.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                   |  |     |  |        +-----| (100)
+|        |  |                                   |  |     |  |        |     +---B_SRR6869054.1_metawrap_50_10_bins_bin.54.fa
+|        |  |                                   |  |     |  |     +--| (75)
+|        |  |                                   |  |     |  |     |  +--Geminocystis_herdmanii_PCC_6308
+|        |  |                                   |  |     |  |  +--| (66)
+|        |  |                                   |  |     |  |  |  +-----Gloeocapsa_sp._PCC_73106
+|        |  |                                   |  |     |  +--| (67)
+|        |  |                                   |  |     |     +-----Cyanothece_sp._PCC_8801
+|        |  |                                   |  |  +--| (73)
+|        |  |                                   |  |  |  |       +--B_SRR6869388.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                   |  |  |  |  +----| (100)
+|        |  |                                   |  |  |  |  |    +--Moorea_producens_JHB
+|        |  |                                   |  |  |  +--| (100)
+|        |  |                                   |  |  |     +----Crinalium_epipsammum_PCC_9333
+|        |  |                                   |  +--| (70)
+|        |  |                                   |     |        +---B_SRR6869052.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                   |     |     +--| (100)
+|        |  |                                   |     |     |  +--Rivularia_sp._PCC_7116
+|        |  |                                   |     |  +--| (97)
+|        |  |                                   |     |  |  |     +--B_SRR6869387.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                   |     |  |  |  +--| (100)
+|        |  |                                   |     |  |  |  |  +--Mastigocoleus_testarum_BC008_Contig-1
+|        |  |                                   |     |  |  +--| (78)
+|        |  |                                   |     |  |     +----Richelia_intracellularis_HH01
+|        |  |                                   |     +--| (76)
+|        |  |                                   |        +----Calothrix_sp._PCC_7103
+|        |  |                                +--| (75)
+|        |  |                                |  |               +------B_SRR6854573.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                |  |           +---| (100)
+|        |  |                                |  |           |   +--------B_SRR6854589.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                |  |        +--| (67)
+|        |  |                                |  |        |  |              +--B_SRR6869046.1_metawrap_50_10_bins_bin.32.fa
+|        |  |                                |  |        |  |           +--| (74)
+|        |  |                                |  |        |  |           |  |    +--B_SRR6869050.1_metawrap_50_10_bins_bin.19.fa
+|        |  |                                |  |        |  |           |  +----| (100)
+|        |  |                                |  |        |  |           |       +--B_SRR6869054.1_metawrap_50_10_bins_bin.25.fa
+|        |  |                                |  |        |  |        +--| (71)
+|        |  |                                |  |        |  |        |  |  +--B_SRR6869047.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                                |  |        |  |        |  +--| (100)
+|        |  |                                |  |        |  |        |     +--B_SRR6869048.1_metawrap_50_10_bins_bin.20.fa
+|        |  |                                |  |        |  |     +--| (74)
+|        |  |                                |  |        |  |     |  +--B_SRR6869049.1_metawrap_50_10_bins_bin.18.fa
+|        |  |                                |  |        |  +-----| (100)
+|        |  |                                |  |        |        +--B_SRR6869387.1_metawrap_50_10_bins_bin.1.fa
+|        |  |                                |  |     +--| (75)
+|        |  |                                |  |     |  |                     +--B_SRR6869023.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                |  |     |  |                  +--| (100)
+|        |  |                                |  |     |  |                  |  |  +--B_SRR6869023.1_metawrap_50_10_bins_bin.7.fa
+|        |  |                                |  |     |  |                  |  +--| (100)
+|        |  |                                |  |     |  |                  |     +--B_SRR6869040.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                                |  |     |  |               +--| (75)
+|        |  |                                |  |     |  |               |  |              +-----B_SRR6869023.1_metawrap_50_10_bins_bin.24.fa
+|        |  |                                |  |     |  |               |  |           +--| (100)
+|        |  |                                |  |     |  |               |  |           |  |  +---B_SRR6869035.1_metawrap_50_10_bins_bin.22.fa
+|        |  |                                |  |     |  |               |  |           |  +--| (100)
+|        |  |                                |  |     |  |               |  |           |     |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.46.fa
+|        |  |                                |  |     |  |               |  |           |     +--| (100)
+|        |  |                                |  |     |  |               |  |           |        +--B_SRR6869043.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                                |  |     |  |               |  |        +--| (68)
+|        |  |                                |  |     |  |               |  |        |  |          +--B_SRR6869046.1_metawrap_50_10_bins_bin.8.fa
+|        |  |                                |  |     |  |               |  |        |  |     +----| (100)
+|        |  |                                |  |     |  |               |  |        |  |     |    +--B_SRR6869053.1_metawrap_50_10_bins_bin.45.fa
+|        |  |                                |  |     |  |               |  |        |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |        |  |  |  |  +------B_SRR6869050.1_metawrap_50_10_bins_bin.2.fa
+|        |  |                                |  |     |  |               |  |        |  |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |        |  |  |     +--------Rubidibacter_lacunae_KORDI_51-2
+|        |  |                                |  |     |  |               |  |        |  +--| (74)
+|        |  |                                |  |     |  |               |  |        |     +--B_SRR6869395.1_metawrap_50_10_bins_bin.45.fa
+|        |  |                                |  |     |  |               |  |     +--| (75)
+|        |  |                                |  |     |  |               |  |     |  |  +--B_SRR6869036.1_metawrap_50_10_bins_bin.53.fa
+|        |  |                                |  |     |  |               |  |     |  +--| (100)
+|        |  |                                |  |     |  |               |  |     |     +---B_SRR6869395.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                                |  |     |  |               |  |  +--| (75)
+|        |  |                                |  |     |  |               |  |  |  +--B_SRR6869034.1_metawrap_50_10_bins_bin.13.fa
+|        |  |                                |  |     |  |               |  +--| (75)
+|        |  |                                |  |     |  |               |     +--B_SRR6869035.1_metawrap_50_10_bins_bin.66.fa
+|        |  |                                |  |     |  |           +---| (75)
+|        |  |                                |  |     |  |           |   +--B_SRR6869035.1_metawrap_50_10_bins_bin.44.fa
+|        |  |                                |  |     |  |        +--| (100)
+|        |  |                                |  |     |  |        |  +--B_SRR6869034.1_metawrap_50_10_bins_bin.35.fa
+|        |  |                                |  |     |  |     +--| (75)
+|        |  |                                |  |     |  |     |  +---B_SRR6869391.1_metawrap_50_10_bins_bin.27.fa
+|        |  |                                |  |     |  |  +--| (74)
+|        |  |                                |  |     |  |  |  +-------B_SRR6869051.1_metawrap_50_10_bins_bin.2.fa
+|        |  |                                |  |     |  +--| (75)
+|        |  |                                |  |     |     +------B_SRR6869053.1_metawrap_50_10_bins_bin.16.fa
+|        |  |                                |  |  +--| (68)
+|        |  |                                |  |  |  |          +--B_SRR6869054.1_metawrap_50_10_bins_bin.42.fa
+|        |  |                                |  |  |  |     +----| (75)
+|        |  |                                |  |  |  |     |    +---B_SRR6869052.1_metawrap_50_10_bins_bin.15.fa
+|        |  |                                |  |  |  |  +--| (75)
+|        |  |                                |  |  |  |  |  +----B_SRR6869034.1_metawrap_50_10_bins_bin.34.fa
+|        |  |                                |  |  |  +--| (73)
+|        |  |                                |  |  |     +----Coleofasciculus_chthonoplastes_PCC_7420
+|        |  |                                |  +--| (75)
+|        |  |                                |     |  +----Chroogloeocystis_siderophila_5.2_s.c.1
+|        |  |                                |     +--| (75)
+|        |  |                                |        +----Nostoc_sp_PCC_7120
+|        |  |                             +--| (72)
+|        |  |                             |  |        +--Calothrix_sp._336.3
+|        |  |                             |  |     +--| (100)
+|        |  |                             |  |     |  +---Calothrix_sp._PCC_6303
+|        |  |                             |  |  +--| (51)
+|        |  |                             |  |  |  |     +--Chlorogloeopsis_fritschii_PCC_6912
+|        |  |                             |  |  |  |  +--| (100)
+|        |  |                             |  |  |  |  |  |  +--Fischerella_sp._PCC_9605
+|        |  |                             |  |  |  |  |  +--| (100)
+|        |  |                             |  |  |  |  |     +--Mastigocladus_laminosus_UU774
+|        |  |                             |  |  |  +--| (100)
+|        |  |                             |  |  |     |  +--Scytonema_tolypothrichoides_VB-61278
+|        |  |                             |  |  |     +--| (100)
+|        |  |                             |  |  |        +--Tolypothrix_bouteillei_VB521301
+|        |  |                             |  +--| (100)
+|        |  |                             |     |     +--Nodularia_spumigena_CCY9414
+|        |  |                             |     |  +--| (100)
+|        |  |                             |     |  |  |  +--Nostoc_sp_PCC_7107
+|        |  |                             |     |  |  +--| (100)
+|        |  |                             |     |  |     +--Nostoc_sp_PCC_7524
+|        |  |                             |     +--| (100)
+|        |  |                             |        +---Scytonema_hofmanni_UTEX_2349
+|        |  |                          +--| (75)
+|        |  |                          |  |           +------B_SRR6854712.1_metawrap_50_10_bins_bin.6.fa
+|        |  |                          |  |        +--| (100)
+|        |  |                          |  |        |  |  +----B_SRR6869046.1_metawrap_50_10_bins_bin.3.fa
+|        |  |                          |  |        |  +--| (100)
+|        |  |                          |  |        |     +---B_SRR6869054.1_metawrap_50_10_bins_bin.12.fa
+|        |  |                          |  |     +--| (75)
+|        |  |                          |  |     |  |     +-----B_SRR6869023.1_metawrap_50_10_bins_bin.25.fa
+|        |  |                          |  |     |  |  +--| (75)
+|        |  |                          |  |     |  |  |  |        +--Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA
+|        |  |                          |  |     |  |  |  |  +-----| (100)
+|        |  |                          |  |     |  |  |  |  |     +--W_Tara_ERR599006_metawrap_50_10_bins_bin.5.fa
+|        |  |                          |  |     |  |  |  +--| (100)
+|        |  |                          |  |     |  |  |     |  +----Crocosphaera_watsonii_WH_8501
+|        |  |                          |  |     |  |  |     +--| (100)
+|        |  |                          |  |     |  |  |        +--Cyanothece_sp._ATCC_51142
+|        |  |                          |  |     |  +--| (75)
+|        |  |                          |  |     |     |     +--B_SRR6869046.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                          |  |     |     |  +--| (100)
+|        |  |                          |  |     |     |  |  +--B_SRR6869053.1_metawrap_50_10_bins_bin.5.fa
+|        |  |                          |  |     |     +--| (100)
+|        |  |                          |  |     |        +---B_SRR6869387.1_metawrap_50_10_bins_bin.4.fa
+|        |  |                          |  |  +--| (75)
+|        |  |                          |  |  |  |     +-----B_SRR6869046.1_metawrap_50_10_bins_bin.43.fa
+|        |  |                          |  |  |  |  +--| (73)
+|        |  |                          |  |  |  |  |  |    +--Dactylococcopsis_salina_PCC_8305
+|        |  |                          |  |  |  |  |  +----| (100)
+|        |  |                          |  |  |  |  |       +--Halothece_sp._PCC_7418
+|        |  |                          |  |  |  +--| (75)
+|        |  |                          |  |  |     |        +--Cyanothece_sp._PCC_7424
+|        |  |                          |  |  |     |     +--| (100)
+|        |  |                          |  |  |     |     |  +--Cyanothece_sp._PCC_7822
+|        |  |                          |  |  |     |  +--| (100)
+|        |  |                          |  |  |     |  |  +----Pleurocapsa_sp._PCC_7327
+|        |  |                          |  |  |     +--| (74)
+|        |  |                          |  |  |        +----Stanieria_cyanosphaera_PCC_7437
+|        |  |                          |  +--| (75)
+|        |  |                          |     +-----Microcoleus_sp._PCC_7113
+|        |  |                       +--| (75)
+|        |  |                       |  |     +----Arthrospira_platensis_NIES-39
+|        |  |                       |  |  +--| (100)
+|        |  |                       |  |  |  +---Lyngbya_aestuarii_BL_J_laest3
+|        |  |                       |  +--| (100)
+|        |  |                       |     +---Planktothrix_agardhii_NIVA-CYA_126.8
+|        |  |                    +--| (64)
+|        |  |                    |  |  +---Oscillatoria_acuminata_PCC_6304
+|        |  |                    |  +--| (89)
+|        |  |                    |     +-----Oscillatoria_sp._PCC_10802
+|        |  |                 +--| (43)
+|        |  |                 |  +----------Leptolyngbya_valderiana_BDU_20041
+|        |  |              +--| (35)
+|        |  |              |  |     +-----Pseudanabaena_biceps_PCC_7429
+|        |  |              |  |  +--| (100)
+|        |  |              |  |  |  |  +----Pseudanabaena_sp._PCC_6802
+|        |  |              |  |  |  +--| (100)
+|        |  |              |  |  |     +-----Synechococcus_sp_PCC_7502
+|        |  |              |  +--| (99)
+|        |  |              |     |  +----Synechococcus_sp_PCC_6312
+|        |  |              |     +--| (100)
+|        |  |              |        +---Thermosynechococcus_elongatus_BP-1
+|        |  |           +--| (74)
+|        |  |           |  +------B_SRR6869047.1_metawrap_50_10_bins_bin.23.fa
+|        |  |        +--| (100)
+|        |  |        |  |  +------------B_SRR6854585.1_metawrap_50_10_bins_bin.4.fa
+|        |  |        |  +--| (75)
+|        |  |        |     |                          +---------Caenarcanum_bioreactoricola_isolate_UASB_169
+|        |  |        |     |               +----------| (100)
+|        |  |        |     |               |          +-----Melainabacteria_bacterium_SSGW_16
+|        |  |        |     |            +--| (100)
+|        |  |        |     |            |  +----------Obscuribacter_phosphatis_isolate_EBPR_351
+|        |  |        |     |         +--| (100)
+|        |  |        |     |         |  |  +-------------Gastranaerophilales_bacterium_strain_UMGS1517
+|        |  |        |     |         |  +--| (100)
+|        |  |        |     |         |     +---------Vampirovibrio_chlorellavorus_strain_Vc_AZ_2
+|        |  |        |     |  +------| (100)
+|        |  |        |     |  |      |      +-------Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72
+|        |  |        |     |  |      +------| (100)
+|        |  |        |     |  |             +------Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196
+|        |  |        |     +--| (100)
+|        |  |        |        |      +--Synechococcus_sp_JA-2-3B_a_2-13_
+|        |  |        |        +------| (100)
+|        |  |        |               +--Synechococcus_sp_JA-3-3Ab
+|        |  |  +-----| (100)
+|        |  |  |     +---Synechococcus_elongatus_PCC_6301
+|        |  +--| (75)
+|        |     |                    +--MED-G67
+|        |     |                 +--| (100)
+|        |     |                 |  +--RCC307
+|        |     |              +--| (63)
+|        |     |              |  |  +--UBA6965
+|        |     |              |  +--| (63)
+|        |     |              |     |  +--W_SRR6873777.1_metawrap_50_10_bins_bin.23.fa
+|        |     |              |     +--| (100)
+|        |     |              |        +--W_SRR6873775.1_metawrap_50_10_bins_bin.5.fa
+|        |     |           +--| (63)
+|        |     |           |  +--W_SRR6873777.1_metawrap_50_10_bins_bin.60.fa
+|        |     |        +--| (100)
+|        |     |        |  +--Minos11
+|        |     |     +--| (100)
+|        |     |     |  +--W_Tara_ERR599134_metawrap_50_10_bins_bin.3.fa
+|        |     |  +--| (100)
+|        |     |  |  +--W_Tara_ERR598951_metawrap_50_10_bins_bin.4.fa
+|        |     +--| (75)
+|        |        |        +--MED-G71
+|        |        |     +--| (100)
+|        |        |     |  +--TMED155
+|        |        |  +--| (75)
+|        |        |  |  +--TMED19
+|        |        +--| (74)
+|        |           +--W_Tara_ERR599029_metawrap_50_10_bins_bin.31.fa
+|     +--| (100)
+|     |  |  +--CB0101
+|     |  +--| (100)
+|     |     |  +--CB0205
+|     |     +--| (100)
+|     |        |  +--W_SRR6873785.1_metawrap_50_10_bins_bin.26.fa
+|     |        +--| (100)
+|     |           +--W_Tara_ERR599029_metawrap_50_10_bins_bin.38.fa
+|  +--| (98)
+|  |  |  +--MW101C3
+|  |  +--| (100)
+|  |     +--ULC065bin1
++--| (100)
+|  |  +--SynAce01
+|  +--| (100)
+|     |  +--ULC082bin1
+|     +--| (100)
+|        +--ULC084bin3
+|
++--WH5701
+
+
+Consensus tree in newick format: 
+
+(1G10:0.0482816889,((((((((((AG-670-A05:0.0618929983,(B_SRR6854584.1_metawrap_50_10_bins_bin.1.fa:0.0141987812,((RS9915:0.0018442863,YX04-3:0.0027581253)100:0.0032956261,(WH8102:0.0017532113,WH8103:0.0043763841)100:0.0066018452)100:0.0130504783)100:0.0435823965)100:0.0148892525,W_SRR6873778.1_metawrap_50_10_bins_bin.23.fa:0.0313241955)100:0.0260815920,((AG-670-B23:0.0442977993,((((((((((B_SRR6869036.1_metawrap_50_10_bins_bin.2.fa:0.0558764098,(((B_SRR6869047.1_metawrap_50_10_bins_bin.14.fa:0.0052050394,W_Tara_ERR598966_metawrap_50_10_bins_bin.4.fa:0.0036699457)100:0.0008846243,W_Tara_ERR598979_metawrap_50_10_bins_bin.2.fa:0.0044022492)100:0.0004645909,W_SRR6877511.1_metawrap_50_10_bins_bin.37.fa:0.0003031458)100:0.0358745804)100:0.0397517596,((N19:0.0073376600,W_Tara_ERR599102_metawrap_50_10_bins_bin.8.fa:0.0098036491)72:0.0006809325,((N5:0.0062809145,REDSEA-S02_B4:0.0024451388)98:0.0006559479,REDSEA-S01_B1:0.0005925834)100:0.0011841323)68:0.0001469251)67:0.0002435938,UW86:0.0060870248)29:0.0001975363,((B_SRR6869044.1_metawrap_50_10_bins_bin.21.fa:0.0101970358,N32:0.0066572087)52:0.0007707363,B_SRR6869048.1_metawrap_50_10_bins_bin.21.fa:0.0049011516)26:0.0004490799)28:0.0002187385,RS344:0.0015434055)88:0.0008290982,N26:0.0069148782)100:0.0031313279,W_SRR6873784.1_metawrap_50_10_bins_bin.55.fa:0.0091436400)100:0.0036150633,WH8109:0.0191832064)100:0.0030536987,CC9605:0.0177321173)100:0.0082903701,KORDI-52:0.0298885847)100:0.0063882228)99:0.0092510526,((UW106:0.0100706877,UW69:0.0063124276)100:0.0036117861,W_Tara_ERR598976_metawrap_50_10_bins_bin.5.fa:0.0829458382)100:0.0469227338)100:0.0404349480)74:0.0186943875,(((((CC9616:0.0038255510,TMED20:0.0018863882)100:0.0711154753,KORDI-100:0.0392134599)100:0.0346191189,MED850:0.0771607276)98:0.0242046434,W_Tara_ERR599029_metawrap_50_10_bins_bin.17.fa:0.0603995461)100:0.0358565729,((((KORDI-49:0.0033191988,UBA9887:0.0182883667)67:0.0000663808,UBA3999:0.0013649779)26:0.0001962260,MED-G70:0.0003170501)66:0.0037380602,W_Tara_ERR598951_metawrap_50_10_bins_bin.8.fa:0.0716137961)100:0.0755443804)69:0.0156064989)31:0.0086141193,((AG-683-C23:0.0052319510,AG-686-B21:0.0067493416)100:0.0444058039,(BL107:0.0392977708,((CC9902:0.0237700992,(MED-G69:0.0028715931,W_Tara_ERR598963_metawrap_50_10_bins_bin.24.fa:0.0088511088)100:0.0124173983)100:0.0123288316,W_Tara_ERR598976_metawrap_50_10_bins_bin.23.fa:0.0414779144)99:0.0067862838)98:0.0178121426)100:0.1676259077)64:0.0180903502,((((((((AG-670-F22:0.0052206199,AG-676-C06:0.0021751755)99:0.0023916537,AG-673-F03:0.0052584151)75:0.0185194263,((((AG-676-E23:0.0029300191,MIT_S9220:0.0054600890)100:0.0011156604,(W_Tara_ERR599050_metawrap_50_10_bins_bin.46.fa:0.0386827915,W_Tara_ERR599174_metawrap_50_10_bins_bin.4.fa:0.0034706102)75:0.0779528791)75:0.0007534356,GEYO:0.0074458475)75:0.0022349110,MITS9508:0.0090938146)75:0.0134915870)75:0.0169582735,((MITS9504:0.0000348356,MITS9509:0.0002516750)100:0.0346568168,UW179A:0.0313067631)100:0.0151725286)75:0.0763658779,EAC657:0.0861930945)74:0.0176240185,((((((((((AG-679-B05:0.0666610995,((W_Tara_ERR594297_metawrap_50_10_bins_bin.6.fa:0.0054496827,W_Tara_ERR599174_metawrap_50_10_bins_bin.8.fa:0.0027940641)100:0.0063451094,W_Tara_ERR599165_metawrap_50_10_bins_bin.14.fa:0.0362774459)100:0.0088674266)100:0.0696796982,W_SRR6877515.1_metawrap_50_10_bins_bin.13.fa:0.0731525221)100:0.0263154847,(W_Tara_ERR599136_metawrap_50_10_bins_bin.43.fa:0.1344939889,W_Tara_ERR594297_metawrap_50_10_bins_bin.12.fa:0.1659470790)100:0.0376167521)75:0.0334959960,(B_SRR6869398.1_metawrap_50_10_bins_bin.20.fa:0.2027395959,W_Tara_ERR599136_metawrap_50_10_bins_bin.5.fa:0.1607860112)75:0.0669346224)75:0.0392163492,W_Tara_ERR599058_metawrap_50_10_bins_bin.13.fa:0.0986068693)75:0.0880116979,B_SRR6854712.1_metawrap_50_10_bins_bin.2.fa:0.0033934538)75:0.0397687790,((B_SRR6869024.1_metawrap_50_10_bins_bin.3.fa:0.0138769793,W_SRR6873778.1_metawrap_50_10_bins_bin.26.fa:0.1738450921)75:0.0133310897,W_SRR6873778.1_metawrap_50_10_bins_bin.43.fa:0.0090598568)64:0.0098729020)64:0.0452435802,WH7803:0.0020527432)63:0.0012033687,B_SRR6869026.1_metawrap_50_10_bins_bin.1.fa:0.0843872728)75:0.0355571618,(TMED90:0.0294920881,WH7805:0.0588464774)100:0.0249360621)75:0.0704010093)72:0.0145908476,(((AG-679-C18:0.0015699310,(NAT249:0.0036226624,(NP17:0.0009449741,UBA1528:0.0120741745)67:0.0010391569)67:0.0012199269)100:0.0914414634,((CC9311:0.0274245943,WH8020:0.0269732487)100:0.0179489014,(((((MED-G68:0.0005238359,UBA7448:0.0557603080)100:0.0005721290,UBA1269:0.0014184267)100:0.0003492622,UBA7854:0.0014718827)100:0.0260314553,W_Tara_ERR599144_metawrap_50_10_bins_bin.16.fa:0.0385920177)100:0.0135163738,(UW179B:0.0131688991,WH8106:0.0222048423)100:0.0348850171)98:0.0098893280)99:0.0331015305)74:0.0468088854,(W_Tara_ERR594307_metawrap_50_10_bins_bin.15.fa:0.3163634291,((((((W_Tara_ERR594316_metawrap_50_10_bins_bin.2.fa:0.0043076283,W_Tara_ERR599140_metawrap_50_10_bins_bin.2.fa:0.0122153037)100:0.3962790607,W_Tara_ERR598951_metawrap_50_10_bins_bin.6.fa:0.0396464549)74:0.0178724797,(W_Tara_ERR594318_metawrap_50_10_bins_bin.15.fa:0.0539461431,((W_Tara_ERR594297_metawrap_50_10_bins_bin.10.fa:0.0007491890,(W_Tara_ERR594332_metawrap_50_10_bins_bin.12.fa:0.0050019577,W_Tara_ERR598955_metawrap_50_10_bins_bin.10.fa:0.0014893266)75:0.0063989333)75:0.0205124870,W_Tara_ERR599174_metawrap_50_10_bins_bin.1.fa:0.0012207251)75:0.0406593403)74:0.1486182606)70:0.0139259433,W_Tara_ERR598976_metawrap_50_10_bins_bin.36.fa:0.0090522307)73:0.0906166708,(W_Tara_ERR598963_metawrap_50_10_bins_bin.12.fa:0.9008853775,W_Tara_ERR599006_metawrap_50_10_bins_bin.1.fa:0.0365829043)73:0.0683433122)100:0.1329104723,W_Tara_ERR599165_metawrap_50_10_bins_bin.8.fa:0.0250421970)75:0.0218644880)100:0.3288869856)68:0.1068078835)64:0.0150141308,(((BS55D:0.0086586057,BS56D:0.0065371306)100:0.0693936035,(RS9917:0.0203031964,WH8101:0.0228829350)100:0.0703839172)100:0.0239546511,((((MED-G135:0.0011017276,(NAT40:0.0008746535,(UW105:0.0019464954,W_Tara_ERR598963_metawrap_50_10_bins_bin.16.fa:0.0028813620)98:0.0004548925)94:0.0004401889)100:0.0086056826,UW140:0.0069285306)100:0.1019142693,RS9916:0.0646762527)56:0.0053459143,W_SRR6877514.1_metawrap_50_10_bins_bin.77.fa:0.2953036882)75:0.0283718242)67:0.0103593564)64:0.0209604542)75:0.0388588391,((((((((((((((Acaryochloris_marina_MBIC11017:0.2781757905,(Synechococcus_sp_PCC_7336:0.3656023724,B_SRR6854586.1_metawrap_50_10_bins_bin.5.fa:0.3126138115)74:0.0430279949)75:0.0688758123,((Oscillatoria_nigro-viridis_PCC_7112:0.2734151922,Trichodesmium_erythraeum_IMS101:0.2868452938)99:0.0338512486,Planktothricoides_sp._SR001:0.2379616181)100:0.0371927225)75:0.0241915367,(((((((((((B_SRR6869023.1_metawrap_50_10_bins_bin.26.fa:0.1009117588,B_SRR6869394.1_metawrap_50_10_bins_bin.21.fa:0.0571382718)100:0.0618311563,((B_SRR6869035.1_metawrap_50_10_bins_bin.21.fa:0.1283032798,B_SRR6869035.1_metawrap_50_10_bins_bin.29.fa:0.1362406830)99:0.0184867741,(B_SRR6869036.1_metawrap_50_10_bins_bin.16.fa:0.0806573029,B_SRR6869035.1_metawrap_50_10_bins_bin.46.fa:0.1147248773)75:0.0465238254)74:0.0149504516)75:0.0200735217,(B_SRR6869042.1_metawrap_50_10_bins_bin.16.fa:0.1255664836,B_SRR6869389.1_metawrap_50_10_bins_bin.5.fa:0.1171719965)100:0.0287093607)75:0.0187380065,(((((B_SRR6869034.1_metawrap_50_10_bins_bin.17.fa:0.1835894902,B_SRR6869035.1_metawrap_50_10_bins_bin.62.fa:0.0594911067)100:0.0514997563,B_SRR6869036.1_metawrap_50_10_bins_bin.33.fa:0.1142709484)100:0.0219974882,B_SRR6869393.1_metawrap_50_10_bins_bin.51.fa:0.1209689965)100:0.0231985385,(B_SRR6869036.1_metawrap_50_10_bins_bin.22.fa:0.1141668684,(B_SRR6869048.1_metawrap_50_10_bins_bin.23.fa:0.0887914702,B_SRR6869053.1_metawrap_50_10_bins_bin.27.fa:0.1871973389)75:0.0548994426)75:0.0659080661)75:0.0432622689,B_SRR6869053.1_metawrap_50_10_bins_bin.19.fa:0.2010905356)75:0.0955144298)75:0.1218238222,((((B_SRR6869035.1_metawrap_50_10_bins_bin.8.fa:0.0993743562,B_SRR6869036.1_metawrap_50_10_bins_bin.32.fa:0.1007286038)75:0.0250961273,W_SRR6873781.1_metawrap_50_10_bins_bin.11.fa:0.1041210784)100:0.1057390704,B_SRR6869395.1_metawrap_50_10_bins_bin.26.fa:0.1006748291)75:0.0824950124,Pleurocapsa_sp._PCC_7319:0.1231605003)68:0.0043498552)75:0.0410995856,Myxosarcina_sp._GI1_contig_0:0.1760173392)75:0.0446331732,Xenococcus_sp_PCC_7305:0.2260702643)75:0.0603112574,(B_SRR6869052.1_metawrap_50_10_bins_bin.51.fa:0.0971734704,Leptolyngbya_sp._PCC_7376:0.1000734996)100:0.2341880865)66:0.0248163838,((((B_SRR6869051.1_metawrap_50_10_bins_bin.1.fa:0.1545375876,B_SRR6869054.1_metawrap_50_10_bins_bin.54.fa:0.1842018667)100:0.2676153434,Geminocystis_herdmanii_PCC_6308:0.1263342823)75:0.1580510596,Gloeocapsa_sp._PCC_73106:0.2709540885)66:0.0376106098,Cyanothece_sp._PCC_8801:0.2527211749)67:0.0304503834)75:0.0777752990,((B_SRR6869388.1_metawrap_50_10_bins_bin.4.fa:0.1091558836,Moorea_producens_JHB:0.0050207260)100:0.2154285905,Crinalium_epipsammum_PCC_9333:0.2115695650)100:0.0469873256)73:0.0175664947,(((B_SRR6869052.1_metawrap_50_10_bins_bin.46.fa:0.2019959768,Rivularia_sp._PCC_7116:0.0707063675)100:0.1218687967,((B_SRR6869387.1_metawrap_50_10_bins_bin.5.fa:0.1374882589,Mastigocoleus_testarum_BC008_Contig-1:0.0156718985)100:0.1408408273,Richelia_intracellularis_HH01:0.2234510424)78:0.0305405011)97:0.0256595752,Calothrix_sp._PCC_7103:0.2434142163)76:0.1091355639)70:0.0028753741)75:0.0772865481,(((((B_SRR6854573.1_metawrap_50_10_bins_bin.1.fa:0.3188560542,B_SRR6854589.1_metawrap_50_10_bins_bin.4.fa:0.3831934370)100:0.1687759189,((((B_SRR6869046.1_metawrap_50_10_bins_bin.32.fa:0.0245634157,(B_SRR6869050.1_metawrap_50_10_bins_bin.19.fa:0.0316601677,B_SRR6869054.1_metawrap_50_10_bins_bin.25.fa:0.0179605244)100:0.2135008509)74:0.0183004499,(B_SRR6869047.1_metawrap_50_10_bins_bin.5.fa:0.0112425739,B_SRR6869048.1_metawrap_50_10_bins_bin.20.fa:0.0161709350)100:0.0029803622)71:0.0035513656,B_SRR6869049.1_metawrap_50_10_bins_bin.18.fa:0.0224139206)74:0.0154003400,B_SRR6869387.1_metawrap_50_10_bins_bin.1.fa:0.0253444811)100:0.2747781346)67:0.0257093372,(((((((B_SRR6869023.1_metawrap_50_10_bins_bin.16.fa:0.1243950068,(B_SRR6869023.1_metawrap_50_10_bins_bin.7.fa:0.0779008458,B_SRR6869040.1_metawrap_50_10_bins_bin.4.fa:0.1045865773)100:0.0165644423)100:0.0664402125,(((((B_SRR6869023.1_metawrap_50_10_bins_bin.24.fa:0.2783425310,(B_SRR6869035.1_metawrap_50_10_bins_bin.22.fa:0.1776613505,(B_SRR6869036.1_metawrap_50_10_bins_bin.46.fa:0.0971919818,B_SRR6869043.1_metawrap_50_10_bins_bin.6.fa:0.0995758236)100:0.0213471483)100:0.0366276295)100:0.0236296759,(((B_SRR6869046.1_metawrap_50_10_bins_bin.8.fa:0.0013043951,B_SRR6869053.1_metawrap_50_10_bins_bin.45.fa:0.0810772607)100:0.2367519053,(B_SRR6869050.1_metawrap_50_10_bins_bin.2.fa:0.2926894852,Rubidibacter_lacunae_KORDI_51-2:0.3907487732)75:0.0978695226)75:0.1138187105,B_SRR6869395.1_metawrap_50_10_bins_bin.45.fa:0.1172145603)74:0.0402055835)68:0.0170352369,(B_SRR6869036.1_metawrap_50_10_bins_bin.53.fa:0.1492991928,B_SRR6869395.1_metawrap_50_10_bins_bin.6.fa:0.1638068589)100:0.0476106954)75:0.0359215735,B_SRR6869034.1_metawrap_50_10_bins_bin.13.fa:0.0928341030)75:0.0365277553,B_SRR6869035.1_metawrap_50_10_bins_bin.66.fa:0.0664605581)75:0.0893513694)75:0.1473920208,B_SRR6869035.1_metawrap_50_10_bins_bin.44.fa:0.0785354337)75:0.1934788849,B_SRR6869034.1_metawrap_50_10_bins_bin.35.fa:0.0535876874)100:0.0862606547,B_SRR6869391.1_metawrap_50_10_bins_bin.27.fa:0.1892535009)75:0.0954718097,B_SRR6869051.1_metawrap_50_10_bins_bin.2.fa:0.3600225301)74:0.0523405150,B_SRR6869053.1_metawrap_50_10_bins_bin.16.fa:0.2931600383)75:0.1023172829)75:0.0592908342,(((B_SRR6869054.1_metawrap_50_10_bins_bin.42.fa:0.0192319727,B_SRR6869052.1_metawrap_50_10_bins_bin.15.fa:0.1929237472)75:0.2355634806,B_SRR6869034.1_metawrap_50_10_bins_bin.34.fa:0.2375758367)75:0.1356772658,Coleofasciculus_chthonoplastes_PCC_7420:0.2413020418)73:0.0379677428)68:0.0099548863,(Chroogloeocystis_siderophila_5.2_s.c.1:0.2240797977,Nostoc_sp_PCC_7120:0.2415729750)75:0.0798704637)75:0.1306962054)75:0.0434475681,(((Calothrix_sp._336.3:0.1559946862,Calothrix_sp._PCC_6303:0.1785204404)100:0.0534847664,((Chlorogloeopsis_fritschii_PCC_6912:0.1276939485,(Fischerella_sp._PCC_9605:0.0398981679,Mastigocladus_laminosus_UU774:0.0882774231)100:0.0385863051)100:0.0419847349,(Scytonema_tolypothrichoides_VB-61278:0.1045871740,Tolypothrix_bouteillei_VB521301:0.1375922147)100:0.0382604491)100:0.0261822014)51:0.0115233796,((Nodularia_spumigena_CCY9414:0.1190811058,(Nostoc_sp_PCC_7107:0.1033854206,Nostoc_sp_PCC_7524:0.0982472838)100:0.0332571698)100:0.0225081488,Scytonema_hofmanni_UTEX_2349:0.1674069217)100:0.0195205220)100:0.1362496791)72:0.0098395772,((((B_SRR6854712.1_metawrap_50_10_bins_bin.6.fa:0.3095346500,(B_SRR6869046.1_metawrap_50_10_bins_bin.3.fa:0.2149651468,B_SRR6869054.1_metawrap_50_10_bins_bin.12.fa:0.1995670099)100:0.1046654339)100:0.0806320141,((B_SRR6869023.1_metawrap_50_10_bins_bin.25.fa:0.2766988641,((Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA:0.0000503861,W_Tara_ERR599006_metawrap_50_10_bins_bin.5.fa:0.0000023603)100:0.2647661632,(Crocosphaera_watsonii_WH_8501:0.2268061191,Cyanothece_sp._ATCC_51142:0.0725449371)100:0.0546795856)100:0.1379804883)75:0.0447604147,((B_SRR6869046.1_metawrap_50_10_bins_bin.4.fa:0.0167751905,B_SRR6869053.1_metawrap_50_10_bins_bin.5.fa:0.1412911001)100:0.1630178466,B_SRR6869387.1_metawrap_50_10_bins_bin.4.fa:0.1866360613)100:0.0972056193)75:0.0241537916)75:0.1384732955,((B_SRR6869046.1_metawrap_50_10_bins_bin.43.fa:0.2526194978,(Dactylococcopsis_salina_PCC_8305:0.1343101989,Halothece_sp._PCC_7418:0.1094636411)100:0.2162085410)73:0.0254444917,(((Cyanothece_sp._PCC_7424:0.1051205530,Cyanothece_sp._PCC_7822:0.1113150040)100:0.1116610570,Pleurocapsa_sp._PCC_7327:0.2327464020)100:0.0457280036,Stanieria_cyanosphaera_PCC_7437:0.2286738073)74:0.0401714765)75:0.0190620144)75:0.0428300429,Microcoleus_sp._PCC_7113:0.2817105820)75:0.0257609182)75:0.0331411212,((Arthrospira_platensis_NIES-39:0.2046296982,Lyngbya_aestuarii_BL_J_laest3:0.1814659203)100:0.0357061121,Planktothrix_agardhii_NIVA-CYA_126.8:0.2000435184)100:0.1016005714)75:0.0410332643,(Oscillatoria_acuminata_PCC_6304:0.2031213463,Oscillatoria_sp._PCC_10802:0.2484839439)89:0.0447144391)64:0.0234149279,Leptolyngbya_valderiana_BDU_20041:0.4894107642)43:0.0317280083,((Pseudanabaena_biceps_PCC_7429:0.2628483711,(Pseudanabaena_sp._PCC_6802:0.2084062671,Synechococcus_sp_PCC_7502:0.2790426159)100:0.0477316433)100:0.1405408363,(Synechococcus_sp_PCC_6312:0.2123593076,Thermosynechococcus_elongatus_BP-1:0.1925735372)100:0.1129009937)99:0.0257773020)35:0.0354994513,B_SRR6869047.1_metawrap_50_10_bins_bin.23.fa:0.3161857318)74:0.0299240444,(B_SRR6854585.1_metawrap_50_10_bins_bin.4.fa:0.5706215558,(((((Caenarcanum_bioreactoricola_isolate_UASB_169:0.4082911646,Melainabacteria_bacterium_SSGW_16:0.2584757764)100:0.4673482565,Obscuribacter_phosphatis_isolate_EBPR_351:0.4543880262)100:0.1240117107,(Gastranaerophilales_bacterium_strain_UMGS1517:0.5885330416,Vampirovibrio_chlorellavorus_strain_Vc_AZ_2:0.4294280848)100:0.1290534818)100:0.1602446870,(Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72:0.3667097063,Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196:0.3059721420)100:0.3011485736)100:0.3165620175,(Synechococcus_sp_JA-2-3B_a_2-13_:0.0671959870,Synechococcus_sp_JA-3-3Ab:0.0779485797)100:0.2946850482)100:0.1086892914)75:0.1103314469)100:0.0774167559,Synechococcus_elongatus_PCC_6301:0.1972368300)100:0.2746364005,(((((((MED-G67:0.0003226219,RCC307:0.0023062427)100:0.0013673760,(UBA6965:0.0000028956,(W_SRR6873777.1_metawrap_50_10_bins_bin.23.fa:0.0398210403,W_SRR6873775.1_metawrap_50_10_bins_bin.5.fa:0.0640983091)100:0.1041917689)63:0.0009868114)63:0.0009878669,W_SRR6873777.1_metawrap_50_10_bins_bin.60.fa:0.0597252508)63:0.0008922281,Minos11:0.0036747346)100:0.0109670020,W_Tara_ERR599134_metawrap_50_10_bins_bin.3.fa:0.1194731395)100:0.0215165687,W_Tara_ERR598951_metawrap_50_10_bins_bin.4.fa:0.0391487159)100:0.0542710238,(((MED-G71:0.0024554988,TMED155:0.0018774789)100:0.0623925309,TMED19:0.0837849034)75:0.0357882277,W_Tara_ERR599029_metawrap_50_10_bins_bin.31.fa:0.0663763600)74:0.0164234065)75:0.0389469111)75:0.0194730620)100:0.0245082965,(CB0101:0.0538558187,(CB0205:0.0418741308,(W_SRR6873785.1_metawrap_50_10_bins_bin.26.fa:0.0047587079,W_Tara_ERR599029_metawrap_50_10_bins_bin.38.fa:0.0229902042)100:0.0830739267)100:0.0331955450)100:0.0388605169)100:0.0418213547,(MW101C3:0.0036167791,ULC065bin1:0.0027354622)100:0.0836660951)98:0.0140388882,(SynAce01:0.0776987557,(ULC082bin1:0.0025205341,ULC084bin3:0.0015553939)100:0.0878902456)100:0.0355952463)100:0.0485194908,WH5701:0.0314051843);
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep 23 19:12:32 2022
+Total CPU time used: 184977.5577 seconds (51h:22m:57s)
+Total wall-clock time used: 36367.27365 seconds (10h:6m:7s)
+

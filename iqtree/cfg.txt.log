@@ -1,0 +1,988 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    ylifc (AVX, FMA3, 566 GB RAM)
+Command: iqtree2 -s reformated_merged.fa -B 1000 --threads-max 64 --seqtype DNA -m MFP+MERGE -p cfg.txt -T AUTO
+Seed:    10727 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Sep 22 19:13:28 2022
+Kernel:  AVX+FMA - auto-detect threads (64 CPU cores detected)
+
+Reading partition model file cfg.txt ...
+Reading alignment file reformated_merged.fa ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 274 sequences with 21256 columns, 17507 distinct patterns
+16737 parsimony-informative, 1262 singleton sites, 3257 constant sites
+                                                                  Gap/Ambiguity  Composition  p-value
+   1  1G10                                                                0.24%    failed      0.00%
+   2  AG-670-A05                                                         12.26%    failed      0.00%
+   3  AG-670-B23                                                          0.23%    failed      0.00%
+   4  AG-670-F22                                                          0.23%    failed      0.00%
+   5  AG-673-F03                                                          2.95%    failed      0.00%
+   6  AG-676-C06                                                          0.23%    failed      0.00%
+   7  AG-676-E23                                                          0.23%    failed      0.00%
+   8  AG-679-B05                                                         16.07%    failed      0.00%
+   9  AG-679-C18                                                          6.72%    failed      0.00%
+  10  AG-683-C23                                                          8.76%    failed      0.16%
+  11  AG-686-B21                                                          1.03%    failed      1.29%
+  12  Acaryochloris_marina_MBIC11017                                      0.45%    failed      0.00%
+  13  Arthrospira_platensis_NIES-39                                       0.37%    failed      0.00%
+  14  BL107                                                               0.23%    failed      0.00%
+  15  BS55D                                                               0.23%    failed      0.00%
+  16  BS56D                                                               0.23%    failed      0.00%
+  17  B_SRR6854573.1_metawrap_50_10_bins_bin.1.fa                         3.81%    failed      0.00%
+  18  B_SRR6854584.1_metawrap_50_10_bins_bin.1.fa                        29.30%    failed      0.00%
+  19  B_SRR6854585.1_metawrap_50_10_bins_bin.4.fa                        46.71%    failed      0.00%
+  20  B_SRR6854586.1_metawrap_50_10_bins_bin.5.fa                        29.95%    failed      0.00%
+  21  B_SRR6854589.1_metawrap_50_10_bins_bin.4.fa                         7.29%    failed      0.00%
+  22  B_SRR6854712.1_metawrap_50_10_bins_bin.2.fa                         6.93%    failed      0.00%
+  23  B_SRR6854712.1_metawrap_50_10_bins_bin.6.fa                        14.22%    failed      0.00%
+  24  B_SRR6869023.1_metawrap_50_10_bins_bin.16.fa                       19.60%    failed      0.00%
+  25  B_SRR6869023.1_metawrap_50_10_bins_bin.24.fa                       44.24%    failed      0.00%
+  26  B_SRR6869023.1_metawrap_50_10_bins_bin.25.fa                       33.94%    failed      0.00%
+  27  B_SRR6869023.1_metawrap_50_10_bins_bin.26.fa                       54.94%    failed      0.00%
+  28  B_SRR6869023.1_metawrap_50_10_bins_bin.7.fa                        10.80%    failed      0.00%
+  29  B_SRR6869024.1_metawrap_50_10_bins_bin.3.fa                        41.04%    failed      0.00%
+  30  B_SRR6869026.1_metawrap_50_10_bins_bin.1.fa                        46.01%    failed      0.00%
+  31  B_SRR6869034.1_metawrap_50_10_bins_bin.13.fa                       72.49%    passed      7.65%
+  32  B_SRR6869034.1_metawrap_50_10_bins_bin.17.fa                        8.20%    failed      0.00%
+  33  B_SRR6869034.1_metawrap_50_10_bins_bin.34.fa                       46.06%    failed      0.00%
+  34  B_SRR6869034.1_metawrap_50_10_bins_bin.35.fa                       72.98%    failed      0.07%
+  35  B_SRR6869035.1_metawrap_50_10_bins_bin.21.fa                       19.34%    failed      0.00%
+  36  B_SRR6869035.1_metawrap_50_10_bins_bin.22.fa                       25.73%    failed      0.00%
+  37  B_SRR6869035.1_metawrap_50_10_bins_bin.29.fa                       27.63%    failed      0.00%
+  38  B_SRR6869035.1_metawrap_50_10_bins_bin.44.fa                       10.89%    failed      0.00%
+  39  B_SRR6869035.1_metawrap_50_10_bins_bin.46.fa                       37.37%    failed      0.00%
+  40  B_SRR6869035.1_metawrap_50_10_bins_bin.62.fa                        7.64%    failed      0.00%
+  41  B_SRR6869035.1_metawrap_50_10_bins_bin.66.fa                       16.33%    failed      0.00%
+  42  B_SRR6869035.1_metawrap_50_10_bins_bin.8.fa                        43.44%    failed      0.00%
+  43  B_SRR6869036.1_metawrap_50_10_bins_bin.16.fa                        3.35%    failed      0.00%
+  44  B_SRR6869036.1_metawrap_50_10_bins_bin.2.fa                        41.00%    failed      0.00%
+  45  B_SRR6869036.1_metawrap_50_10_bins_bin.22.fa                        3.28%    failed      0.00%
+  46  B_SRR6869036.1_metawrap_50_10_bins_bin.32.fa                       50.76%    failed      0.00%
+  47  B_SRR6869036.1_metawrap_50_10_bins_bin.33.fa                       33.92%    failed      0.00%
+  48  B_SRR6869036.1_metawrap_50_10_bins_bin.46.fa                        9.37%    failed      0.63%
+  49  B_SRR6869036.1_metawrap_50_10_bins_bin.53.fa                        3.62%    failed      0.00%
+  50  B_SRR6869040.1_metawrap_50_10_bins_bin.4.fa                        10.11%    failed      0.00%
+  51  B_SRR6869042.1_metawrap_50_10_bins_bin.16.fa                        7.32%    failed      0.00%
+  52  B_SRR6869043.1_metawrap_50_10_bins_bin.6.fa                         5.07%    failed      0.00%
+  53  B_SRR6869044.1_metawrap_50_10_bins_bin.21.fa                       22.58%    failed      0.00%
+  54  B_SRR6869046.1_metawrap_50_10_bins_bin.3.fa                         3.18%    failed      0.00%
+  55  B_SRR6869046.1_metawrap_50_10_bins_bin.32.fa                       35.23%    failed      0.00%
+  56  B_SRR6869046.1_metawrap_50_10_bins_bin.4.fa                        10.15%    failed      0.00%
+  57  B_SRR6869046.1_metawrap_50_10_bins_bin.43.fa                       19.17%    failed      0.00%
+  58  B_SRR6869046.1_metawrap_50_10_bins_bin.8.fa                         2.99%    failed      0.00%
+  59  B_SRR6869047.1_metawrap_50_10_bins_bin.14.fa                       37.84%    failed      0.00%
+  60  B_SRR6869047.1_metawrap_50_10_bins_bin.23.fa                       48.58%    failed      0.00%
+  61  B_SRR6869047.1_metawrap_50_10_bins_bin.5.fa                        34.54%    failed      0.00%
+  62  B_SRR6869048.1_metawrap_50_10_bins_bin.20.fa                       49.09%    failed      0.00%
+  63  B_SRR6869048.1_metawrap_50_10_bins_bin.21.fa                       29.71%    failed      0.00%
+  64  B_SRR6869048.1_metawrap_50_10_bins_bin.23.fa                       23.03%    failed      0.00%
+  65  B_SRR6869049.1_metawrap_50_10_bins_bin.18.fa                       37.35%    failed      0.00%
+  66  B_SRR6869050.1_metawrap_50_10_bins_bin.19.fa                        4.36%    failed      0.00%
+  67  B_SRR6869050.1_metawrap_50_10_bins_bin.2.fa                         3.03%    failed      0.00%
+  68  B_SRR6869051.1_metawrap_50_10_bins_bin.1.fa                        34.03%    failed      0.00%
+  69  B_SRR6869051.1_metawrap_50_10_bins_bin.2.fa                        62.43%    failed      0.00%
+  70  B_SRR6869052.1_metawrap_50_10_bins_bin.15.fa                       81.45%    failed      0.00%
+  71  B_SRR6869052.1_metawrap_50_10_bins_bin.46.fa                        3.02%    failed      0.00%
+  72  B_SRR6869052.1_metawrap_50_10_bins_bin.51.fa                       15.02%    failed      0.00%
+  73  B_SRR6869053.1_metawrap_50_10_bins_bin.16.fa                       45.87%    failed      0.00%
+  74  B_SRR6869053.1_metawrap_50_10_bins_bin.19.fa                       16.36%    failed      0.00%
+  75  B_SRR6869053.1_metawrap_50_10_bins_bin.27.fa                       62.42%    failed      0.00%
+  76  B_SRR6869053.1_metawrap_50_10_bins_bin.45.fa                       35.36%    failed      0.00%
+  77  B_SRR6869053.1_metawrap_50_10_bins_bin.5.fa                        11.55%    failed      0.00%
+  78  B_SRR6869054.1_metawrap_50_10_bins_bin.12.fa                       21.70%    failed      0.00%
+  79  B_SRR6869054.1_metawrap_50_10_bins_bin.25.fa                        3.17%    failed      0.00%
+  80  B_SRR6869054.1_metawrap_50_10_bins_bin.42.fa                       56.15%    failed      0.00%
+  81  B_SRR6869054.1_metawrap_50_10_bins_bin.54.fa                       48.81%    failed      0.00%
+  82  B_SRR6869387.1_metawrap_50_10_bins_bin.1.fa                        24.22%    failed      0.00%
+  83  B_SRR6869387.1_metawrap_50_10_bins_bin.4.fa                         3.17%    failed      0.00%
+  84  B_SRR6869387.1_metawrap_50_10_bins_bin.5.fa                        15.43%    failed      0.00%
+  85  B_SRR6869388.1_metawrap_50_10_bins_bin.4.fa                         3.13%    failed      0.00%
+  86  B_SRR6869389.1_metawrap_50_10_bins_bin.5.fa                        13.17%    failed      0.00%
+  87  B_SRR6869391.1_metawrap_50_10_bins_bin.27.fa                       17.45%    failed      0.00%
+  88  B_SRR6869393.1_metawrap_50_10_bins_bin.51.fa                        3.31%    failed      0.00%
+  89  B_SRR6869394.1_metawrap_50_10_bins_bin.21.fa                        4.66%    failed      0.00%
+  90  B_SRR6869395.1_metawrap_50_10_bins_bin.26.fa                       46.72%    failed      0.00%
+  91  B_SRR6869395.1_metawrap_50_10_bins_bin.45.fa                        3.31%    failed      0.00%
+  92  B_SRR6869395.1_metawrap_50_10_bins_bin.6.fa                         3.16%    failed      0.00%
+  93  B_SRR6869398.1_metawrap_50_10_bins_bin.20.fa                       40.54%    failed      0.00%
+  94  CB0101                                                              0.24%    failed      0.00%
+  95  CB0205                                                              0.26%    failed      0.00%
+  96  CC9311                                                              0.23%    failed      0.02%
+  97  CC9605                                                              0.23%    failed      0.00%
+  98  CC9616                                                              0.23%    failed      0.00%
+  99  CC9902                                                              0.23%    failed      0.00%
+ 100  Caenarcanum_bioreactoricola_isolate_UASB_169                        5.16%    failed      0.00%
+ 101  Calothrix_sp._336.3                                                 0.36%    failed      0.00%
+ 102  Calothrix_sp._PCC_6303                                              0.35%    failed      0.00%
+ 103  Calothrix_sp._PCC_7103                                              0.40%    failed      0.00%
+ 104  Candidatus_Atelocyanobacterium_thalassa_isolate_ALOHA               3.32%    failed      0.00%
+ 105  Chlorogloeopsis_fritschii_PCC_6912                                  0.35%    failed      0.00%
+ 106  Chroogloeocystis_siderophila_5.2_s.c.1                              1.13%    failed      0.00%
+ 107  Coleofasciculus_chthonoplastes_PCC_7420                             2.00%    failed      0.00%
+ 108  Crinalium_epipsammum_PCC_9333                                       0.25%    failed      0.00%
+ 109  Crocosphaera_watsonii_WH_8501                                       6.91%    failed      0.00%
+ 110  Cyanobacteria_Melainabacteria_group_bacterium_GL2-53_LSPB_72       16.36%    failed      0.00%
+ 111  Cyanobacteria_Melainabacteria_group_bacterium_S15B-MN24_RAAC_196   16.66%    failed      0.00%
+ 112  Cyanothece_sp._ATCC_51142                                           3.62%    failed      0.00%
+ 113  Cyanothece_sp._PCC_7424                                             0.49%    failed      0.00%
+ 114  Cyanothece_sp._PCC_7822                                             0.53%    failed      0.00%
+ 115  Cyanothece_sp._PCC_8801                                             0.48%    failed      0.00%
+ 116  Dactylococcopsis_salina_PCC_8305                                    0.58%    failed      0.00%
+ 117  EAC657                                                              2.87%    failed      0.00%
+ 118  Fischerella_sp._PCC_9605                                            0.34%    failed      0.00%
+ 119  GEYO                                                                0.23%    failed      0.00%
+ 120  Gastranaerophilales_bacterium_strain_UMGS1517                       5.27%    failed      0.00%
+ 121  Geminocystis_herdmanii_PCC_6308                                     0.62%    failed      0.00%
+ 122  Gloeocapsa_sp._PCC_73106                                            0.52%    failed      0.00%
+ 123  Halothece_sp._PCC_7418                                              0.72%    failed      0.00%
+ 124  KORDI-100                                                           0.23%    failed      0.00%
+ 125  KORDI-49                                                            0.25%    failed      0.00%
+ 126  KORDI-52                                                            0.23%    failed      0.00%
+ 127  Leptolyngbya_sp._PCC_7376                                           0.46%    failed      0.00%
+ 128  Leptolyngbya_valderiana_BDU_20041                                   0.66%    failed      0.00%
+ 129  Lyngbya_aestuarii_BL_J_laest3                                       0.42%    failed      0.00%
+ 130  MED-G135                                                            0.24%    failed      0.00%
+ 131  MED-G67                                                             0.26%    failed      0.00%
+ 132  MED-G68                                                             0.23%    failed      0.03%
+ 133  MED-G69                                                             0.23%    failed      0.00%
+ 134  MED-G70                                                             0.88%    failed      0.00%
+ 135  MED-G71                                                             0.45%    failed      0.00%
+ 136  MED850                                                              0.90%    failed      0.00%
+ 137  MITS9504                                                            0.23%    failed      0.00%
+ 138  MITS9508                                                            0.23%    failed      0.00%
+ 139  MITS9509                                                            0.23%    failed      0.00%
+ 140  MIT_S9220                                                           0.23%    failed      0.00%
+ 141  MW101C3                                                             0.24%    failed      0.00%
+ 142  Mastigocladus_laminosus_UU774                                      10.43%    failed      0.00%
+ 143  Mastigocoleus_testarum_BC008_Contig-1                               0.43%    failed      0.00%
+ 144  Melainabacteria_bacterium_SSGW_16                                   5.34%    failed      0.00%
+ 145  Microcoleus_sp._PCC_7113                                            0.32%    failed      0.00%
+ 146  Minos11                                                             0.26%    failed      0.00%
+ 147  Moorea_producens_JHB                                                0.38%    failed      0.00%
+ 148  Myxosarcina_sp._GI1_contig_0                                        0.42%    failed      0.00%
+ 149  N19                                                                 0.23%    failed      0.00%
+ 150  N26                                                                 0.23%    failed      0.00%
+ 151  N32                                                                 0.23%    failed      0.00%
+ 152  N5                                                                  0.23%    failed      0.00%
+ 153  NAT249                                                              3.03%    failed      0.00%
+ 154  NAT40                                                               0.94%    failed      0.00%
+ 155  NP17                                                                0.48%    failed      0.00%
+ 156  Nodularia_spumigena_CCY9414                                         0.36%    failed      0.00%
+ 157  Nostoc_sp_PCC_7107                                                  0.36%    failed      0.00%
+ 158  Nostoc_sp_PCC_7120                                                  1.24%    failed      0.00%
+ 159  Nostoc_sp_PCC_7524                                                  0.36%    failed      0.00%
+ 160  Obscuribacter_phosphatis_isolate_EBPR_351                           4.92%    failed      0.00%
+ 161  Oscillatoria_acuminata_PCC_6304                                     0.44%    failed      0.03%
+ 162  Oscillatoria_nigro-viridis_PCC_7112                                 0.46%    failed      0.00%
+ 163  Oscillatoria_sp._PCC_10802                                          1.70%    failed      0.00%
+ 164  Planktothricoides_sp._SR001                                         0.41%    failed      0.00%
+ 165  Planktothrix_agardhii_NIVA-CYA_126.8                                0.37%    failed      0.00%
+ 166  Pleurocapsa_sp._PCC_7319                                            0.49%    failed      0.00%
+ 167  Pleurocapsa_sp._PCC_7327                                            0.49%    failed      0.00%
+ 168  Pseudanabaena_biceps_PCC_7429                                       0.40%    failed      0.00%
+ 169  Pseudanabaena_sp._PCC_6802                                          0.44%    failed      0.00%
+ 170  RCC307                                                              2.22%    failed      0.00%
+ 171  REDSEA-S01_B1                                                       0.23%    failed      0.00%
+ 172  REDSEA-S02_B4                                                       0.29%    failed      0.00%
+ 173  RS344                                                               0.86%    failed      0.00%
+ 174  RS9915                                                              0.23%    failed      0.00%
+ 175  RS9916                                                              0.26%    failed      0.00%
+ 176  RS9917                                                              0.23%    failed      0.00%
+ 177  Richelia_intracellularis_HH01                                       0.34%    failed      0.00%
+ 178  Rivularia_sp._PCC_7116                                              0.34%    failed      0.00%
+ 179  Rubidibacter_lacunae_KORDI_51-2                                     3.28%    failed      0.00%
+ 180  Scytonema_hofmanni_UTEX_2349                                        0.37%    failed      0.00%
+ 181  Scytonema_tolypothrichoides_VB-61278                                0.34%    failed      0.00%
+ 182  Stanieria_cyanosphaera_PCC_7437                                     0.47%    failed      0.00%
+ 183  SynAce01                                                            0.24%    failed      0.00%
+ 184  Synechococcus_elongatus_PCC_6301                                    0.40%    failed      0.00%
+ 185  Synechococcus_sp_JA-2-3B_a_2-13_                                    3.03%    failed      0.00%
+ 186  Synechococcus_sp_JA-3-3Ab                                           3.03%    failed      0.00%
+ 187  Synechococcus_sp_PCC_6312                                           0.43%    failed      0.00%
+ 188  Synechococcus_sp_PCC_7336                                           0.60%    failed      0.00%
+ 189  Synechococcus_sp_PCC_7502                                           0.34%    failed      0.00%
+ 190  TMED155                                                             1.59%    failed      0.00%
+ 191  TMED19                                                              0.48%    failed      0.00%
+ 192  TMED20                                                              0.90%    failed      0.00%
+ 193  TMED90                                                              3.13%    failed      0.00%
+ 194  Thermosynechococcus_elongatus_BP-1                                  0.45%    failed      0.04%
+ 195  Tolypothrix_bouteillei_VB521301                                     0.34%    failed      0.00%
+ 196  Trichodesmium_erythraeum_IMS101                                     2.26%    failed      0.00%
+ 197  UBA1269                                                            21.51%    failed      0.00%
+ 198  UBA1528                                                             8.53%    failed      0.01%
+ 199  UBA3999                                                            19.97%    failed      0.00%
+ 200  UBA6965                                                            23.38%    failed      0.00%
+ 201  UBA7448                                                            28.37%    failed      0.06%
+ 202  UBA7854                                                             7.01%    failed      0.06%
+ 203  UBA9887                                                            33.40%    failed      0.00%
+ 204  ULC065bin1                                                          0.24%    failed      0.00%
+ 205  ULC082bin1                                                          0.24%    failed      0.00%
+ 206  ULC084bin3                                                          0.24%    failed      0.00%
+ 207  UW105                                                               0.24%    failed      0.00%
+ 208  UW106                                                               0.23%    failed      0.00%
+ 209  UW140                                                               0.26%    failed      0.00%
+ 210  UW179A                                                              0.23%    failed      0.00%
+ 211  UW179B                                                              0.23%    failed      0.00%
+ 212  UW69                                                                0.23%    failed      0.00%
+ 213  UW86                                                                0.23%    failed      0.00%
+ 214  Vampirovibrio_chlorellavorus_strain_Vc_AZ_2                         4.70%    passed     37.66%
+ 215  WH5701                                                              0.24%    failed      0.00%
+ 216  WH7803                                                              0.23%    failed      0.00%
+ 217  WH7805                                                              0.23%    failed      0.00%
+ 218  WH8020                                                              0.23%    failed      0.02%
+ 219  WH8101                                                              0.23%    failed      0.00%
+ 220  WH8102                                                              0.23%    failed      0.00%
+ 221  WH8103                                                              0.23%    failed      0.00%
+ 222  WH8106                                                              0.23%    failed      0.00%
+ 223  WH8109                                                              0.61%    failed      0.00%
+ 224  W_SRR6873775.1_metawrap_50_10_bins_bin.5.fa                        86.60%    failed      0.00%
+ 225  W_SRR6873777.1_metawrap_50_10_bins_bin.23.fa                       79.22%    failed      0.00%
+ 226  W_SRR6873777.1_metawrap_50_10_bins_bin.60.fa                       80.91%    failed      0.00%
+ 227  W_SRR6873778.1_metawrap_50_10_bins_bin.23.fa                       66.91%    failed      0.00%
+ 228  W_SRR6873778.1_metawrap_50_10_bins_bin.26.fa                       35.84%    failed      0.00%
+ 229  W_SRR6873778.1_metawrap_50_10_bins_bin.43.fa                       66.48%    failed      0.00%
+ 230  W_SRR6873781.1_metawrap_50_10_bins_bin.11.fa                       47.74%    failed      0.00%
+ 231  W_SRR6873784.1_metawrap_50_10_bins_bin.55.fa                        8.00%    failed      0.00%
+ 232  W_SRR6873785.1_metawrap_50_10_bins_bin.26.fa                       67.51%    failed      0.00%
+ 233  W_SRR6877511.1_metawrap_50_10_bins_bin.37.fa                        2.67%    failed      0.00%
+ 234  W_SRR6877514.1_metawrap_50_10_bins_bin.77.fa                       74.45%    failed      0.00%
+ 235  W_SRR6877515.1_metawrap_50_10_bins_bin.13.fa                       58.13%    failed      0.00%
+ 236  W_Tara_ERR594297_metawrap_50_10_bins_bin.10.fa                     84.00%    failed      0.00%
+ 237  W_Tara_ERR594297_metawrap_50_10_bins_bin.12.fa                     53.31%    failed      0.21%
+ 238  W_Tara_ERR594297_metawrap_50_10_bins_bin.6.fa                      64.49%    failed      0.00%
+ 239  W_Tara_ERR594307_metawrap_50_10_bins_bin.15.fa                     16.05%    failed      0.00%
+ 240  W_Tara_ERR594316_metawrap_50_10_bins_bin.2.fa                      72.18%    failed      0.00%
+ 241  W_Tara_ERR594318_metawrap_50_10_bins_bin.15.fa                     34.67%    failed      0.00%
+ 242  W_Tara_ERR594332_metawrap_50_10_bins_bin.12.fa                     74.02%    failed      0.00%
+ 243  W_Tara_ERR598951_metawrap_50_10_bins_bin.4.fa                      47.12%    failed      0.00%
+ 244  W_Tara_ERR598951_metawrap_50_10_bins_bin.6.fa                       6.93%    failed      0.00%
+ 245  W_Tara_ERR598951_metawrap_50_10_bins_bin.8.fa                      69.44%    failed      0.00%
+ 246  W_Tara_ERR598955_metawrap_50_10_bins_bin.10.fa                     61.14%    failed      0.00%
+ 247  W_Tara_ERR598963_metawrap_50_10_bins_bin.12.fa                     65.05%    failed      0.00%
+ 248  W_Tara_ERR598963_metawrap_50_10_bins_bin.16.fa                     38.21%    failed      0.00%
+ 249  W_Tara_ERR598963_metawrap_50_10_bins_bin.24.fa                     18.23%    failed      0.03%
+ 250  W_Tara_ERR598966_metawrap_50_10_bins_bin.4.fa                       5.21%    failed      0.00%
+ 251  W_Tara_ERR598976_metawrap_50_10_bins_bin.23.fa                     76.63%    failed      0.19%
+ 252  W_Tara_ERR598976_metawrap_50_10_bins_bin.36.fa                     91.47%    failed      0.00%
+ 253  W_Tara_ERR598976_metawrap_50_10_bins_bin.5.fa                      60.46%    failed      0.00%
+ 254  W_Tara_ERR598979_metawrap_50_10_bins_bin.2.fa                       5.69%    failed      0.00%
+ 255  W_Tara_ERR599006_metawrap_50_10_bins_bin.1.fa                      59.08%    failed      0.00%
+ 256  W_Tara_ERR599006_metawrap_50_10_bins_bin.5.fa                       3.32%    failed      0.00%
+ 257  W_Tara_ERR599029_metawrap_50_10_bins_bin.17.fa                     72.66%    failed      0.00%
+ 258  W_Tara_ERR599029_metawrap_50_10_bins_bin.31.fa                     67.62%    failed      0.00%
+ 259  W_Tara_ERR599029_metawrap_50_10_bins_bin.38.fa                     60.03%    failed      0.00%
+ 260  W_Tara_ERR599050_metawrap_50_10_bins_bin.46.fa                      6.22%    failed      0.00%
+ 261  W_Tara_ERR599058_metawrap_50_10_bins_bin.13.fa                     46.71%    failed      0.00%
+ 262  W_Tara_ERR599102_metawrap_50_10_bins_bin.8.fa                      13.05%    failed      0.00%
+ 263  W_Tara_ERR599134_metawrap_50_10_bins_bin.3.fa                      24.88%    failed      0.00%
+ 264  W_Tara_ERR599136_metawrap_50_10_bins_bin.43.fa                     22.21%    failed      0.00%
+ 265  W_Tara_ERR599136_metawrap_50_10_bins_bin.5.fa                      25.40%    failed      0.00%
+ 266  W_Tara_ERR599140_metawrap_50_10_bins_bin.2.fa                      40.67%    failed      0.00%
+ 267  W_Tara_ERR599144_metawrap_50_10_bins_bin.16.fa                     34.25%    failed      0.25%
+ 268  W_Tara_ERR599165_metawrap_50_10_bins_bin.14.fa                     30.87%    failed      0.00%
+ 269  W_Tara_ERR599165_metawrap_50_10_bins_bin.8.fa                      82.15%    failed      0.00%
+ 270  W_Tara_ERR599174_metawrap_50_10_bins_bin.1.fa                      60.85%    failed      0.00%
+ 271  W_Tara_ERR599174_metawrap_50_10_bins_bin.4.fa                       2.65%    failed      0.00%
+ 272  W_Tara_ERR599174_metawrap_50_10_bins_bin.8.fa                       2.65%    failed      0.00%
+ 273  Xenococcus_sp_PCC_7305                                              0.50%    failed      0.00%
+ 274  YX04-3                                                              0.23%    failed      0.00%
+WARNING: 33 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                              16.78%  272 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 20 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1	DNA	243	437	329	78	MFP+MERGE	part1
+2	DNA	242	1109	873	100	MFP+MERGE	part2
+3	DNA	251	658	485	113	MFP+MERGE	part3
+4	DNA	241	389	256	101	MFP+MERGE	part4
+5	DNA	240	645	494	109	MFP+MERGE	part5
+6	DNA	254	2933	2646	157	MFP+MERGE	part6
+7	DNA	241	1704	1033	577	MFP+MERGE	part7
+8	DNA	250	3126	2436	590	MFP+MERGE	part8
+9	DNA	231	795	576	156	MFP+MERGE	part9
+10	DNA	225	638	481	91	MFP+MERGE	part10
+11	DNA	237	484	341	99	MFP+MERGE	part11
+12	DNA	234	478	374	82	MFP+MERGE	part12
+13	DNA	248	383	239	112	MFP+MERGE	part13
+14	DNA	256	412	349	30	MFP+MERGE	part14
+15	DNA	226	378	258	77	MFP+MERGE	part15
+16	DNA	247	1211	969	159	MFP+MERGE	part16
+17	DNA	253	816	651	126	MFP+MERGE	part17
+18	DNA	257	1886	1578	224	MFP+MERGE	part18
+19	DNA	257	1889	1579	226	MFP+MERGE	part19
+20	DNA	247	885	790	50	MFP+MERGE	part20
+Degree of missing data: 0.097
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 2.300 seconds
+Measuring multi-threading efficiency up to 64 CPU cores
+7 trees examined
+Threads: 1 / Time: 74.846 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -3080260
+Threads: 2 / Time: 44.992 sec / Speedup: 1.664 / Efficiency: 83% / LogL: -3080260
+Threads: 3 / Time: 32.500 sec / Speedup: 2.303 / Efficiency: 77% / LogL: -3080260
+Threads: 4 / Time: 27.778 sec / Speedup: 2.694 / Efficiency: 67% / LogL: -3080260
+Threads: 5 / Time: 24.860 sec / Speedup: 3.011 / Efficiency: 60% / LogL: -3080260
+Threads: 6 / Time: 21.901 sec / Speedup: 3.418 / Efficiency: 57% / LogL: -3080260
+Threads: 7 / Time: 20.647 sec / Speedup: 3.625 / Efficiency: 52% / LogL: -3080260
+Threads: 8 / Time: 20.461 sec / Speedup: 3.658 / Efficiency: 46% / LogL: -3080260
+BEST NUMBER OF THREADS: 7
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -1995068.866
+Current log-likelihood at step 1: -1913696.292
+Current log-likelihood at step 2: -1911100.384
+Current log-likelihood at step 3: -1911011.670
+Current log-likelihood at step 4: -1911008.681
+Parameters optimization took 3 rounds (47.109 sec)
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -1907235.508
+Current log-likelihood at step 1: -1907229.869
+Current log-likelihood at step 2: -1907229.404
+Partition-specific rates:  0.990 0.882 1.042 0.749 1.023 1.208 0.833 0.986 0.798 0.851 0.842 0.942 0.790 0.979 0.732 1.044 1.016 1.043 1.040 1.265
+Parameters optimization took 1 rounds (8.471 sec)
+
+Time for fast ML tree search: 85.031 seconds
+
+NOTE: ModelFinder requires 1071 MB RAM!
+Selecting individual models for 20 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 GTR+F+I+G4   228846.799  43.903      part16
+   2 GTR+F+I+G4   240222.707  34.029      part7
+   3 GTR+F+I+G4   165991.020  35.811      part2
+   4 GTR+F+I+G4   124525.569  31.002      part9
+   5 GTR+F+I+G4   146746.276  42.672      part17
+   6 GTR+F+I+G4   204513.083  52.590      part20
+   7 GTR+F+I+G4   377422.539  44.962      part18
+   8 GTR+F+I+G4   377703.106  44.851      part19
+   9 GTR+F+I+G4   112817.266  41.891      part5
+  10 GTR+F+I+G4   93717.506   32.606      part10	0h:0m:2s (0h:1m:35s left)
+  11 GTR+F+I+G4   76636.047   41.919      part14	0h:0m:2s (0h:1m:27s left)
+  12 GTR+F+I+G4   71098.801   34.011      part11	0h:0m:2s (0h:1m:23s left)
+  13 GTR+F+I+G4   85066.019   36.882      part12	0h:0m:2s (0h:1m:22s left)
+  14 GTR+F+I+G4   55804.990   30.772      part4	0h:0m:2s (0h:1m:16s left)
+  15 GTR+F+I+G4   109364.897  43.129      part3	0h:0m:2s (0h:1m:13s left)
+  16 GTR+F+I+G4   51446.394   27.984      part15	0h:0m:3s (0h:1m:8s left)
+  17 GTR+F+I+G4   75189.698   40.366      part1	0h:0m:3s (0h:1m:4s left)
+  18 GTR+F+I+G4   58827.102   32.822      part13	0h:0m:3s (0h:1m:4s left)
+  19 GTR+F+I+G4   542738.866  40.887      part8	0h:0m:3s (0h:1m:1s left)
+  20 GTR+F+I+G4   617259.723  52.666      part6	0h:0m:3s (0h:0m:59s left)
+Full partition model BIC score: 3822071.125 (LnL: -1907229.164  df:764)
+Merging models to increase model fit (about 381 total partition schemes)...
+  21 GTR+F+I+G4   3823290.091 46.484      part6+part7	0h:0m:37s (0h:10m:43s left)
+  22 GTR+F+I+G4   3822205.947 51.304      part6+part19	0h:0m:42s (0h:11m:38s left)
+  23 GTR+F+I+G4   3822183.011 51.698      part6+part16	0h:0m:42s (0h:11m:7s left)
+  24 GTR+F+I+G4   3822202.688 51.393      part6+part18	0h:0m:42s (0h:10m:37s left)
+  25 GTR+F+I+G4   3822344.203 43.873      part8+part18	0h:0m:43s (0h:10m:19s left)
+  26 GTR+F+I+G4   3822345.971 43.831      part8+part19	0h:0m:45s (0h:10m:16s left)
+  27 GTR+F+I+G4   3822521.885 47.951      part6+part8	0h:1m:4s (0h:14m:7s left)
+  28 GTR+F+I+G4   3822348.650 50.259      part2+part6	0h:1m:13s (0h:15m:21s left)
+  29 GTR+F+I+G4   3822180.777 43.979      part8+part16	0h:1m:15s (0h:15m:19s left)
+  30 GTR+F+I+G4   3822163.912 42.819      part2+part8	0h:1m:16s (0h:14m:56s left)
+  31 GTR+F+I+G4   3822211.477 52.095      part6+part17	0h:1m:17s (0h:14m:30s left)
+  32 GTR+F+I+G4   3822037.076 54.808      part6+part20	0h:1m:17s (0h:14m:9s left)
+  33 GTR+F+I+G4   3822296.221 39.623      part7+part8	0h:1m:19s (0h:13m:59s left)
+  34 GTR+F+I+G4   3821961.538 44.901      part18+part19	0h:1m:21s (0h:13m:47s left)
+  35 GTR+F+I+G4   3822458.440 48.719      part6+part9	0h:1m:44s (0h:17m:9s left)
+  36 GTR+F+I+G4   3822140.621 51.774      part5+part6	0h:1m:45s (0h:16m:46s left)
+  37 GTR+F+I+G4   3822407.724 45.897      part8+part20	0h:1m:45s (0h:16m:18s left)
+  38 GTR+F+I+G4   3822297.724 52.632      part3+part6	0h:1m:47s (0h:16m:14s left)
+  39 GTR+F+I+G4   3822415.713 50.642      part6+part10	0h:1m:52s (0h:16m:22s left)
+  40 GTR+F+I+G4   3822028.899 44.156      part8+part17	0h:1m:52s (0h:15m:58s left)
+  41 GTR+F+I+G4   3822423.314 52.261      part6+part14	0h:1m:52s (0h:15m:32s left)
+  42 GTR+F+I+G4   3822141.288 40.183      part8+part9	0h:2m:11s (0h:17m:39s left)
+  43 GTR+F+I+G4   3822194.586 52.310      part1+part6	0h:2m:13s (0h:17m:32s left)
+  44 GTR+F+I+G4   3822370.754 50.740      part6+part11	0h:2m:16s (0h:17m:24s left)
+  45 GTR+F+I+G4   3822221.718 51.522      part6+part12	0h:2m:16s (0h:17m:0s left)
+  46 GTR+F+I+G4   3822058.692 44.460      part3+part8	0h:2m:20s (0h:17m:5s left)
+  47 GTR+F+I+G4   3822379.825 50.551      part4+part6	0h:2m:24s (0h:17m:5s left)
+  48 GTR+F+I+G4   3822076.381 43.249      part5+part8	0h:2m:25s (0h:16m:52s left)
+  49 GTR+F+I+G4   3822289.399 51.362      part6+part15	0h:2m:37s (0h:17m:47s left)
+  50 GTR+F+I+G4   3822190.677 42.360      part8+part10	0h:2m:41s (0h:17m:45s left)
+  51 GTR+F+I+G4   3822259.354 52.111      part6+part13	0h:2m:43s (0h:17m:41s left)
+  52 GTR+F+I+G4   3822314.688 43.385      part8+part14	0h:2m:45s (0h:17m:25s left)
+  53 GTR+F+I+G4   3822131.116 41.832      part8+part11	0h:2m:45s (0h:17m:5s left)
+  54 GTR+F+I+G4   3822164.213 41.539      part8+part12	0h:2m:50s (0h:17m:10s left)
+  55 GTR+F+I+G4   3822030.554 42.304      part1+part8	0h:2m:51s (0h:16m:55s left)
+  56 GTR+F+I+G4   3822850.507 40.730      part7+part18	0h:3m:1s (0h:17m:32s left)
+  57 GTR+F+I+G4   3822852.220 40.687      part7+part19	0h:3m:6s (0h:17m:38s left)
+  58 GTR+F+I+G4   3822135.803 41.784      part4+part8	0h:3m:10s (0h:17m:41s left)
+  59 GTR+F+I+G4   3822148.459 41.759      part8+part15	0h:3m:10s (0h:17m:20s left)
+  60 GTR+F+I+G4   3821996.980 42.843      part8+part13	0h:3m:11s (0h:17m:6s left)
+  61 GTR+F+I+G4   3822195.092 46.578      part16+part18	0h:3m:12s (0h:16m:47s left)
+  62 GTR+F+I+G4   3822192.260 46.505      part16+part19	0h:3m:12s (0h:16m:28s left)
+  63 GTR+F+I+G4   3822147.157 43.798      part2+part18	0h:3m:26s (0h:17m:23s left)
+  64 GTR+F+I+G4   3822178.846 50.264      part19+part20	0h:3m:26s (0h:17m:4s left)
+  65 GTR+F+I+G4   3822178.038 50.399      part18+part20	0h:3m:28s (0h:16m:54s left)
+  66 GTR+F+I+G4   3822145.448 43.733      part2+part19	0h:3m:31s (0h:16m:49s left)
+  67 GTR+F+I+G4   3822185.415 46.013      part17+part18	0h:3m:32s (0h:16m:37s left)
+  68 GTR+F+I+G4   3822053.734 41.704      part9+part18	0h:3m:32s (0h:16m:19s left)
+  69 GTR+F+I+G4   3822184.615 45.942      part17+part19	0h:3m:33s (0h:16m:7s left)
+  70 GTR+F+I+G4   3822054.366 41.633      part9+part19	0h:3m:47s (0h:16m:49s left)
+  71 GTR+F+I+G4   3822259.719 45.841      part3+part18	0h:3m:47s (0h:16m:32s left)
+  72 GTR+F+I+G4   3822028.546 45.950      part5+part18	0h:3m:47s (0h:16m:17s left)
+  73 GTR+F+I+G4   3822028.351 45.859      part5+part19	0h:3m:48s (0h:16m:2s left)
+  74 GTR+F+I+G4   3822259.546 45.772      part3+part19	0h:3m:51s (0h:15m:59s left)
+  75 GTR+F+I+G4   3822197.120 43.832      part10+part18	0h:3m:53s (0h:15m:51s left)
+  76 GTR+F+I+G4   3822551.143 40.439      part7+part16	0h:3m:54s (0h:15m:40s left)
+  77 GTR+F+I+G4   3822294.735 45.135      part14+part18	0h:4m:6s (0h:16m:11s left)
+  78 GTR+F+I+G4   3822293.377 45.062      part14+part19	0h:4m:6s (0h:15m:57s left)
+  79 GTR+F+I+G4   3822197.172 43.756      part10+part19	0h:4m:6s (0h:15m:43s left)
+  80 GTR+F+I+G4   3822432.939 39.066      part2+part7	0h:4m:7s (0h:15m:32s left)
+  81 GTR+F+I+G4   3822162.367 43.204      part11+part18	0h:4m:7s (0h:15m:18s left)
+  82 GTR+F+I+G4   3822161.203 43.134      part11+part19	0h:4m:10s (0h:15m:12s left)
+  83 GTR+F+I+G4   3822043.522 44.171      part12+part18	0h:4m:12s (0h:15m:6s left)
+  84 GTR+F+I+G4   3822043.905 44.106      part12+part19	0h:4m:21s (0h:15m:23s left)
+  85 GTR+F+I+G4   3822050.805 44.440      part1+part18	0h:4m:21s (0h:15m:11s left)
+  86 GTR+F+I+G4   3822051.958 44.365      part1+part19	0h:4m:23s (0h:15m:3s left)
+  87 GTR+F+I+G4   3822165.915 43.249      part4+part18	0h:4m:24s (0h:14m:54s left)
+  88 GTR+F+I+G4   3822098.477 44.817      part2+part16	0h:4m:24s (0h:14m:41s left)
+  89 GTR+F+I+G4   3822164.695 43.180      part4+part19	0h:4m:26s (0h:14m:33s left)
+  90 GTR+F+I+G4   3822115.355 44.085      part15+part18	0h:4m:29s (0h:14m:31s left)
+  91 GTR+F+I+G4   3822010.959 44.445      part13+part18	0h:4m:36s (0h:14m:40s left)
+  92 GTR+F+I+G4   3822115.149 44.010      part15+part19	0h:4m:37s (0h:14m:31s left)
+  93 GTR+F+I+G4   3822011.713 44.361      part13+part19	0h:4m:38s (0h:14m:23s left)
+  94 GTR+F+I+G4   3822173.342 51.676      part16+part20	0h:4m:40s (0h:14m:17s left)
+  95 GTR+F+I+G4   3822959.740 42.219      part7+part20	0h:4m:41s (0h:14m:6s left)
+  96 GTR+F+I+G4   3822207.607 39.904      part7+part17	0h:4m:42s (0h:13m:57s left)
+  97 GTR+F+I+G4   3822285.671 49.300      part2+part20	0h:4m:44s (0h:13m:53s left)
+  98 GTR+F+I+G4   3822061.065 45.149      part16+part17	0h:4m:52s (0h:14m:5s left)
+  99 GTR+F+I+G4   3822274.855 34.743      part7+part9	0h:4m:52s (0h:13m:54s left)
+ 100 GTR+F+I+G4   3822076.586 42.509      part2+part17	0h:4m:55s (0h:13m:51s left)
+ 101 GTR+F+I+G4   3822099.324 39.143      part3+part7	0h:4m:56s (0h:13m:41s left)
+ 102 GTR+F+I+G4   3822335.193 38.307      part5+part7	0h:4m:56s (0h:13m:32s left)
+ 103 GTR+F+I+G4   3822193.984 41.429      part9+part16	0h:4m:57s (0h:13m:22s left)
+ 104 GTR+F+I+G4   3822282.826 36.660      part7+part10	0h:5m:0s (0h:13m:21s left)
+ 105 GTR+F+I+G4   3822011.821 45.615      part5+part16	0h:5m:5s (0h:13m:22s left)
+ 106 GTR+F+I+G4   3822054.419 36.500      part2+part9	0h:5m:6s (0h:13m:14s left)
+ 107 GTR+F+I+G4   3822134.187 45.821      part3+part16	0h:5m:9s (0h:13m:11s left)
+ 108 GTR+F+I+G4   3822129.395 42.609      part2+part3	0h:5m:11s (0h:13m:7s left)
+ 109 GTR+F+I+G4   3822175.780 36.062      part7+part11	0h:5m:12s (0h:12m:58s left)
+ 110 GTR+F+I+G4   3822418.662 38.121      part7+part14	0h:5m:12s (0h:12m:50s left)
+ 111 GTR+F+I+G4   3822258.137 43.070      part10+part16	0h:5m:16s (0h:12m:50s left)
+ 112 GTR+F+I+G4   3822134.649 36.744      part1+part7	0h:5m:19s (0h:12m:46s left)
+ 113 GTR+F+I+G4   3822230.835 51.193      part17+part20	0h:5m:22s (0h:12m:45s left)
+ 114 GTR+F+I+G4   3822357.557 36.080      part7+part12	0h:5m:24s (0h:12m:40s left)
+ 115 GTR+F+I+G4   3822141.899 41.272      part2+part5	0h:5m:25s (0h:12m:32s left)
+ 116 GTR+F+I+G4   3822078.255 37.265      part2+part10	0h:5m:25s (0h:12m:24s left)
+ 117 GTR+F+I+G4   3822162.149 35.472      part4+part7	0h:5m:27s (0h:12m:17s left)
+ 118 GTR+F+I+G4   3822253.439 35.741      part7+part15	0h:5m:29s (0h:12m:13s left)
+ 119 GTR+F+I+G4   3822006.453 36.991      part7+part13	0h:5m:31s (0h:12m:10s left)
+ 120 GTR+F+I+G4   3822189.686 42.612      part12+part16	0h:5m:33s (0h:12m:5s left)
+ 121 GTR+F+I+G4   3822285.297 45.651      part14+part16	0h:5m:34s (0h:11m:59s left)
+ 122 GTR+F+I+G4   3822195.746 41.766      part11+part16	0h:5m:35s (0h:11m:52s left)
+ 123 GTR+F+I+G4   3822386.869 45.441      part9+part20	0h:5m:37s (0h:11m:48s left)
+ 124 GTR+F+I+G4   3822124.101 44.768      part1+part16	0h:5m:38s (0h:11m:40s left)
+ 125 GTR+F+I+G4   3822300.162 51.778      part3+part20	0h:5m:39s (0h:11m:35s left)
+ 126 GTR+F+I+G4   3822157.472 38.191      part2+part14	0h:5m:43s (0h:11m:35s left)
+ 127 GTR+F+I+G4   3822076.829 38.294      part2+part11	0h:5m:45s (0h:11m:30s left)
+ 128 GTR+F+I+G4   3822008.639 51.125      part5+part20	0h:5m:46s (0h:11m:25s left)
+ 129 GTR+F+I+G4   3822148.117 42.476      part4+part16	0h:5m:47s (0h:11m:18s left)
+ 130 GTR+F+I+G4   3822234.653 41.872      part15+part16	0h:5m:47s (0h:11m:11s left)
+ 131 GTR+F+I+G4   3822104.771 40.936      part1+part2	0h:5m:49s (0h:11m:6s left)
+ 132 GTR+F+I+G4   3822147.332 39.936      part2+part12	0h:5m:51s (0h:11m:2s left)
+ 133 GTR+F+I+G4   3822031.879 43.505      part13+part16	0h:5m:51s (0h:10m:55s left)
+ 134 GTR+F+I+G4   3822085.877 39.329      part9+part17	0h:5m:56s (0h:10m:56s left)
+ 135 GTR+F+I+G4   3822406.203 49.646      part10+part20	0h:5m:56s (0h:10m:49s left)
+ 136 GTR+F+I+G4   3822024.879 44.838      part5+part17	0h:6m:0s (0h:10m:49s left)
+ 137 GTR+F+I+G4   3822014.750 45.650      part3+part17	0h:6m:1s (0h:10m:43s left)
+ 138 GTR+F+I+G4   3822108.130 36.729      part2+part4	0h:6m:2s (0h:10m:38s left)
+ 139 GTR+F+I+G4   3822087.080 36.622      part2+part15	0h:6m:4s (0h:10m:35s left)
+ 140 GTR+F+I+G4   3822323.472 50.012      part11+part20	0h:6m:5s (0h:10m:29s left)
+ 141 GTR+F+I+G4   3822298.114 53.808      part14+part20	0h:6m:7s (0h:10m:24s left)
+ 142 GTR+F+I+G4   3822091.258 39.046      part2+part13	0h:6m:9s (0h:10m:21s left)
+ 143 GTR+F+I+G4   3822162.858 49.959      part12+part20	0h:6m:9s (0h:10m:15s left)
+ 144 GTR+F+I+G4   3822113.420 40.080      part10+part17	0h:6m:11s (0h:10m:10s left)
+ 145 GTR+F+I+G4   3822177.722 51.029      part1+part20	0h:6m:11s (0h:10m:4s left)
+ 146 GTR+F+I+G4   3822101.554 37.900      part5+part9	0h:6m:14s (0h:10m:2s left)
+ 147 GTR+F+I+G4   3822132.100 38.129      part3+part9	0h:6m:15s (0h:9m:58s left)
+ 148 GTR+F+I+G4   3822206.698 43.984      part14+part17	0h:6m:16s (0h:9m:52s left)
+ 149 GTR+F+I+G4   3822270.684 50.585      part15+part20	0h:6m:16s (0h:9m:46s left)
+ 150 GTR+F+I+G4   3822321.706 49.721      part4+part20	0h:6m:16s (0h:9m:40s left)
+ 151 GTR+F+I+G4   3822123.501 50.824      part13+part20	0h:6m:19s (0h:9m:38s left)
+ 152 GTR+F+I+G4   3822102.505 45.461      part3+part5	0h:6m:21s (0h:9m:34s left)
+ 153 GTR+F+I+G4   3822027.823 33.314      part9+part10	0h:6m:23s (0h:9m:31s left)
+ 154 GTR+F+I+G4   3822093.498 40.797      part11+part17	0h:6m:23s (0h:9m:25s left)
+ 155 GTR+F+I+G4   3822123.302 42.438      part12+part17	0h:6m:24s (0h:9m:20s left)
+ 156 GTR+F+I+G4   3822154.095 40.495      part3+part10	0h:6m:25s (0h:9m:15s left)
+ 157 GTR+F+I+G4   3822030.269 44.792      part1+part17	0h:6m:25s (0h:9m:10s left)
+ 158 GTR+F+I+G4   3822150.943 40.949      part5+part10	0h:6m:27s (0h:9m:7s left)
+ 159 GTR+F+I+G4   3822055.709 36.620      part9+part14	0h:6m:28s (0h:9m:2s left)
+ 160 GTR+F+I+G4   3821978.990 40.916      part13+part17	0h:6m:30s (0h:8m:59s left)
+ 161 GTR+F+I+G4   3822062.122 40.352      part4+part17	0h:6m:31s (0h:8m:55s left)
+ 162 GTR+F+I+G4   3821906.276 33.993      part9+part11	0h:6m:31s (0h:8m:49s left)
+ 163 GTR+F+I+G4   3822141.484 40.560      part15+part17	0h:6m:33s (0h:8m:45s left)
+ 164 GTR+F+I+G4   3822006.948 34.745      part9+part12	0h:6m:34s (0h:8m:41s left)
+ 165 GTR+F+I+G4   3822013.731 36.126      part1+part9	0h:6m:34s (0h:8m:36s left)
+ 166 GTR+F+I+G4   3822241.792 45.931      part3+part14	0h:6m:38s (0h:8m:35s left)
+ 167 GTR+F+I+G4   3822196.940 43.395      part3+part12	0h:6m:40s (0h:8m:32s left)
+ 168 GTR+F+I+G4   3822023.750 41.897      part5+part12	0h:6m:40s (0h:8m:27s left)
+ 169 GTR+F+I+G4   3822079.571 41.796      part3+part11	0h:6m:40s (0h:8m:22s left)
+ 170 GTR+F+I+G4   3822034.200 45.597      part1+part3	0h:6m:40s (0h:8m:17s left)
+ 171 GTR+F+I+G4   3822162.364 44.321      part5+part14	0h:6m:41s (0h:8m:12s left)
+ 172 GTR+F+I+G4   3822084.671 39.977      part5+part11	0h:6m:43s (0h:8m:10s left)
+ 173 GTR+F+I+G4   3822023.152 44.348      part1+part5	0h:6m:45s (0h:8m:7s left)
+ 174 GTR+F+I+G4   3821978.565 33.711      part4+part9	0h:6m:46s (0h:8m:3s left)
+ 175 GTR+F+I+G4   3822009.704 33.949      part9+part13	0h:6m:46s (0h:7m:58s left)
+ 176 GTR+F+I+G4   3821971.314 32.367      part9+part15	0h:6m:46s (0h:7m:54s left)
+ 177 GTR+F+I+G4   3821954.164 35.002      part10+part11	0h:6m:48s (0h:7m:50s left)
+ 178 GTR+F+I+G4   3822012.732 38.803      part10+part14	0h:6m:49s (0h:7m:46s left)
+ 179 GTR+F+I+G4   3822059.722 36.682      part10+part12	0h:6m:52s (0h:7m:45s left)
+ 180 GTR+F+I+G4   3822028.020 38.818      part1+part10	0h:6m:52s (0h:7m:40s left)
+ 181 GTR+F+I+G4   3822185.772 41.714      part3+part15	0h:6m:53s (0h:7m:37s left)
+ 182 GTR+F+I+G4   3821993.991 42.470      part3+part13	0h:6m:54s (0h:7m:32s left)
+ 183 GTR+F+I+G4   3822122.064 40.733      part3+part4	0h:6m:54s (0h:7m:28s left)
+ 184 GTR+F+I+G4   3822079.674 40.628      part5+part15	0h:6m:55s (0h:7m:24s left)
+ 185 GTR+F+I+G4   3822089.436 38.269      part4+part5	0h:6m:55s (0h:7m:20s left)
+ 186 GTR+F+I+G4   3821998.883 41.049      part5+part13	0h:6m:58s (0h:7m:19s left)
+ 187 GTR+F+I+G4   3822008.383 34.943      part4+part10	0h:6m:59s (0h:7m:14s left)
+ 188 GTR+F+I+G4   3822049.990 39.597      part11+part14	0h:6m:59s (0h:7m:10s left)
+ 189 GTR+F+I+G4   3822077.734 41.530      part12+part14	0h:7m:0s (0h:7m:7s left)
+ 190 GTR+F+I+G4   3822001.691 31.945      part10+part15	0h:7m:0s (0h:7m:2s left)
+ 191 GTR+F+I+G4   3822073.987 41.882      part1+part14	0h:7m:1s (0h:6m:59s left)
+ 192 GTR+F+I+G4   3822019.902 36.027      part10+part13	0h:7m:2s (0h:6m:55s left)
+ 193 GTR+F+I+G4   3822035.425 35.835      part11+part12	0h:7m:4s (0h:6m:53s left)
+ 194 GTR+F+I+G4   3821993.952 40.604      part1+part12	0h:7m:5s (0h:6m:50s left)
+ 195 GTR+F+I+G4   3821966.187 39.239      part1+part11	0h:7m:6s (0h:6m:46s left)
+ 196 GTR+F+I+G4   3822104.687 37.780      part4+part14	0h:7m:6s (0h:6m:42s left)
+ 197 GTR+F+I+G4   3822021.450 35.276      part14+part15	0h:7m:6s (0h:6m:38s left)
+ 198 GTR+F+I+G4   3822009.656 34.123      part4+part11	0h:7m:7s (0h:6m:34s left)
+ 199 GTR+F+I+G4   3822044.113 39.610      part13+part14	0h:7m:7s (0h:6m:31s left)
+ 200 GTR+F+I+G4   3821898.813 35.812      part11+part13	0h:7m:10s (0h:6m:30s left)
+ 201 GTR+F+I+G4   3822002.636 33.217      part11+part15	0h:7m:11s (0h:6m:25s left)
+ 202 GTR+F+I+G4   3822026.977 37.152      part1+part4	0h:7m:11s (0h:6m:22s left)
+ 203 GTR+F+I+G4   3822051.590 36.739      part4+part12	0h:7m:11s (0h:6m:18s left)
+ 204 GTR+F+I+G4   3822005.322 35.895      part12+part15	0h:7m:12s (0h:6m:15s left)
+ 205 GTR+F+I+G4   3821975.835 37.484      part12+part13	0h:7m:12s (0h:6m:11s left)
+ 206 GTR+F+I+G4   3822017.301 38.691      part1+part15	0h:7m:13s (0h:6m:8s left)
+ 207 GTR+F+I+G4   3821966.729 34.153      part4+part13	0h:7m:15s (0h:6m:6s left)
+ 208 GTR+F+I+G4   3821975.395 34.033      part13+part15	0h:7m:16s (0h:6m:2s left)
+ 209 GTR+F+I+G4   3821977.561 39.721      part1+part13	0h:7m:16s (0h:5m:59s left)
+ 210 GTR+F+I+G4   3822008.221 31.733      part4+part15	0h:7m:18s (0h:5m:56s left)
+7 compatible better partition pairs found
+Merging part11+part13 with BIC score: 3821898.813 (LnL: -1907197.812  df: 753)
+Merging part18+part19 with BIC score: 3821789.226 (LnL: -1907197.823  df: 742)
+Merging part9+part15 with BIC score: 3821689.415 (LnL: -1907202.721  df: 731)
+Merging part1+part12 with BIC score: 3821612.242 (LnL: -1907218.939  df: 720)
+Merging part4+part10 with BIC score: 3821549.500 (LnL: -1907242.372  df: 709)
+Merging part5+part20 with BIC score: 3821487.013 (LnL: -1907265.933  df: 698)
+Merging part3+part17 with BIC score: 3821430.638 (LnL: -1907292.549  df: 687)
+ 211 GTR+F+I+G4   3821728.386 51.030      part1+part6+part12	0h:7m:49s (0h:6m:18s left)
+ 212 GTR+F+I+G4   3821985.668 49.717      part6+part11+part13	0h:7m:49s (0h:6m:14s left)
+ 213 GTR+F+I+G4   3821633.135 40.724      part8+part9+part15	0h:7m:54s (0h:6m:14s left)
+ 214 GTR+F+I+G4   3821422.854 45.064      part3+part8+part17	0h:7m:57s (0h:6m:12s left)
+ 215 GTR+F+I+G4   3821499.369 53.507      part5+part6+part20	0h:8m:1s (0h:6m:11s left)
+ 216 GTR+F+I+G4   3821764.312 51.426      part3+part6+part17	0h:8m:2s (0h:6m:8s left)
+ 217 GTR+F+I+G4   3822035.267 47.927      part6+part9+part15	0h:8m:8s (0h:6m:9s left)
+ 218 GTR+F+I+G4   3821764.218 46.549      part5+part8+part20	0h:8m:21s (0h:6m:14s left)
+ 219 GTR+F+I+G4   3821553.908 42.068      part8+part11+part13	0h:8m:23s (0h:6m:12s left)
+ 220 GTR+F+I+G4   3822049.566 48.699      part4+part6+part10	0h:8m:25s (0h:6m:9s left)
+ 221 GTR+F+I+G4   3821645.936 41.751      part4+part8+part10	0h:8m:32s (0h:6m:11s left)
+ 222 GTR+F+I+G4   3821535.691 42.441      part1+part8+part12	0h:8m:34s (0h:6m:8s left)
+ 223 GTR+F+I+G4   3821796.539 35.666      part7+part9+part15	0h:8m:39s (0h:6m:7s left)
+ 224 GTR+F+I+G4   3821589.659 41.486      part3+part7+part17	0h:8m:47s (0h:6m:9s left)
+ 225 GTR+F+I+G4   3821668.001 50.130      part6+part18+part19	0h:8m:48s (0h:6m:6s left)
+ 226 GTR+F+I+G4   3822350.225 43.887      part5+part7+part20	0h:8m:49s (0h:6m:3s left)
+ 227 GTR+F+I+G4   3821574.356 36.978      part7+part11+part13	0h:8m:49s (0h:5m:59s left)
+ 228 GTR+F+I+G4   3821866.704 44.213      part8+part18+part19	0h:8m:50s (0h:5m:56s left)
+ 229 GTR+F+I+G4   3821469.050 36.436      part2+part9+part15	0h:8m:51s (0h:5m:52s left)
+ 230 GTR+F+I+G4   3821487.036 44.491      part2+part3+part17	0h:8m:59s (0h:5m:54s left)
+ 231 GTR+F+I+G4   3821540.283 39.371      part2+part11+part13	0h:9m:5s (0h:5m:54s left)
+ 232 GTR+F+I+G4   3821719.536 36.660      part4+part7+part10	0h:9m:7s (0h:5m:51s left)
+ 233 GTR+F+I+G4   3821541.156 41.828      part1+part2+part12	0h:9m:8s (0h:5m:48s left)
+ 234 GTR+F+I+G4   3821654.029 48.620      part2+part5+part20	0h:9m:9s (0h:5m:45s left)
+ 235 GTR+F+I+G4   3821492.938 37.265      part2+part4+part10	0h:9m:15s (0h:5m:45s left)
+ 236 GTR+F+I+G4   3821762.362 37.940      part1+part7+part12	0h:9m:16s (0h:5m:42s left)
+ 237 GTR+F+I+G4   3822461.540 42.349      part7+part18+part19	0h:9m:24s (0h:5m:42s left)
+ 238 GTR+F+I+G4   3821849.503 44.823      part5+part9+part15+part20	0h:9m:29s (0h:5m:42s left)
+ 239 GTR+F+I+G4   3821367.946 35.509      part9+part11+part13+part15	0h:9m:29s (0h:5m:38s left)
+ 240 GTR+F+I+G4   3821631.373 40.636      part3+part9+part15+part17	0h:9m:30s (0h:5m:35s left)
+ 241 GTR+F+I+G4   3821543.914 44.549      part2+part18+part19	0h:9m:30s (0h:5m:31s left)
+ 242 GTR+F+I+G4   3821703.953 49.535      part3+part5+part17+part20	0h:9m:32s (0h:5m:28s left)
+ 243 GTR+F+I+G4   3821498.855 42.731      part3+part11+part13+part17	0h:9m:34s (0h:5m:26s left)
+ 244 GTR+F+I+G4   3821731.514 47.207      part5+part11+part13+part20	0h:9m:40s (0h:5m:25s left)
+ 245 GTR+F+I+G4   3821424.015 35.988      part9+part14+part15	0h:9m:41s (0h:5m:22s left)
+ 246 GTR+F+I+G4   3821716.753 40.300      part9+part15+part16	0h:9m:42s (0h:5m:19s left)
+ 247 GTR+F+I+G4   3821390.571 37.572      part1+part9+part12+part15	0h:9m:46s (0h:5m:17s left)
+ 248 GTR+F+I+G4   3821629.081 45.667      part3+part14+part17	0h:9m:46s (0h:5m:14s left)
+ 249 GTR+F+I+G4   3821551.837 44.993      part1+part3+part12+part17	0h:9m:51s (0h:5m:13s left)
+ 250 GTR+F+I+G4   3821500.166 46.271      part3+part16+part17	0h:9m:55s (0h:5m:12s left)
+ 251 GTR+F+I+G4   3821657.962 51.175      part5+part14+part20	0h:9m:56s (0h:5m:8s left)
+ 252 GTR+F+I+G4   3821588.078 48.793      part1+part5+part12+part20	0h:9m:59s (0h:5m:6s left)
+ 253 GTR+F+I+G4   3821456.912 39.016      part11+part13+part14	0h:10m:0s (0h:5m:3s left)
+ 254 GTR+F+I+G4   3821493.626 50.469      part5+part16+part20	0h:10m:1s (0h:5m:0s left)
+ 255 GTR+F+I+G4   3821376.833 34.652      part4+part9+part10+part15	0h:10m:1s (0h:4m:57s left)
+ 256 GTR+F+I+G4   3821390.608 39.657      part1+part11+part12+part13	0h:10m:8s (0h:4m:56s left)
+ 257 GTR+F+I+G4   3821619.603 42.025      part11+part13+part16	0h:10m:10s (0h:4m:54s left)
+ 258 GTR+F+I+G4   3821554.813 43.187      part9+part15+part18+part19	0h:10m:11s (0h:4m:51s left)
+ 259 GTR+F+I+G4   3821899.099 46.517      part4+part5+part10+part20	0h:10m:17s (0h:4m:51s left)
+ 260 GTR+F+I+G4   3821571.944 41.668      part3+part4+part10+part17	0h:10m:18s (0h:4m:47s left)
+ 261 GTR+F+I+G4   3821460.460 42.353      part1+part12+part14	0h:10m:22s (0h:4m:46s left)
+ 262 GTR+F+I+G4   3821387.122 36.233      part4+part10+part11+part13	0h:10m:23s (0h:4m:43s left)
+ 263 GTR+F+I+G4   3821805.528 46.209      part3+part17+part18+part19	0h:10m:26s (0h:4m:41s left)
+ 264 GTR+F+I+G4   3821428.052 37.622      part4+part10+part14	0h:10m:28s (0h:4m:38s left)
+ 265 GTR+F+I+G4   3821598.057 48.810      part5+part18+part19+part20	0h:10m:32s (0h:4m:37s left)
+ 266 GTR+F+I+G4   3821621.445 43.918      part1+part12+part16	0h:10m:33s (0h:4m:33s left)
+ 267 GTR+F+I+G4   3821627.451 43.945      part11+part13+part18+part19	0h:10m:33s (0h:4m:30s left)
+ 268 GTR+F+I+G4   3821700.342 42.064      part4+part10+part16	0h:10m:36s (0h:4m:28s left)
+ 269 GTR+F+I+G4   3821438.327 39.148      part1+part4+part10+part12	0h:10m:40s (0h:4m:26s left)
+ 270 GTR+F+I+G4   3821687.995 45.574      part14+part18+part19	0h:10m:45s (0h:4m:25s left)
+ 271 GTR+F+I+G4   3821467.409 44.524      part1+part12+part18+part19	0h:10m:55s (0h:4m:26s left)
+ 272 GTR+F+I+G4   3821608.489 46.518      part16+part18+part19	0h:10m:56s (0h:4m:23s left)
+ 273 GTR+F+I+G4   3821722.271 43.770      part4+part10+part18+part19	0h:10m:57s (0h:4m:20s left)
+3 compatible better partition pairs found
+Merging part9+part11+part13+part15 with BIC score: 3821367.946 (LnL: -1907316.008  df: 676)
+Merging part3+part8+part17 with BIC score: 3821360.162 (LnL: -1907366.920  df: 665)
+Merging part4+part10+part14 with BIC score: 3821357.576 (LnL: -1907420.431  df: 654)
+ 274 GTR+F+I+G4   3821739.532 39.891      part9+part11+part13+part15+part16	0h:11m:14s (0h:4m:23s left)
+ 275 GTR+F+I+G4   3821469.771 37.795      part2+part9+part11+part13+part15	0h:11m:21s (0h:4m:22s left)
+ 276 GTR+F+I+G4   3821938.296 43.085      part5+part9+part11+part13+part15+part20	0h:11m:23s (0h:4m:19s left)
+ 277 GTR+F+I+G4   3821757.343 36.787      part7+part9+part11+part13+part15	0h:11m:25s (0h:4m:17s left)
+ 278 GTR+F+I+G4   3822307.246 46.210      part6+part9+part11+part13+part15	0h:11m:35s (0h:4m:17s left)
+ 279 GTR+F+I+G4   3821324.625 38.066      part1+part9+part11+part12+part13+part15	0h:11m:45s (0h:4m:17s left)
+ 280 GTR+F+I+G4   3822204.404 48.551      part4+part6+part10+part14	0h:11m:51s (0h:4m:16s left)
+ 281 GTR+F+I+G4   3821657.821 42.259      part9+part11+part13+part15+part18+part19	0h:11m:54s (0h:4m:14s left)
+ 282 GTR+F+I+G4   3821342.323 36.832      part4+part9+part10+part11+part13+part14+part15	0h:11m:55s (0h:4m:11s left)
+ 283 GTR+F+I+G4   3821709.833 42.160      part3+part8+part9+part11+part13+part15+part17	0h:11m:56s (0h:4m:7s left)
+ 284 GTR+F+I+G4   3821913.000 48.610      part3+part6+part8+part17	0h:12m:8s (0h:4m:8s left)
+ 285 GTR+F+I+G4   3821463.479 38.171      part2+part4+part10+part14	0h:12m:16s (0h:4m:8s left)
+ 286 GTR+F+I+G4   3821847.305 38.265      part4+part7+part10+part14	0h:12m:16s (0h:4m:4s left)
+ 287 GTR+F+I+G4   3821444.597 44.670      part2+part3+part8+part17	0h:12m:30s (0h:4m:5s left)
+ 288 GTR+F+I+G4   3821612.065 43.023      part3+part7+part8+part17	0h:12m:35s (0h:4m:3s left)
+ 289 GTR+F+I+G4   3821757.428 42.762      part4+part10+part14+part16	0h:12m:40s (0h:4m:2s left)
+ 290 GTR+F+I+G4   3821760.136 47.062      part3+part5+part8+part17+part20	0h:12m:47s (0h:4m:0s left)
+ 291 GTR+F+I+G4   3821482.016 45.618      part3+part8+part16+part17	0h:12m:48s (0h:3m:57s left)
+ 292 GTR+F+I+G4   3821951.592 46.302      part4+part5+part10+part14+part20	0h:12m:59s (0h:3m:57s left)
+ 293 GTR+F+I+G4   3821379.866 39.610      part1+part4+part10+part12+part14	0h:13m:5s (0h:3m:55s left)
+ 294 GTR+F+I+G4   3821490.180 44.608      part1+part3+part8+part12+part17	0h:13m:6s (0h:3m:52s left)
+ 295 GTR+F+I+G4   3821841.863 43.640      part4+part10+part14+part18+part19	0h:13m:12s (0h:3m:51s left)
+ 296 GTR+F+I+G4   3821968.284 45.630      part3+part8+part17+part18+part19	0h:13m:16s (0h:3m:48s left)
+ 297 GTR+F+I+G4   3821776.084 43.510      part3+part4+part8+part10+part14+part17	0h:13m:22s (0h:3m:47s left)
+Merging part1+part9+part11+part12+part13+part15 with BIC score: 3821324.625 (LnL: -1907458.760  df: 643)
+ 298 GTR+F+I+G4   3821740.157 40.836      part1+part9+part11+part12+part13+part15+part16	0h:13m:57s (0h:3m:53s left)
+ 299 GTR+F+I+G4   3821467.271 39.059      part1+part2+part9+part11+part12+part13+part15	0h:14m:1s (0h:3m:50s left)
+ 300 GTR+F+I+G4   3821831.155 38.116      part1+part7+part9+part11+part12+part13+part15	0h:14m:1s (0h:3m:47s left)
+ 301 GTR+F+I+G4   3821896.918 42.951      part1+part5+part9+part11+part12+part13+part15+part20	0h:14m:1s (0h:3m:43s left)
+ 302 GTR+F+I+G4   3821632.369 42.315      part1+part9+part11+part12+part13+part15+part18+part19	0h:14m:6s (0h:3m:41s left)
+ 303 GTR+F+I+G4   3822330.912 45.748      part1+part6+part9+part11+part12+part13+part15	0h:14m:14s (0h:3m:39s left)
+ 304 GTR+F+I+G4   3821333.781 38.045      part1+part4+part9+part10+part11+part12+part13+part14+part15	0h:14m:34s (0h:3m:41s left)
+ 305 GTR+F+I+G4   3821749.949 42.224      part1+part3+part8+part9+part11+part12+part13+part15+part17	0h:14m:49s (0h:3m:41s left)
+Agglomerative model selection: (((part1,part12)4:3.82161e+06,((part9,part15)3:3.82169e+06,(part11,part13)1:3.8219e+06)8:3.82137e+06)11:3.82132e+06,part2,((part3,part17)7:3.82143e+06,part8)9:3.82136e+06,((part4,part10)5:3.82155e+06,part14)10:3.82136e+06,(part5,part20)6:3.82149e+06,part6,part7,part16,(part18,part19)2:3.82179e+06)
+Merging into 9 partitions...
+WARNING: Log-likelihood -583946 of GTR+F+R10 worse than GTR+F+R9 -583838
+ 306 GTR+F+I+G4   240222.707  part7	0h:42m:30s (0h:10m:25s left)
+WARNING: Log-likelihood -239524 of GTR+F+R5 worse than GTR+F+R4 -239158
+ 307 GTR+F+I+G4   228846.799  part16	0h:49m:6s (0h:11m:50s left)
+ 308 GTR+F+I+G4   165991.020  part2	1h:6m:8s (0h:15m:40s left)
+ 309 SYM+R8       316265.616  part5+part20	1h:12m:54s (0h:16m:59s left)
+ 310 GTR+F+I+G4   617259.723  part6	1h:14m:11s (0h:16m:59s left)
+WARNING: Log-likelihood -112809 of TIM3e+R8 worse than TIM3e+R7 -112806
+ 311 SYM+R10      752561.688  part18+part19	2h:12m:36s (0h:29m:50s left)
+ 312 GTR+F+R7     225525.001  part4+part10+part14	4h:40m:31s (1h:2m:2s left)
+ 313 SYM+R10      796431.360  part3+part8+part17	6h:38m:28s (1h:26m:34s left)
+ 314 SYM+R9       464437.341  part1+part9+part11+part12+part13+part15	13h:46m:57s (2h:56m:27s left)
+Best partition model BIC score: 3813306.229 (LnL: -1903170.559  df:699)
+Partition information was printed to cfg.txt.best_scheme.nex
+Partition information in Raxml format was printed to cfg.txt.best_scheme
+
+All model information printed to cfg.txt.model.gz
+CPU time for ModelFinder: 110857.052 seconds (30h:47m:37s)
+Wall-clock time for ModelFinder: 49975.468 seconds (13h:52m:55s)
+Generating 1000 samples for ultrafast bootstrap (seed: 10727)...
+
+NOTE: 1169 MB RAM (1 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1930962.159
+Current log-likelihood at step 1: -1904556.845
+Current log-likelihood at step 2: -1903791.486
+Current log-likelihood at step 3: -1903082.299
+Current log-likelihood at step 4: -1903081.545
+Current log-likelihood at step 5: -1903081.010
+Current log-likelihood at step 6: -1903080.599
+Current log-likelihood at step 7: -1903080.177
+Current log-likelihood at step 8: -1903079.793
+Current log-likelihood at step 9: -1903079.440
+Current log-likelihood at step 10: -1903079.111
+Current log-likelihood at step 11: -1903078.854
+Current log-likelihood at step 12: -1903078.537
+Current log-likelihood at step 13: -1903078.190
+Current log-likelihood at step 14: -1903077.869
+Current log-likelihood at step 15: -1903077.545
+Current log-likelihood at step 16: -1903077.239
+Current log-likelihood at step 17: -1903077.045
+Current log-likelihood at step 18: -1903076.878
+Current log-likelihood at step 19: -1903076.602
+Current log-likelihood at step 20: -1903076.388
+Current log-likelihood at step 21: -1903076.208
+Current log-likelihood at step 22: -1903076.024
+Current log-likelihood at step 23: -1903075.786
+Current log-likelihood at step 24: -1903075.611
+Current log-likelihood at step 25: -1903075.478
+Current log-likelihood at step 26: -1903075.277
+Current log-likelihood at step 27: -1903075.086
+Current log-likelihood at step 28: -1903074.878
+Current log-likelihood at step 29: -1903074.663
+Current log-likelihood at step 30: -1903074.514
+Current log-likelihood at step 31: -1903074.405
+Current log-likelihood at step 32: -1903074.232
+Current log-likelihood at step 33: -1903074.088
+Current log-likelihood at step 34: -1903073.974
+Current log-likelihood at step 35: -1903073.832
+Current log-likelihood at step 36: -1903073.671
+Current log-likelihood at step 37: -1903073.547
+Current log-likelihood at step 38: -1903073.400
+Current log-likelihood at step 39: -1903073.282
+Current log-likelihood at step 40: -1903073.191
+Partition-specific rates:  0.832 0.904 0.996 0.786 1.151 1.237 0.855 1.070 1.044
+Parameters optimization took 39 rounds (1689.829 sec)
+
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.006587 sec (of wall-clock time) 0.023175 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.683578 sec (of wall-clock time) 1.236895 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -2873350.910
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 244.054 second
+Computing log-likelihood of 98 initial trees ... 562.669 seconds
+Current best score: -1902524.596
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1896762.447
+Current log-likelihood at step 1: -1896730.885
+Current log-likelihood at step 2: -1896729.239
+Current log-likelihood at step 3: -1896728.525
+Current log-likelihood at step 4: -1896728.135
+Current log-likelihood at step 5: -1896727.813
+Current log-likelihood at step 6: -1896727.550
+Current log-likelihood at step 7: -1896727.296
+Current log-likelihood at step 8: -1896727.073
+Current log-likelihood at step 9: -1896726.873
+Current log-likelihood at step 10: -1896726.681
+Current log-likelihood at step 11: -1896726.532
+Current log-likelihood at step 12: -1896726.371
+Current log-likelihood at step 13: -1896726.208
+Current log-likelihood at step 14: -1896726.025
+Current log-likelihood at step 15: -1896725.908
+Current log-likelihood at step 16: -1896725.812
+Parameters optimization took 15 rounds (617.057 sec)
+
+BETTER TREE FOUND at iteration 1: -1896725.812
+Iteration 10 / LogL: -1899991.587 / Time: 1h:14m:33s
+Iteration 20 / LogL: -1900791.075 / Time: 1h:33m:28s
+Finish initializing candidate tree set (20)
+Current best tree score: -1896725.812 / CPU time: 3734.189
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -1897891.035 / Time: 1h:55m:29s (4h:42m:45s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1896545.803
+Current log-likelihood at step 1: -1896535.901
+Current log-likelihood at step 2: -1896529.484
+Current log-likelihood at step 3: -1896528.054
+Current log-likelihood at step 4: -1896527.891
+Current log-likelihood at step 5: -1896527.765
+Current log-likelihood at step 6: -1896527.678
+Parameters optimization took 5 rounds (172.235 sec)
+
+BETTER TREE FOUND at iteration 31: -1896527.678
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1896286.166
+Current log-likelihood at step 1: -1896280.518
+Current log-likelihood at step 2: -1896280.152
+Current log-likelihood at step 3: -1896279.971
+Current log-likelihood at step 4: -1896279.824
+Current log-likelihood at step 5: -1896279.700
+Current log-likelihood at step 6: -1896279.596
+Current log-likelihood at step 7: -1896279.519
+Parameters optimization took 6 rounds (213.799 sec)
+
+BETTER TREE FOUND at iteration 32: -1896279.519
+Iteration 40 / LogL: -1896546.760 / Time: 2h:23m:38s (5h:38m:51s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895975.020
+Current log-likelihood at step 1: -1895927.463
+Current log-likelihood at step 2: -1895918.437
+Current log-likelihood at step 3: -1895912.707
+Current log-likelihood at step 4: -1895908.373
+Current log-likelihood at step 5: -1895905.310
+Current log-likelihood at step 6: -1895902.854
+Current log-likelihood at step 7: -1895900.804
+Current log-likelihood at step 8: -1895899.060
+Current log-likelihood at step 9: -1895897.571
+Current log-likelihood at step 10: -1895896.299
+Current log-likelihood at step 11: -1895895.121
+Current log-likelihood at step 12: -1895894.155
+Current log-likelihood at step 13: -1895893.304
+Current log-likelihood at step 14: -1895892.607
+Current log-likelihood at step 15: -1895892.063
+Current log-likelihood at step 16: -1895891.568
+Current log-likelihood at step 17: -1895891.170
+Current log-likelihood at step 18: -1895890.824
+Current log-likelihood at step 19: -1895890.504
+Current log-likelihood at step 20: -1895890.270
+Current log-likelihood at step 21: -1895890.060
+Current log-likelihood at step 22: -1895889.883
+Current log-likelihood at step 23: -1895889.737
+Current log-likelihood at step 24: -1895889.605
+Current log-likelihood at step 25: -1895889.509
+Parameters optimization took 24 rounds (731.971 sec)
+
+BETTER TREE FOUND at iteration 44: -1895889.509
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895850.138
+Current log-likelihood at step 1: -1895849.602
+Current log-likelihood at step 2: -1895849.449
+Current log-likelihood at step 3: -1895849.310
+Current log-likelihood at step 4: -1895849.192
+Current log-likelihood at step 5: -1895849.108
+Parameters optimization took 4 rounds (115.640 sec)
+
+BETTER TREE FOUND at iteration 50: -1895849.108
+Iteration 50 / LogL: -1895849.108 / Time: 3h:0m:15s (6h:7m:52s left)
+Log-likelihood cutoff on original alignment: -1896330.494
+Iteration 60 / LogL: -1895968.499 / Time: 3h:20m:21s (5h:5m:37s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895747.164
+Current log-likelihood at step 1: -1895744.332
+Current log-likelihood at step 2: -1895744.004
+Current log-likelihood at step 3: -1895743.879
+Current log-likelihood at step 4: -1895743.801
+Parameters optimization took 3 rounds (120.581 sec)
+
+BETTER TREE FOUND at iteration 62: -1895743.801
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895734.271
+Current log-likelihood at step 1: -1895727.453
+Current log-likelihood at step 2: -1895726.920
+Current log-likelihood at step 3: -1895726.694
+Current log-likelihood at step 4: -1895726.567
+Current log-likelihood at step 5: -1895726.448
+Current log-likelihood at step 6: -1895726.387
+Parameters optimization took 5 rounds (190.100 sec)
+
+BETTER TREE FOUND at iteration 70: -1895726.387
+Iteration 70 / LogL: -1895726.387 / Time: 3h:47m:6s (5h:29m:8s left)
+Iteration 80 / LogL: -1895754.990 / Time: 4h:9m:41s (4h:44m:27s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895716.475
+Current log-likelihood at step 1: -1895715.400
+Current log-likelihood at step 2: -1895715.271
+Current log-likelihood at step 3: -1895715.224
+Parameters optimization took 2 rounds (82.155 sec)
+
+BETTER TREE FOUND at iteration 82: -1895715.224
+Iteration 90 / LogL: -1895786.160 / Time: 4h:31m:43s (4h:40m:52s left)
+Iteration 100 / LogL: -1895803.668 / Time: 4h:52m:52s (4h:2m:34s left)
+Log-likelihood cutoff on original alignment: -1896029.726
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.910
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -1896639.083 / Time: 5h:14m:7s (4h:19m:22s left)
+Iteration 120 / LogL: -1900817.730 / Time: 5h:35m:7s (3h:45m:17s left)
+Iteration 130 / LogL: -1898587.682 / Time: 5h:56m:2s (3h:13m:12s left)
+Iteration 140 / LogL: -1900024.760 / Time: 6h:16m:49s (2h:42m:39s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895713.259
+Current log-likelihood at step 1: -1895712.458
+Current log-likelihood at step 2: -1895712.293
+Current log-likelihood at step 3: -1895712.225
+Parameters optimization took 2 rounds (89.998 sec)
+
+BETTER TREE FOUND at iteration 142: -1895712.225
+Iteration 150 / LogL: -1895718.458 / Time: 6h:39m:41s (4h:6m:47s left)
+Log-likelihood cutoff on original alignment: -1896029.726
+Iteration 160 / LogL: -1895763.746 / Time: 7h:1m:13s (3h:37m:14s left)
+Iteration 170 / LogL: -1896480.491 / Time: 7h:23m:27s (3h:8m:55s left)
+Iteration 180 / LogL: -1895763.768 / Time: 7h:44m:5s (2h:40m:44s left)
+Iteration 190 / LogL: -1896571.880 / Time: 8h:5m:35s (2h:13m:36s left)
+Iteration 200 / LogL: -1895722.551 / Time: 8h:26m:20s (1h:46m:51s left)
+Log-likelihood cutoff on original alignment: -1896029.726
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+Iteration 210 / LogL: -1895768.749 / Time: 8h:46m:57s (3h:46m:55s left)
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -1895706.788
+Current log-likelihood at step 1: -1895706.388
+Current log-likelihood at step 2: -1895706.243
+Current log-likelihood at step 3: -1895706.149
+Parameters optimization took 2 rounds (81.764 sec)
+
+UPDATE BEST LOG-LIKELIHOOD: -1895706.149
+Iteration 220 / LogL: -1897344.966 / Time: 9h:9m:40s (3h:20m:47s left)
+Iteration 230 / LogL: -1896671.515 / Time: 9h:30m:18s (2h:54m:19s left)
+Iteration 240 / LogL: -1895835.480 / Time: 9h:51m:21s (2h:28m:27s left)
+TREE SEARCH COMPLETED AFTER 243 ITERATIONS / Time: 9h:57m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -1895706.149
+Current log-likelihood at step 1: -1895706.092
+Current log-likelihood at step 2: -1895706.032
+Current log-likelihood at step 3: -1895705.979
+Current log-likelihood at step 4: -1895705.943
+Current log-likelihood at step 5: -1895705.899
+Current log-likelihood at step 6: -1895705.871
+Current log-likelihood at step 7: -1895705.851
+Current log-likelihood at step 8: -1895705.833
+Current log-likelihood at step 9: -1895705.805
+Current log-likelihood at step 10: -1895705.773
+Current log-likelihood at step 11: -1895705.746
+Current log-likelihood at step 12: -1895705.729
+Current log-likelihood at step 13: -1895705.713
+Current log-likelihood at step 14: -1895705.700
+Current log-likelihood at step 15: -1895705.687
+Current log-likelihood at step 16: -1895705.673
+Current log-likelihood at step 17: -1895705.660
+Current log-likelihood at step 18: -1895705.647
+Current log-likelihood at step 19: -1895705.632
+Current log-likelihood at step 20: -1895705.619
+Current log-likelihood at step 21: -1895705.606
+Current log-likelihood at step 22: -1895705.603
+Partition-specific rates:  0.835 0.909 1.008 0.787 1.162 1.224 0.878 1.063 1.023
+Parameters optimization took 21 rounds (367.923 sec)
+
+Partition information was printed to cfg.txt.best_model.nex
+BEST SCORE FOUND : -1895705.603
+Creating bootstrap support values...
+Split supports printed to NEXUS file cfg.txt.splits.nex
+Total tree length: 44.388
+
+Total number of iterations: 243
+CPU time used for tree search: 178320.262 sec (49h:32m:0s)
+Wall-clock time used for tree search: 33982.582 sec (9h:26m:22s)
+Total CPU time used: 184977.558 sec (51h:22m:57s)
+Total wall-clock time used: 36226.726 sec (10h:3m:46s)
+
+Computing bootstrap consensus tree...
+Reading input file cfg.txt.splits.nex...
+274 taxa and 853 splits.
+Consensus tree written to cfg.txt.contree
+Reading input trees file cfg.txt.contree
+Log-likelihood of consensus tree: -1895722.635
+
+Analysis results written to: 
+  IQ-TREE report:                cfg.txt.iqtree
+  Maximum-likelihood tree:       cfg.txt.treefile
+  Likelihood distances:          cfg.txt.mldist
+  Best partitioning scheme:      cfg.txt.best_scheme.nex
+           in RAxML format:      cfg.txt.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          cfg.txt.splits.nex
+  Consensus tree:                cfg.txt.contree
+  Screen log file:               cfg.txt.log
+
+Date and Time: Fri Sep 23 19:12:32 2022
